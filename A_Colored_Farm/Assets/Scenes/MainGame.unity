@@ -330,6 +330,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: b480b248-051d-46dc-9885-9b04aafa90c4
     m_ActionName: UI/New action
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 96750385-7c35-4318-916e-477a79375234
+    m_ActionName: Inputs/Inventory[/Keyboard/i]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Inputs
