@@ -14,11 +14,13 @@ public class OpenInventory : MonoBehaviour
         {
             if (_open == false)
             {
+                Time.timeScale = 0;
                 _panelInventory.SetActive(true);
                 _open = true;
             }
             else
             {
+                Time.timeScale = 1;
                 _panelInventory.SetActive(false);
                 _panelInventoryPaint.SetActive(false);
                 _panelInventoryPlant.SetActive(false);
