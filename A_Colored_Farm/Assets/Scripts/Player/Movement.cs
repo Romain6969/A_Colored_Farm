@@ -6,6 +6,9 @@ public class Movement : MonoBehaviour
     private Vector2 _movement;
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private float _speed;
+    [SerializeField] private PlayerInput _playerInput;
+
+    public PlayerInput PlayerInput => _playerInput;
 
     public void OnMovement(InputAction.CallbackContext context)
     {
