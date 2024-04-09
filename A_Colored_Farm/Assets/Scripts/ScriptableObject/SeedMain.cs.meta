@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f74147f67b4c7be46ae18b9b70380879
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <BlueSeed>k__BackingField: {fileID: 11400000, guid: fff391aef5d86a142b30fa805710bfd3, type: 2}
+  - <YellowSeed>k__BackingField: {fileID: 11400000, guid: 7c4d6719c18f41441a1b031268c3c936, type: 2}
+  - <RedSeed>k__BackingField: {fileID: 11400000, guid: 61b6cb5f45f136943a28938e5797f727, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
