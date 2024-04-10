@@ -193,30 +193,8 @@
         {
             "name": "UI",
             "id": "ae040fe5-ca40-4b6c-91c3-0016dddc7fbd",
-            "actions": [
-                {
-                    "name": "New action",
-                    "type": "Button",
-                    "id": "b480b248-051d-46dc-9885-9b04aafa90c4",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "96d2e32c-32de-4024-9aa6-c87dbd879d59",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
+            "actions": [],
+            "bindings": []
         }
     ],
     "controlSchemes": [

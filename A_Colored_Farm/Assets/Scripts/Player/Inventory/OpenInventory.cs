@@ -7,6 +7,9 @@ public class OpenInventory : MonoBehaviour
     [SerializeField] private GameObject _panelInventory;
     [SerializeField] private GameObject _panelInventoryColor;
     [SerializeField] private GameObject _panelInventoryPlant;
+    [SerializeField] private PlayerInput _playerInput;
+
+    public PlayerInput PlayerInput => _playerInput;
 
     public void OnInventory(InputAction.CallbackContext context)
     {
