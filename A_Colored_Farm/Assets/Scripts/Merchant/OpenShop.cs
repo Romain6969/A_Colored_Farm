@@ -1,32 +1,31 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-
 public class OpenShop : MonoBehaviour
 {
     [SerializeField] private GameObject _shopPanel;
+    [SerializeField] private Interactions _interactions;
     private bool _open = false;
     private bool _isTrigger = false;
 
-    public void OnShop(InputAction.CallbackContext context)
+    public void Update()
     {
         if (_isTrigger == true)
         {
             if (_open == false)
             {
-                if (context.performed)
+                if (_interactions.IsPerformed == true)
                 {
-                    Time.timeScale = 0;
                     _shopPanel.SetActive(true);
                     _open = true;
+                    Time.timeScale = 0;
                 }
             }
             else
             {
-                if (context.performed)
+                if (_interactions.IsPerformed == false)
                 {
-                    Time .timeScale = 1;
                     _shopPanel.SetActive(false);
                     _open = false;
+                    Time.timeScale = 1;
                 }
             }
         }

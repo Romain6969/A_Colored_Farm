@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 1363597508881975594}
   - component: {fileID: 5164394600241547982}
   - component: {fileID: 3030685884229560691}
+  - component: {fileID: 7212423717165870380}
+  - component: {fileID: 1255879139870312579}
+  - component: {fileID: 2447420885019448261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -33,7 +36,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2019293694919607630}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5530560406653768934
@@ -130,19 +134,39 @@ MonoBehaviour:
     m_ActionId: 1efb8e2f-8216-4b84-9e35-c9f9ee520661
     m_ActionName: Inputs/Movement[/Keyboard/z,/Keyboard/s,/Keyboard/q,/Keyboard/d,/SwitchProControllerHID/leftStick/up,/SwitchProControllerHID/leftStick/down,/SwitchProControllerHID/leftStick/left,/SwitchProControllerHID/leftStick/right]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1255879139870312579}
+        m_TargetAssemblyTypeName: Interactions, Assembly-CSharp
+        m_MethodName: OnPlant
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5673013e-a9c6-4b3d-beac-c878c5f741b9
     m_ActionName: Inputs/Plant[/Keyboard/e,/SwitchProControllerHID/buttonEast]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b480b248-051d-46dc-9885-9b04aafa90c4
-    m_ActionName: UI/New action
-  - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7212423717165870380}
+        m_TargetAssemblyTypeName: OpenInventory, Assembly-CSharp
+        m_MethodName: OnInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 96750385-7c35-4318-916e-477a79375234
     m_ActionName: Inputs/Inventory[/Keyboard/i]
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: Gamepad
+  m_DefaultControlScheme: 
   m_DefaultActionMap: Inputs
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
@@ -222,4 +246,127 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 1363597508881975594}
   _speed: 5
-  _playerInput: {fileID: 0}
+  _playerInput: {fileID: 6226090527064342290}
+--- !u!114 &7212423717165870380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284860028164395308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc60236d71a24d1449c9a113660881eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panelInventory: {fileID: 0}
+  _panelInventoryColor: {fileID: 0}
+  _panelInventoryPlant: {fileID: 0}
+  _playerInput: {fileID: 6226090527064342290}
+--- !u!114 &1255879139870312579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284860028164395308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc6b02acdbaa8794a9967bd8ac82b765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 6226090527064342290}
+  <IsPerformed>k__BackingField: 0
+--- !u!114 &2447420885019448261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6284860028164395308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4935d99a9f875248bf0730a98bded2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shopPanel: {fileID: 0}
+  _interactions: {fileID: 1255879139870312579}
+--- !u!1 &8618662406233919062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019293694919607630}
+  - component: {fileID: 2085709398979622099}
+  - component: {fileID: 7290980671677847892}
+  - component: {fileID: 3789661194408019882}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019293694919607630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8618662406233919062}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 816.3207, y: 485.19894, z: -7.057272}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8102857234517220803}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2085709398979622099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8618662406233919062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b3e4bb49339934490d960f38acce4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Money>k__BackingField: 0
+  <InventorySeed>k__BackingField: {fileID: 7290980671677847892}
+  <InventoryColor>k__BackingField: {fileID: 3789661194408019882}
+--- !u!114 &7290980671677847892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8618662406233919062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00adf25c185ece145a69e0001414f464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <NumberBlueSeed>k__BackingField: 0
+  <NumberYellowSeed>k__BackingField: 0
+  <NumberRedSeed>k__BackingField: 0
+--- !u!114 &3789661194408019882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8618662406233919062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cb8e262288d624baaa1e3ec050df18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <NumberBlue>k__BackingField: 0
+  <NumberYellow>k__BackingField: 0
+  <NumberRed>k__BackingField: 0
