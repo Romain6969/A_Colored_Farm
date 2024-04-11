@@ -13,7 +13,7 @@ public class Interactions : MonoBehaviour
         IsPerformed = false;
     }
 
-    public void OnPlant(InputAction.CallbackContext context)
+    public void OnShop(InputAction.CallbackContext context)
     {
         if (context.performed == true)
         {
