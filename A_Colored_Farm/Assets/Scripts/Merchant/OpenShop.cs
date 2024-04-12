@@ -5,6 +5,8 @@ public class OpenShop : MonoBehaviour
 {
     [field: SerializeField] public bool Open { get; set; }
     [SerializeField] private GameObject _shopPanel;
+    [SerializeField] private GameObject _shopColorPanel;
+    [SerializeField] private GameObject _shopSeedPanel;
     [SerializeField] private OpenInventory _openInventory;
     [SerializeField] private PlayerInput _playerInput;
     private bool _isTrigger = false;
@@ -31,6 +33,8 @@ public class OpenShop : MonoBehaviour
                     if (context.performed)
                     {
                         _shopPanel.SetActive(false);
+                        _shopColorPanel.SetActive(false);
+                        _shopSeedPanel.SetActive(false);
                         Open = false;
                         Time.timeScale = 1;
                     }
