@@ -10,6 +10,13 @@ public class SellColor : MonoBehaviour
     {
         switch (_id)
         {
+            case 0:
+                if (_inventoryMain.InventoryColor.NumberGrey >= 1)
+                {
+                    _inventoryMain.Money += _seedMain.GreySeed.SellValue;
+                    _inventoryMain.InventoryColor.NumberGrey -= 1;
+                }
+                break;
             case 1:
                 if (_inventoryMain.InventoryColor.NumberBlue >= 1)
                 {
@@ -29,6 +36,27 @@ public class SellColor : MonoBehaviour
                 {
                     _inventoryMain.Money += _seedMain.RedSeed.SellValue;
                     _inventoryMain.InventoryColor.NumberRed -= 1;
+                }
+                break;
+            case 4:
+                if (_inventoryMain.InventoryColor.NumberPurple >= 1)
+                {
+                    _inventoryMain.Money += _seedMain.PurpleSeed.SellValue;
+                    _inventoryMain.InventoryColor.NumberPurple -= 1;
+                }
+                break;
+            case 5:
+                if (_inventoryMain.InventoryColor.NumberGreen >= 1)
+                {
+                    _inventoryMain.Money += _seedMain.GreenSeed.SellValue;
+                    _inventoryMain.InventoryColor.NumberGreen -= 1;
+                }
+                break;
+            case 6:
+                if (_inventoryMain.InventoryColor.NumberOrange >= 1)
+                {
+                    _inventoryMain.Money += _seedMain.OrangeSeed.SellValue;
+                    _inventoryMain.InventoryColor.NumberOrange -= 1;
                 }
                 break;
         }

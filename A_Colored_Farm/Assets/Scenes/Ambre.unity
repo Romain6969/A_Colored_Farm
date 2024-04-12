@@ -2456,10 +2456,6 @@ MonoBehaviour:
     m_ActionId: 5673013e-a9c6-4b3d-beac-c878c5f741b9
     m_ActionName: Inputs/Plant[/Keyboard/e,/SwitchProControllerHID/buttonEast]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b480b248-051d-46dc-9885-9b04aafa90c4
-    m_ActionName: UI/New action
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 558488248}
         m_TargetAssemblyTypeName: OpenInventory, Assembly-CSharp
@@ -2624,7 +2620,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 558488245}
   _speed: 5
-  _playerInput: {fileID: 0}
+  _playerInput: {fileID: 558488242}
 --- !u!114 &558488248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2637,9 +2633,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc60236d71a24d1449c9a113660881eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Open>k__BackingField: 0
   _panelInventory: {fileID: 1482787591}
   _panelInventoryColor: {fileID: 638398076}
   _panelInventoryPlant: {fileID: 275273379}
+  _playerInput: {fileID: 558488242}
+  _openShop: {fileID: 558488249}
 --- !u!114 &558488249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2652,7 +2651,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4935d99a9f875248bf0730a98bded2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Open>k__BackingField: 0
   _shopPanel: {fileID: 1690932031}
+  _openInventory: {fileID: 558488248}
+  _playerInput: {fileID: 558488242}
 --- !u!114 &558488250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,6 +2667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d5df7119e910541b90ce3f915e6c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerInput: {fileID: 558488242}
   _client: {fileID: 224847120}
   _movement: {fileID: 224847125}
 --- !u!1 &569311447

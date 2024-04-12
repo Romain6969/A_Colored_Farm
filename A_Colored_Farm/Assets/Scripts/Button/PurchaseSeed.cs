@@ -8,8 +8,16 @@ public class PurchaseSeed : MonoBehaviour
 
     public void OnClick()
     {
+
         switch (_id)
         {
+            case 0:
+                if (_inventoryMain.Money >= _seedMain.GreySeed.PurchaseValue)
+                {
+                    _inventoryMain.Money -= _seedMain.GreySeed.PurchaseValue;
+                    _inventoryMain.InventorySeed.NumberGreySeed += 1;
+                }
+                break;
             case 1:
                 if (_inventoryMain.Money >= _seedMain.BlueSeed.PurchaseValue)
                 {
@@ -29,6 +37,27 @@ public class PurchaseSeed : MonoBehaviour
                 {
                     _inventoryMain.Money -= _seedMain.RedSeed.PurchaseValue;
                     _inventoryMain.InventorySeed.NumberRedSeed += 1;
+                }
+                break;
+            case 4:
+                if (_inventoryMain.Money >= _seedMain.PurpleSeed.PurchaseValue)
+                {
+                    _inventoryMain.Money -= _seedMain.PurpleSeed.PurchaseValue;
+                    _inventoryMain.InventorySeed.NumberPurpleSeed += 1;
+                }
+                break;
+            case 5:
+                if (_inventoryMain.Money >= _seedMain.GreenSeed.PurchaseValue)
+                {
+                    _inventoryMain.Money -= _seedMain.GreenSeed.PurchaseValue;
+                    _inventoryMain.InventorySeed.NumberGreenSeed += 1;
+                }
+                break;
+            case 6:
+                if (_inventoryMain.Money >= _seedMain.OrangeSeed.PurchaseValue)
+                {
+                    _inventoryMain.Money -= _seedMain.OrangeSeed.PurchaseValue;
+                    _inventoryMain.InventorySeed.NumberOrangeSeed += 1;
                 }
                 break;
         }

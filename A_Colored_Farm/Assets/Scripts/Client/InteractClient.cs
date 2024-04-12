@@ -3,9 +3,12 @@ using UnityEngine.InputSystem;
 
 public class InteractClient : MonoBehaviour
 {
+    [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Client _client;
     [SerializeField] private ClientMovement _movement;
     private bool _isTrigger = false;
+
+    public PlayerInput PlayerInput => _playerInput;
 
     public void OnInteract(InputAction.CallbackContext context)
     {
