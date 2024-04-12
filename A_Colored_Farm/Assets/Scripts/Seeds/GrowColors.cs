@@ -17,80 +17,66 @@ public class GrowColors : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (_dirt.SeedPlaced == true)
-        {
-            _seedsGrowTime += Time.deltaTime;
+        _seedsGrowTime += Time.deltaTime;
 
-            if (_wichSeed._redSeed == true)
-            {
-                if (_seedsGrowTime > _seedMain.RedSeed.GrowTime)
-                {
-                    _inventoryColor.NumberRed += 1;
-                    Destroy(GameObject.Find("RedSeed(Clone)"));
-                    _seedsGrowTime = 0;
-                    _dirt.SeedPlaced = false;
-                }
-            }
-            if (_wichSeed._blueSeed == true)
-            {
-                if (_seedsGrowTime > _seedMain.BlueSeed.GrowTime)
-                {
-                    _inventoryColor.NumberBlue += 1;
-                    Destroy(GameObject.Find("BlueSeed(Clone)"));
-                    _seedsGrowTime = 0;
-                    _dirt.SeedPlaced = false;
-                }
-            }
-            if (_wichSeed._yellowSeed == true)
-            {
-                if (_seedsGrowTime > _seedMain.YellowSeed.GrowTime)
-                {
-                    _inventoryColor.NumberYellow += 1;
-                    Destroy(GameObject.Find("YellowSeed(Clone)"));
-                    _seedsGrowTime = 0;
-                    _dirt.SeedPlaced = false;
-                }
-            }
-            if (_wichSeed._greySeed == true)
-            {
+        switch (_wichSeed.SeedNumber)
+        {
+            case 0:
                 if (_seedsGrowTime > _seedMain.GreySeed.GrowTime)
                 {
+                    _dirt.SeedPlaced = false;
                     _inventoryColor.NumberGrey += 1;
-                    Destroy(GameObject.Find("GreySeed(Clone)"));
-                    _seedsGrowTime = 0;
-                    _dirt.SeedPlaced = false;
+                    Destroy(gameObject);
                 }
-            }
-            if (_wichSeed._purpleSeed == true)
-            {
-                if (_seedsGrowTime > _seedMain.GreenSeed.GrowTime)
+                break;
+            case 1:
+                if (_seedsGrowTime > _seedMain.BlueSeed.GrowTime)
                 {
-                    _inventoryColor.NumberGreen += 1;
-                    Destroy(GameObject.Find("GreenSeed(Clone)"));
-                    _seedsGrowTime = 0;
                     _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberBlue += 1;
+                    Destroy(gameObject);
                 }
-            }
-            if (_wichSeed._orangeSeed == true)
-            {
+                break;
+            case 2:
+                if (_seedsGrowTime > _seedMain.YellowSeed.GrowTime)
+                {
+                    _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberYellow += 1;
+                    Destroy(gameObject);
+                }
+                break;
+            case 3:
+                if (_seedsGrowTime > _seedMain.RedSeed.GrowTime)
+                {
+                    _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberRed += 1;
+                    Destroy(gameObject);
+                }
+                break;
+            case 4:
                 if (_seedsGrowTime > _seedMain.PurpleSeed.GrowTime)
                 {
-                    _inventoryColor.NumberPurple += 1;
-                    Destroy(GameObject.Find("PurpleSeed(Clone)"));
-                    _seedsGrowTime = 0;
                     _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberPurple += 1;
+                    Destroy(gameObject);
                 }
-            }
-            if (_wichSeed._greenSeed == true)
-            {
+                break;
+            case 5:
+                if (_seedsGrowTime > _seedMain.GreenSeed.GrowTime)
+                {
+                    _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberGreen += 1;
+                    Destroy(gameObject);
+                }
+                break;
+            case 6:
                 if (_seedsGrowTime > _seedMain.OrangeSeed.GrowTime)
                 {
-                    _inventoryColor.NumberOrange += 1;
-                    Destroy(GameObject.Find("OrangeSeed(Clone)"));
-                    _seedsGrowTime = 0;
                     _dirt.SeedPlaced = false;
+                    _inventoryColor.NumberOrange += 1;
+                    Destroy(gameObject);
                 }
-            }
+                break;
         }
     }
 }

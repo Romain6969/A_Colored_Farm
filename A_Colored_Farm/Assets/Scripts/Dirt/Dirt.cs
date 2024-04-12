@@ -27,73 +27,72 @@ public class Dirt : MonoBehaviour
             {
                 if (_placeSeed.IsPlanting == true)
                 {
-                    if (_wichSeed._redSeed == true)
+                    switch (_wichSeed.SeedNumber)
                     {
-                        if (_inventorySeed.NumberRedSeed > 0)
-                        {
-                            Instantiate(_seedsList[3], transform.parent);
-                            _inventorySeed.NumberRedSeed -= 1;
-                            SeedPlaced = true;
-                        }
+                        case 0:
+                            if (_inventorySeed.NumberGreySeed > 0)
+                            {
+                                Instantiate(_seedsList[0], transform.position, transform.rotation);
+                                _inventorySeed.NumberGreySeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 1:
+                            if (_inventorySeed.NumberBlueSeed > 0)
+                            {
+                                Instantiate(_seedsList[1], transform.position, transform.rotation);
+                                _inventorySeed.NumberBlueSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 2:
+                            if (_inventorySeed.NumberYellowSeed > 0)
+                            {
+                                Instantiate(_seedsList[2], transform.position, transform.rotation);
+                                _inventorySeed.NumberYellowSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 3:
+                            if (_inventorySeed.NumberRedSeed > 0)
+                            {
+                                Instantiate(_seedsList[3], transform.position, transform.rotation);
+                                _inventorySeed.NumberRedSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 4:
+                            if (_inventorySeed.NumberPurpleSeed > 0)
+                            {
+                                Instantiate(_seedsList[4], transform.position, transform.rotation);
+                                _inventorySeed.NumberPurpleSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 5:
+                            if (_inventorySeed.NumberGreenSeed > 0)
+                            {
+                                Instantiate(_seedsList[5], transform.position, transform.rotation);
+                                _inventorySeed.NumberGreenSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
+                        case 6:
+                            if (_inventorySeed.NumberOrangeSeed > 0)
+                            {
+                                Instantiate(_seedsList[6], transform.position, transform.rotation);
+                                _inventorySeed.NumberOrangeSeed -= 1;
+                                SeedPlaced = true;
+                                _placeSeed.IsPlanting = false;
+                            }
+                            break;
                     }
-                    if (_wichSeed._blueSeed == true)
-                    {
-                        if (_inventorySeed.NumberBlueSeed > 0)
-                        {
-                            Instantiate(_seedsList[1], transform.parent);
-                            _inventorySeed.NumberBlueSeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                    if (_wichSeed._yellowSeed == true)
-                    {
-                        if (_inventorySeed.NumberYellowSeed > 0)
-                        {
-                            Instantiate(_seedsList[2], transform.parent);
-                            _inventorySeed.NumberYellowSeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                    if (_wichSeed._greySeed == true)
-                    {
-                        if (_inventorySeed.NumberGreySeed > 0)
-                        {
-                            Instantiate(_seedsList[0], transform.parent);
-                            _inventorySeed.NumberGreySeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                    if (_wichSeed._purpleSeed == true)
-                    {
-                        if (_inventorySeed.NumberPurpleSeed > 0)
-                        {
-                            Instantiate(_seedsList[4], transform.parent);
-                            _inventorySeed.NumberPurpleSeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                    if (_wichSeed._orangeSeed == true)
-                    {
-                        if(_inventorySeed.NumberOrangeSeed > 0)
-                        {
-                            Instantiate(_seedsList[6], transform.parent);
-                            _inventorySeed.NumberOrangeSeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                    if (_wichSeed._greenSeed == true)
-                    {
-                        if(_inventorySeed.NumberGreenSeed > 0)
-                        {
-                            Instantiate(_seedsList[5], transform.parent);
-                            _inventorySeed.NumberGreenSeed -= 1;
-                            SeedPlaced = true;
-                        }
-                    }
-                }
-                else
-                {
-                    _placeSeed.IsPlanting = false;
                 }
             }
         }
