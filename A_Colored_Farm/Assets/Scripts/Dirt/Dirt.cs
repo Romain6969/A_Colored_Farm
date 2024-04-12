@@ -33,6 +33,7 @@ public class Dirt : MonoBehaviour
                         {
                             Instantiate(_seedsList[3], transform.parent);
                             _inventorySeed.NumberRedSeed -= 1;
+                            SeedPlaced = true;
                         }
                     }
                     if (_wichSeed._blueSeed == true)
@@ -41,6 +42,7 @@ public class Dirt : MonoBehaviour
                         {
                             Instantiate(_seedsList[1], transform.parent);
                             _inventorySeed.NumberBlueSeed -= 1;
+                            SeedPlaced = true;
                         }
                     }
                     if (_wichSeed._yellowSeed == true)
@@ -49,23 +51,44 @@ public class Dirt : MonoBehaviour
                         {
                             Instantiate(_seedsList[2], transform.parent);
                             _inventorySeed.NumberYellowSeed -= 1;
+                            SeedPlaced = true;
                         }
                     }
                     if (_wichSeed._greySeed == true)
                     {
-                        Instantiate(_seedsList[0], transform.parent);
+                        if (_inventorySeed.NumberGreySeed > 0)
+                        {
+                            Instantiate(_seedsList[0], transform.parent);
+                            _inventorySeed.NumberGreySeed -= 1;
+                            SeedPlaced = true;
+                        }
                     }
                     if (_wichSeed._purpleSeed == true)
                     {
-                        Instantiate(_seedsList[4], transform.parent);
+                        if (_inventorySeed.NumberPurpleSeed > 0)
+                        {
+                            Instantiate(_seedsList[4], transform.parent);
+                            _inventorySeed.NumberPurpleSeed -= 1;
+                            SeedPlaced = true;
+                        }
                     }
                     if (_wichSeed._orangeSeed == true)
                     {
-                        Instantiate(_seedsList[6], transform.parent);
+                        if(_inventorySeed.NumberOrangeSeed > 0)
+                        {
+                            Instantiate(_seedsList[6], transform.parent);
+                            _inventorySeed.NumberOrangeSeed -= 1;
+                            SeedPlaced = true;
+                        }
                     }
                     if (_wichSeed._greenSeed == true)
                     {
-                        Instantiate(_seedsList[5], transform.parent);
+                        if(_inventorySeed.NumberGreenSeed > 0)
+                        {
+                            Instantiate(_seedsList[5], transform.parent);
+                            _inventorySeed.NumberGreenSeed -= 1;
+                            SeedPlaced = true;
+                        }
                     }
                 }
                 else

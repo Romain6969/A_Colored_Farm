@@ -8,6 +8,13 @@ public class GrowColors : MonoBehaviour
     [SerializeField] private WichSeed _wichSeed;
     [SerializeField] private InventoryColor _inventoryColor;
 
+    private void Start()
+    {
+        _seedMain = FindObjectOfType<SeedMain>();
+        _dirt = FindObjectOfType<Dirt>();
+        _wichSeed = FindObjectOfType<WichSeed>();
+        _inventoryColor = FindObjectOfType<InventoryColor>();
+    }
     private void FixedUpdate()
     {
         if (_dirt.SeedPlaced == true)
