@@ -1,31 +1,39 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+
 public class OpenShop : MonoBehaviour
 {
+    [field: SerializeField] public bool Open { get; set; }
     [SerializeField] private GameObject _shopPanel;
-    [SerializeField] private Interactions _interactions;
-    private bool _open = false;
+    [SerializeField] private OpenInventory _openInventory;
+    [SerializeField] private PlayerInput _playerInput;
     private bool _isTrigger = false;
 
-    public void Update()
+    public PlayerInput PlayerInput => _playerInput;
+
+    public void OnShop(InputAction.CallbackContext context)
     {
         if (_isTrigger == true)
         {
-            if (_open == false)
+            if (_openInventory.Open == false)
             {
-                if (_interactions.IsPerformed == true)
+                if (Open == false)
                 {
-                    _shopPanel.SetActive(true);
-                    _open = true;
-                    Time.timeScale = 0;
+                    if (context.performed)
+                    {
+                        _shopPanel.SetActive(true);
+                        Open = true;
+                        Time.timeScale = 0;
+                    }
                 }
-            }
-            else
-            {
-                if (_interactions.IsPerformed == false)
+                else
                 {
-                    _shopPanel.SetActive(false);
-                    _open = false;
-                    Time.timeScale = 1;
+                    if (context.performed)
+                    {
+                        _shopPanel.SetActive(false);
+                        Open = false;
+                        Time.timeScale = 1;
+                    }
                 }
             }
         }
