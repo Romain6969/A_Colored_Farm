@@ -2135,7 +2135,7 @@ Transform:
   m_GameObject: {fileID: 562314604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.9830685, y: 6.537981, z: -0.077029854}
+  m_LocalPosition: {x: 0, y: 0, z: -0.077029854}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3390,11 +3390,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1c9fe33f6a959c43bed80f98857ff41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _seedPlaced: 0
+  <SeedPlaced>k__BackingField: 0
   _wichButtonToPress: {fileID: 0}
-  _seedsList: []
-  _placeSeed: {fileID: 0}
-  _wichSeed: {fileID: 0}
+  _wichButtonToPressText: {fileID: 0}
+  _seedsList:
+  - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
+  - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
+  - {fileID: 816725150587284670, guid: da08fb2c3db9b0f4db435b6b783d6ed3, type: 3}
+  - {fileID: 7043612541146008480, guid: ab04b99294cc49f4d84cd370c7005212, type: 3}
+  - {fileID: 4615196422988629679, guid: 4c44c84937fa06949b21247cdf738ea6, type: 3}
+  - {fileID: 4932376468868178620, guid: 9e4c05daa2315a945af0464bb1c94a44, type: 3}
+  - {fileID: 2407551260229056290, guid: ecd2cda980c75f340a9169b6f58e79dc, type: 3}
+  _placeSeed: {fileID: 634756030003194794}
+  _wichSeed: {fileID: 1502443144}
+  _inventorySeed: {fileID: 634756030003194793}
 --- !u!1 &994739202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5364,9 +5373,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74147f67b4c7be46ae18b9b70380879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <GreySeed>k__BackingField: {fileID: 11400000, guid: a842b25ae53b7b04e9c0cf4033cb9ffd, type: 2}
   <BlueSeed>k__BackingField: {fileID: 11400000, guid: fff391aef5d86a142b30fa805710bfd3, type: 2}
   <YellowSeed>k__BackingField: {fileID: 11400000, guid: 7c4d6719c18f41441a1b031268c3c936, type: 2}
   <RedSeed>k__BackingField: {fileID: 11400000, guid: 61b6cb5f45f136943a28938e5797f727, type: 2}
+  <PurpleSeed>k__BackingField: {fileID: 11400000, guid: 7daac3c2dc3f69948ae31d534fa1c2c9, type: 2}
+  <OrangeSeed>k__BackingField: {fileID: 11400000, guid: 95ec8b9013648ce448faae0ec0f80fef, type: 2}
+  <GreenSeed>k__BackingField: {fileID: 11400000, guid: 7276388df94297c4eb6d437862e92385, type: 2}
 --- !u!4 &1398405674
 Transform:
   m_ObjectHideFlags: 0
@@ -8974,6 +8987,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00adf25c185ece145a69e0001414f464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &634756030003194794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6207054884956697482, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+  m_PrefabInstance: {fileID: 634756030003194790}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74bca9c7c153e142acb88f5bce3118e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807

@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 6207054884956697482}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b3e4bb49339934490d960f38acce4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <Money>k__BackingField: 0
+  <Money>k__BackingField: 10000
   <InventorySeed>k__BackingField: {fileID: 7290980671677847892}
   <InventoryColor>k__BackingField: {fileID: 3789661194408019882}
 --- !u!114 &7290980671677847892
@@ -469,6 +469,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cb8e262288d624baaa1e3ec050df18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <NumberGrey>k__BackingField: 0
   <NumberBlue>k__BackingField: 0
   <NumberYellow>k__BackingField: 0
   <NumberRed>k__BackingField: 0
+  <NumberPurple>k__BackingField: 0
+  <NumberGreen>k__BackingField: 0
+  <NumberOrange>k__BackingField: 0
