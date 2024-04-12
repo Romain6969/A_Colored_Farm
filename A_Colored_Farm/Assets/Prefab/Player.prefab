@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5164394600241547982}
   - component: {fileID: 3030685884229560691}
   - component: {fileID: 7212423717165870380}
-  - component: {fileID: 1255879139870312579}
   - component: {fileID: 2447420885019448261}
   - component: {fileID: 6207054884956697482}
   m_Layer: 0
@@ -137,8 +136,8 @@ MonoBehaviour:
     m_ActionName: Inputs/Movement[/Keyboard/z,/Keyboard/s,/Keyboard/q,/Keyboard/d,/SwitchProControllerHID/leftStick/up,/SwitchProControllerHID/leftStick/down,/SwitchProControllerHID/leftStick/left,/SwitchProControllerHID/leftStick/right]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1255879139870312579}
-        m_TargetAssemblyTypeName: Interactions, Assembly-CSharp
+      - m_Target: {fileID: 2447420885019448261}
+        m_TargetAssemblyTypeName: OpenShop, Assembly-CSharp
         m_MethodName: OnShop
         m_Mode: 0
         m_Arguments:
@@ -273,24 +272,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc60236d71a24d1449c9a113660881eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Open>k__BackingField: 0
   _panelInventory: {fileID: 0}
   _panelInventoryColor: {fileID: 0}
   _panelInventoryPlant: {fileID: 0}
   _playerInput: {fileID: 6226090527064342290}
---- !u!114 &1255879139870312579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6284860028164395308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc6b02acdbaa8794a9967bd8ac82b765, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _playerInput: {fileID: 6226090527064342290}
-  <IsPerformed>k__BackingField: 0
+  _openShop: {fileID: 2447420885019448261}
 --- !u!114 &2447420885019448261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,8 +290,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4935d99a9f875248bf0730a98bded2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Open>k__BackingField: 0
   _shopPanel: {fileID: 0}
-  _interactions: {fileID: 1255879139870312579}
+  _openInventory: {fileID: 7212423717165870380}
+  _playerInput: {fileID: 6226090527064342290}
 --- !u!114 &6207054884956697482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -454,9 +443,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00adf25c185ece145a69e0001414f464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <NumberGreySeed>k__BackingField: 0
   <NumberBlueSeed>k__BackingField: 0
   <NumberYellowSeed>k__BackingField: 0
   <NumberRedSeed>k__BackingField: 0
+  <NumberPurpleSeed>k__BackingField: 0
+  <NumberGreenSeed>k__BackingField: 0
+  <NumberOrangeSeed>k__BackingField: 0
 --- !u!114 &3789661194408019882
 MonoBehaviour:
   m_ObjectHideFlags: 0
