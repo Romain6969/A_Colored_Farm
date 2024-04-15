@@ -19,6 +19,8 @@ public class RebindingDesplayMovementRight : MonoBehaviour
 
         _movement.PlayerInput.SwitchCurrentActionMap("UI");
 
+        Cursor.lockState = CursorLockMode.Locked;
+
         var moveAction = new InputAction(expectedControlType: "Vector2");
         moveAction.AddCompositeBinding("2DVector")
             .With("Up", "<Keyboard>/w")
@@ -44,5 +46,7 @@ public class RebindingDesplayMovementRight : MonoBehaviour
         _waitingForInputObject.SetActive(false);
 
         _movement.PlayerInput.SwitchCurrentActionMap("Inputs");
+
+        Cursor.lockState = CursorLockMode.None;
     }
 }
