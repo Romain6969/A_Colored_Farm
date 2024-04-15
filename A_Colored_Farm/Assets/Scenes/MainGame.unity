@@ -9189,9 +9189,25 @@ PrefabInstance:
       propertyPath: _shopPanel
       value: 
       objectReference: {fileID: 1008999518}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _shopSeedPanel
+      value: 
+      objectReference: {fileID: 519243207}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _shopColorPanel
+      value: 
+      objectReference: {fileID: 98992991}
+    - target: {fileID: 6207054884956697482, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: <CanPlant>k__BackingField
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7212423717165870380, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _panelInventory
