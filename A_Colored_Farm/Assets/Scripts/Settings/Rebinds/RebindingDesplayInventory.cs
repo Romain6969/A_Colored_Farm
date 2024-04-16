@@ -17,6 +17,8 @@ public class RebindingDesplayInventory : MonoBehaviour
         _startRebindObject.SetActive(false);
         _waitingForInputObject.SetActive(true);
 
+        Cursor.lockState = CursorLockMode.Locked;
+
         _openInventory.PlayerInput.SwitchCurrentActionMap("UI");
 
         _rebindingOperation = _openAction.action.PerformInteractiveRebinding()
@@ -38,5 +40,7 @@ public class RebindingDesplayInventory : MonoBehaviour
         _waitingForInputObject.SetActive(false);
 
         _openInventory.PlayerInput.SwitchCurrentActionMap("Inputs");
+
+        Cursor.lockState = CursorLockMode.None;
     }
 }
