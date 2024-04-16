@@ -9,6 +9,7 @@ public class OpenInventory : MonoBehaviour
     [SerializeField] private GameObject _panelInventoryPlant;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private OpenShop _openShop;
+    [SerializeField] private OpenCrusher _openCrusher;
 
     public PlayerInput PlayerInput => _playerInput;
 
@@ -16,21 +17,24 @@ public class OpenInventory : MonoBehaviour
     {
         if (_openShop.Open == false)
         {
-            if (context.performed)
+            if (_openCrusher.Open == false)
             {
-                if (Open == false)
+                if (context.performed)
                 {
-                    Time.timeScale = 0;
-                    _panelInventory.SetActive(true);
-                    Open = true;
-                }
-                else
-                {
-                    Time.timeScale = 1;
-                    _panelInventory.SetActive(false);
-                    _panelInventoryColor.SetActive(false);
-                    _panelInventoryPlant.SetActive(false);
-                    Open = false;
+                    if (Open == false)
+                    {
+                        Time.timeScale = 0;
+                        _panelInventory.SetActive(true);
+                        Open = true;
+                    }
+                    else
+                    {
+                        Time.timeScale = 1;
+                        _panelInventory.SetActive(false);
+                        _panelInventoryColor.SetActive(false);
+                        _panelInventoryPlant.SetActive(false);
+                        Open = false;
+                    }
                 }
             }
         }
