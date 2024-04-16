@@ -30,10 +30,6 @@ public class RebindingDesplayInventory : MonoBehaviour
 
     public void RebindComplete()
     {
-        int bindingIndex = _openAction.action.GetBindingIndexForControl(_openAction.action.controls[0]);
-
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_openAction.action.bindings[bindingIndex].effectivePath);
-
         _rebindingOperation.Dispose();
 
         _startRebindObject.SetActive(true);
@@ -42,5 +38,12 @@ public class RebindingDesplayInventory : MonoBehaviour
         _openInventory.PlayerInput.SwitchCurrentActionMap("Inputs");
 
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void Update()
+    {
+        int bindingIndex = _openAction.action.GetBindingIndexForControl(_openAction.action.controls[0]);
+
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_openAction.action.bindings[bindingIndex].effectivePath);
     }
 }
