@@ -24,4 +24,30 @@ public class InventorySeed : MonoBehaviour
             Inventory.Add(seed, amount);
         }
     }
+
+    public void RemoveSeed(SeedData seed, int amount) 
+    {
+        if (Inventory.ContainsKey(seed))
+        {
+            if (Inventory[seed] > 0) 
+            {
+                // Vérifier si on  a assez de graines de ce type avant de les enlever
+                Inventory[seed] -= amount;
+            }
+            else
+            {
+                Debug.Log("Dumbass you are seedless, also fuck you");
+            }
+            
+        }
+        else
+        {
+            // Probablement une erreur ici
+        }
+    }
+
+    public int GetAmount(SeedData seed)
+    {
+        return Inventory[seed];
+    }
 }
