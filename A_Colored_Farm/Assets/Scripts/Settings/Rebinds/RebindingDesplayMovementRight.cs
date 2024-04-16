@@ -38,8 +38,6 @@ public class RebindingDesplayMovementRight : MonoBehaviour
 
     public void RebindComplete()
     {
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[4].effectivePath);
-
         _rebindingOperation.Dispose();
 
         _startRebindObject.SetActive(true);
@@ -48,5 +46,10 @@ public class RebindingDesplayMovementRight : MonoBehaviour
         _movement.PlayerInput.SwitchCurrentActionMap("Inputs");
 
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void Update()
+    {
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[4].effectivePath);
     }
 }

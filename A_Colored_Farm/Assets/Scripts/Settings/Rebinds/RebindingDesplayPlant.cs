@@ -4,7 +4,7 @@ using TMPro;
 
 public class RebindingDesplayPlant : MonoBehaviour
 {
-    [SerializeField] private InputActionReference _PlantAction;
+    [SerializeField] private InputActionReference _plantAction;
     [SerializeField] private PlaceSeed _plantSeed;
     [SerializeField] private OpenShop _openShop;
     [SerializeField] private TMP_Text _bindingDisplayNameText;
@@ -23,7 +23,7 @@ public class RebindingDesplayPlant : MonoBehaviour
         _plantSeed.PlayerInput.SwitchCurrentActionMap("UI");
         _openShop.PlayerInput.SwitchCurrentActionMap("UI");
 
-        _rebindingOperation = _PlantAction.action.PerformInteractiveRebinding()
+        _rebindingOperation = _plantAction.action.PerformInteractiveRebinding()
             .WithControlsExcluding("Mouse")
             .OnMatchWaitForAnother(0.1f)
             .OnComplete(operation => RebindComplete())
@@ -32,10 +32,6 @@ public class RebindingDesplayPlant : MonoBehaviour
 
     public void RebindComplete()
     {
-        int bindingIndex = _PlantAction.action.GetBindingIndexForControl(_PlantAction.action.controls[0]);
-
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_PlantAction.action.bindings[bindingIndex].effectivePath);
-
         _rebindingOperation.Dispose();
 
         _startRebindObject.SetActive(true);
@@ -45,5 +41,12 @@ public class RebindingDesplayPlant : MonoBehaviour
         _openShop.PlayerInput.SwitchCurrentActionMap("Inputs");
 
         Cursor.lockState = CursorLockMode.None;
+    }
+
+    private void Update()
+    {
+        int bindingIndex = _plantAction.action.GetBindingIndexForControl(_plantAction.action.controls[0]);
+
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_plantAction.action.bindings[bindingIndex].effectivePath);
     }
 }

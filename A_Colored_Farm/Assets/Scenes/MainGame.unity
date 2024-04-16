@@ -2733,7 +2733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 917d310da0a831d438daa634ccfc0d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PlantAction: {fileID: 6716574646333017591, guid: ce6985946ba6be44aa8cf16a5f87a04c, type: 3}
+  _plantAction: {fileID: 6716574646333017591, guid: ce6985946ba6be44aa8cf16a5f87a04c, type: 3}
   _plantSeed: {fileID: 634756030003194794}
   _openShop: {fileID: 2078742839}
   _bindingDisplayNameText: {fileID: 1236628062}
