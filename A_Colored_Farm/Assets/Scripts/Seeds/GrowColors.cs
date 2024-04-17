@@ -5,13 +5,13 @@ public class GrowColors : MonoBehaviour
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private float _seedsGrowTime;
     [SerializeField] private WichSeed _wichSeed;
-    [SerializeField] private InventoryColor _inventoryColor;
-
+    [SerializeField] private PlantsInventory _plantsInventory;
+    [SerializeField] private PlaceSeed _placeSeed;
     private void Start()
     {
         _seedMain = FindObjectOfType<SeedMain>();
         _wichSeed = FindObjectOfType<WichSeed>();
-        _inventoryColor = FindObjectOfType<InventoryColor>();
+        _plantsInventory = FindObjectOfType<PlantsInventory>();
     }
 
     private void FixedUpdate()
@@ -23,50 +23,71 @@ public class GrowColors : MonoBehaviour
             case 0:
                 if (_seedsGrowTime > _seedMain.GreySeed.GrowTime)
                 {
-                    _inventoryColor.NumberGrey += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("GreyPlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
             case 1:
                 if (_seedsGrowTime > _seedMain.BlueSeed.GrowTime)
                 {
-                    _inventoryColor.NumberBlue += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("BluePlant", 1);
+                        Destroy(gameObject);
+                    }  
                 }
                 break;
             case 2:
                 if (_seedsGrowTime > _seedMain.YellowSeed.GrowTime)
                 {
-                    _inventoryColor.NumberYellow += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("YellowPlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
             case 3:
                 if (_seedsGrowTime > _seedMain.RedSeed.GrowTime)
                 {
-                    _inventoryColor.NumberRed += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("RedPlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
             case 4:
                 if (_seedsGrowTime > _seedMain.PurpleSeed.GrowTime)
                 {
-                    _inventoryColor.NumberPurple += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("PurplePlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
             case 5:
                 if (_seedsGrowTime > _seedMain.GreenSeed.GrowTime)
                 {
-                    _inventoryColor.NumberGreen += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("GreenPlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
             case 6:
                 if (_seedsGrowTime > _seedMain.OrangeSeed.GrowTime)
                 {
-                    _inventoryColor.NumberOrange += 1;
-                    Destroy(gameObject);
+                    if (_placeSeed.IsPlanting == true)
+                    {
+                        _plantsInventory.AddSeed("OrangePlant", 1);
+                        Destroy(gameObject);
+                    }
                 }
                 break;
         }
