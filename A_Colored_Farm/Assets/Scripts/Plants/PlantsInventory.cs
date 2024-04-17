@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryVegetable : MonoBehaviour
+public class PlantsInventory : MonoBehaviour
 {
-    [field: SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
+    [field : SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
 
     public void AddSeed(string plant, int amount)
     {

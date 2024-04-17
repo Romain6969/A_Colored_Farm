@@ -13,20 +13,20 @@ public class InventoryVegetableUI : MonoBehaviour
     [SerializeField] private TMP_Text _orangeVegetableText;
 
     // Update is called once per frame
-    void Update()
-    {
-        _greyVegetableText.text = ($"{_inventory.NumberGreyVegetable}");
+    //void Update()
+    //{
+        //_greyVegetableText.text = ($"{_inventory.NumberGreyVegetable}");
 
-        _blueVegetableText.text = ($"{_inventory.NumberBlueVegetable}");
+        //_blueVegetableText.text = ($"{_inventory.NumberBlueVegetable}");
 
-        _yellowVegetableText.text = ($"{_inventory.NumberYellowVegetable}");
+        //_yellowVegetableText.text = ($"{_inventory.NumberYellowVegetable}");
 
-        _redVegetableText.text = ($"{_inventory.NumberRedVegetable}");
+        //_redVegetableText.text = ($"{_inventory.NumberRedVegetable}");
 
-        _purpleVegetableText.text = ($"{_inventory.NumberPurpleVegetable}");
+        //_purpleVegetableText.text = ($"{_inventory.NumberPurpleVegetable}");
 
-        _greenVegetableText.text = ($"{_inventory.NumberGreenVegetable}");
+        //_greenVegetableText.text = ($"{_inventory.NumberGreenVegetable}");
 
-        _orangeVegetableText.text = ($"{_inventory.NumberOrangeVegetable}");
-    }
+        //_orangeVegetableText.text = ($"{_inventory.NumberOrangeVegetable}");
+    //}
 }
