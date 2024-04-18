@@ -10,10 +10,12 @@ public class InventoryVegetable : MonoBehaviour
         if (Inventory.ContainsKey(plant))
         {
             Inventory[plant] += amount;
+            Debug.Log(Inventory[plant]);
         }
         else
         {
             Inventory.Add(plant, amount);
+            Debug.Log(Inventory[plant]);
         }
     }
 

@@ -4,7 +4,7 @@ public class CrushVegetable : MonoBehaviour
 {
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private SeedMain _seedMain;
-    [SerializeField] private float _id;
+    [SerializeField] private int _id;
 
     public void OnClick()
     {

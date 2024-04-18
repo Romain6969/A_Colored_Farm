@@ -10,10 +10,12 @@ public class InventoryColor : MonoBehaviour
         if (Inventory.ContainsKey(color))
         {
             Inventory[color] += amount;
+            Debug.Log(Inventory[color]);
         }
         else
         {
             Inventory.Add(color, amount);
+            Debug.Log(Inventory[color]);
         }
     }
 
