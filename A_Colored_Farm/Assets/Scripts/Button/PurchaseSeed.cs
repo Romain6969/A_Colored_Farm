@@ -8,7 +8,6 @@ public class PurchaseSeed : MonoBehaviour
 
     public void OnClick()
     {
-
         switch (_id)
         {
             case 0:
