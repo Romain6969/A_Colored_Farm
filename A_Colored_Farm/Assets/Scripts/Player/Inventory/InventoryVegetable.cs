@@ -3,17 +3,19 @@ using UnityEngine;
 
 public class InventoryVegetable : MonoBehaviour
 {
-    [field: SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
+    [field : SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
 
     public void AddSeed(string plant, int amount)
     {
         if (Inventory.ContainsKey(plant))
         {
             Inventory[plant] += amount;
+            Debug.Log(Inventory[plant]);
         }
         else
         {
             Inventory.Add(plant, amount);
+            Debug.Log(Inventory[plant]);
         }
     }
 

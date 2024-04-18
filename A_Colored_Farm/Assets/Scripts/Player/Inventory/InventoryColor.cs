@@ -3,17 +3,19 @@ using UnityEngine;
 
 public class InventoryColor : MonoBehaviour
 {
-    [field: SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
+    [field : SerializeField] public Dictionary<string, int> Inventory { get; set; } = new();
 
     public void AddSeed(string color, int amount)
     {
         if (Inventory.ContainsKey(color))
         {
             Inventory[color] += amount;
+            Debug.Log(Inventory[color]);
         }
         else
         {
             Inventory.Add(color, amount);
+            Debug.Log(Inventory[color]);
         }
     }
 

@@ -7,6 +7,8 @@ TagManager:
   - Shop
   - Client
   - Seed
+  - Crusher
+  - Dirt
   layers:
   - Default
   - TransparentFX

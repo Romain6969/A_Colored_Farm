@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InventorySeed : MonoBehaviour
 {
-    public Dictionary<SeedData, int> Inventory { get; set; } = new();
+    [field : SerializeField] public Dictionary<SeedData, int> Inventory { get; set; } = new();
 
     public void AddSeed(SeedData seed, int amount)
     {
@@ -15,6 +15,7 @@ public class InventorySeed : MonoBehaviour
         else
         {
             Inventory.Add(seed, amount);
+            Debug.Log(Inventory[seed]);
         }
     }
 
