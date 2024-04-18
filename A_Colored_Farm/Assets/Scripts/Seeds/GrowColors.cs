@@ -5,17 +5,19 @@ public class GrowColors : MonoBehaviour
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private float _seedsGrowTime;
     [SerializeField] private WichSeed _wichSeed;
-    [SerializeField] private PlantsInventory _plantsInventory;
+    [SerializeField] private InventoryVegetable _plantsInventory;
     [SerializeField] private PlaceSeed _placeSeed;
     private void Start()
     {
         _seedMain = FindObjectOfType<SeedMain>();
         _wichSeed = FindObjectOfType<WichSeed>();
-        _plantsInventory = FindObjectOfType<PlantsInventory>();
+        _plantsInventory = FindObjectOfType<InventoryVegetable>();
+        _placeSeed = FindObjectOfType<PlaceSeed>();
     }
 
     private void FixedUpdate()
     {
+        Debug.Log(_placeSeed.IsPlanting);
         _seedsGrowTime += Time.deltaTime;
 
         switch (_wichSeed.SeedNumber)
