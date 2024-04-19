@@ -5567,7 +5567,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 583257228}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7416,7 +7416,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 785434007}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9503,7 +9503,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 996516880}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12033,7 +12033,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1243404446}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18263,7 +18263,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1791876897}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19969,7 +19969,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1974169833}
         m_TargetAssemblyTypeName: CrushVegetable, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
