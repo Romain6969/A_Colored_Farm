@@ -1668,7 +1668,7 @@ GameObject:
   - component: {fileID: 173493917}
   m_Layer: 0
   m_Name: Dirt (2)
-  m_TagString: Untagged
+  m_TagString: Dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1686,8 +1686,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
+  _wichButtonToPress: {fileID: 1184990245}
+  _wichButtonToPressText: {fileID: 1802699326}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -5456,7 +5456,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 277137599}
   m_HandleRect: {fileID: 277137598}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.9999997
   m_Size: 0.6666667
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -9394,7 +9394,7 @@ GameObject:
   - component: {fileID: 938801761}
   m_Layer: 0
   m_Name: Dirt (1)
-  m_TagString: Untagged
+  m_TagString: Dirt
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9412,8 +9412,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
+  _wichButtonToPress: {fileID: 1184990245}
+  _wichButtonToPressText: {fileID: 1802699326}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -10918,7 +10918,7 @@ GameObject:
   - component: {fileID: 1027691679}
   - component: {fileID: 1027691678}
   m_Layer: 5
-  m_Name: Button
+  m_Name: BlueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10956,8 +10956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87ba27896725334a8764a8ace9890e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventoryMain: {fileID: 0}
-  _seedMain: {fileID: 0}
+  _inventoryMain: {fileID: 2019296159}
+  _seedMain: {fileID: 1931216649}
   _id: 1
 --- !u!114 &1027691679
 MonoBehaviour:
@@ -15460,7 +15460,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -17830,7 +17830,7 @@ GameObject:
   - component: {fileID: 1743854224}
   - component: {fileID: 1743854223}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: YellowButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17868,8 +17868,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87ba27896725334a8764a8ace9890e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventoryMain: {fileID: 0}
-  _seedMain: {fileID: 0}
+  _inventoryMain: {fileID: 2019296159}
+  _seedMain: {fileID: 1931216649}
   _id: 2
 --- !u!114 &1743854224
 MonoBehaviour:
@@ -18928,7 +18928,7 @@ GameObject:
   - component: {fileID: 1846371319}
   - component: {fileID: 1846371318}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: RedButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18966,8 +18966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87ba27896725334a8764a8ace9890e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inventoryMain: {fileID: 0}
-  _seedMain: {fileID: 0}
+  _inventoryMain: {fileID: 2019296159}
+  _seedMain: {fileID: 1931216649}
   _id: 3
 --- !u!114 &1846371319
 MonoBehaviour:
