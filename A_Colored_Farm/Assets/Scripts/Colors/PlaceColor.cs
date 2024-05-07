@@ -3,16 +3,11 @@ using UnityEngine.InputSystem;
 
 public class PlaceColor : MonoBehaviour
 {
-    [field: SerializeField] public bool IsPainting { get; set; }
+    [field: SerializeField] public bool IsPainting { get; set; } = false;
     [SerializeField] private PlayerInput _playerInput;
     private bool _triggered;
 
     public PlayerInput PlayerInput => _playerInput;
-
-    private void Start()
-    {
-        IsPainting = false;
-    }
 
     public void OnPaint(InputAction.CallbackContext context)
     {
