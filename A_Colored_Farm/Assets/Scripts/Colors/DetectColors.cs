@@ -6,69 +6,70 @@ public class DetectColors : MonoBehaviour
     [SerializeField] private WichColor _wichColor;
     [SerializeField] private PlaceColor _placeColor;
     [SerializeField] private InventoryColor _inventoryColor;
-    [SerializeField] private List<GameObject> _colorList;
+    [SerializeField] private ColorMain _colorMain;
+    [SerializeField] private Dirt _dirt;
 
-    public void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        if (_wichColor.IsNowPaint == true)
+        if (_dirt.SeedPlaced == false)
         {
             if (_placeColor.IsPainting == true)
             {
                 switch (_wichColor.ColorNumber)
                 {
                     case 0:
-                        if(_inventoryColor.GetAmount("GreyColor") > 0)
+                        if (_inventoryColor.GetAmount("Grey") > 0)
                         {
-                            Instantiate(_colorList[0], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("GreyColor", 1);
+                            Instantiate(_colorMain.ColorsList[0].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Grey", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 1:
-                        if (_inventoryColor.GetAmount("BlueColor") > 0)
+                        if (_inventoryColor.GetAmount("Blue") > 0)
                         {
-                            Instantiate(_colorList[1], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("BlueColor", 1);
+                            Instantiate(_colorMain.ColorsList[1].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Blue", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 2:
-                        if (_inventoryColor.GetAmount("YellowColor") > 0)
+                        if (_inventoryColor.GetAmount("Yellow") > 0)
                         {
-                            Instantiate(_colorList[2], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("YellowColor", 1);
+                            Instantiate(_colorMain.ColorsList[2].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Yellow", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 3:
-                        if (_inventoryColor.GetAmount("RedColor") > 0)
+                        if (_inventoryColor.GetAmount("Red") > 0)
                         {
-                            Instantiate(_colorList[3], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("RedColor", 1);
+                            Instantiate(_colorMain.ColorsList[3].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Red", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 4:
-                        if (_inventoryColor.GetAmount("PurpleColor") > 0)
+                        if (_inventoryColor.GetAmount("Purple") > 0)
                         {
-                            Instantiate(_colorList[4], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("PurpleColor", 1);
+                            Instantiate(_colorMain.ColorsList[4].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Purple", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 5:
-                        if (_inventoryColor.GetAmount("GreenColor") > 0)
+                        if (_inventoryColor.GetAmount("Green") > 0)
                         {
-                            Instantiate(_colorList[5], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("GreenColor", 1);
+                            Instantiate(_colorMain.ColorsList[5].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Green", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
                     case 6:
-                        if (_inventoryColor.GetAmount("OrangeColor") > 0)
+                        if (_inventoryColor.GetAmount("Orange") > 0)
                         {
-                            Instantiate(_colorList[6], transform.position, transform.rotation);
-                            _inventoryColor.RemoveSeed("OrangeColor", 1);
+                            Instantiate(_colorMain.ColorsList[6].PrefabColor, transform.position, transform.rotation);
+                            _inventoryColor.RemoveSeed("Orange", 1);
                             _placeColor.IsPainting = false;
                         }
                         break;
