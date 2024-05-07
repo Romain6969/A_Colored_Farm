@@ -15,18 +15,18 @@ public class InventorySeedUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _greySeedText.text = ($"{_inventory.NumberGreySeed}");
+        //_greySeedText.text = ($"{_inventory.NumberGreySeed}");
 
-        _blueSeedText.text = ($"{_inventory.NumberBlueSeed}");
+        //_blueSeedText.text = ($"{_inventory.NumberBlueSeed}");
 
-        _yellowSeedText.text = ($"{_inventory.NumberYellowSeed}");
+        //_yellowSeedText.text = ($"{_inventory.NumberYellowSeed}");
 
-        _redSeedText.text = ($"{_inventory.NumberRedSeed}");
+        //_redSeedText.text = ($"{_inventory.NumberRedSeed}");
 
-        _purpleSeedText.text = ($"{_inventory.NumberPurpleSeed}");
+        //_purpleSeedText.text = ($"{_inventory.NumberPurpleSeed}");
 
-        _greenSeedText.text = ($"{_inventory.NumberGreenSeed}");
+        //_greenSeedText.text = ($"{_inventory.NumberGreenSeed}");
 
-        _orangeSeedText.text = ($"{_inventory.NumberOrangeSeed}");
+        //_orangeSeedText.text = ($"{_inventory.NumberOrangeSeed}");
     }
 }
