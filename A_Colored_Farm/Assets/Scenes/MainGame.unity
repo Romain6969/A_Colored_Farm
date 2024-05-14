@@ -3115,6 +3115,7 @@ GameObject:
   - component: {fileID: 303027178}
   - component: {fileID: 303027177}
   - component: {fileID: 303027176}
+  - component: {fileID: 303027190}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3332,6 +3333,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &303027190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303027175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cbc2701e3e59045ad18a92a7a46f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ColorNumber>k__BackingField: 0
+  <IsNowPaint>k__BackingField: 0
 --- !u!1 &306414551
 GameObject:
   m_ObjectHideFlags: 0
@@ -9200,6 +9215,7 @@ GameObject:
   - component: {fileID: 983280359}
   - component: {fileID: 983280358}
   - component: {fileID: 983280361}
+  - component: {fileID: 983280362}
   m_Layer: 0
   m_Name: Dirt
   m_TagString: Dirt
@@ -9346,6 +9362,24 @@ MonoBehaviour:
   _wichSeed: {fileID: 303027176}
   _inventorySeed: {fileID: 634756030003194793}
   _seedMain: {fileID: 1398405673}
+--- !u!114 &983280362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983280357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b33ed06541d9f4aba5cf4d6c7856bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ColorPlaced>k__BackingField: 0
+  _wichColor: {fileID: 303027190}
+  _placeColor: {fileID: 634756030003194800}
+  _inventoryColor: {fileID: 634756030003194792}
+  _colorMain: {fileID: 82248633}
+  _dirt: {fileID: 983280361}
 --- !u!1 &994739202
 GameObject:
   m_ObjectHideFlags: 0
@@ -12565,6 +12599,7 @@ GameObject:
   - component: {fileID: 1270124130}
   - component: {fileID: 1270124129}
   - component: {fileID: 1270124128}
+  - component: {fileID: 1270124132}
   m_Layer: 0
   m_Name: Dirt (1)
   m_TagString: Dirt
@@ -12711,6 +12746,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270124132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270124127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3b33ed06541d9f4aba5cf4d6c7856bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ColorPlaced>k__BackingField: 0
+  _wichColor: {fileID: 303027190}
+  _placeColor: {fileID: 634756030003194800}
+  _inventoryColor: {fileID: 634756030003194792}
+  _colorMain: {fileID: 82248633}
+  _dirt: {fileID: 1270124128}
 --- !u!1 &1285819928 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8618662406233919062, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -21606,6 +21659,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194799}
+    - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 634756030003194800}
     - targetCorrespondingSourceObject: {fileID: 8618662406233919062, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194797}
@@ -21708,6 +21764,20 @@ MonoBehaviour:
   <Open>k__BackingField: 0
   _crusherPanel: {fileID: 1486705652}
   _openInventory: {fileID: 634756030003194795}
+  _playerInput: {fileID: 1517065703}
+--- !u!114 &634756030003194800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136859935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53e45695d6255e4582702470090f9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsPainting>k__BackingField: 0
   _playerInput: {fileID: 1517065703}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
