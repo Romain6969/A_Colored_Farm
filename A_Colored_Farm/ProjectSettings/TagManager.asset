@@ -9,6 +9,7 @@ TagManager:
   - Seed
   - Crusher
   - Dirt
+  - Paint
   layers:
   - Default
   - TransparentFX
