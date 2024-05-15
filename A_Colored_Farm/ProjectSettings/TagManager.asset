@@ -9,6 +9,9 @@ TagManager:
   - Seed
   - Crusher
   - Dirt
+  - ChestBlue
+  - ChestYellow
+  - ChestRed
   layers:
   - Default
   - TransparentFX
