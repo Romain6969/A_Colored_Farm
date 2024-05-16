@@ -1,21 +1,24 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WichColor : MonoBehaviour
 {
     [field : SerializeField] public int ColorNumber { get; set; }
-    [field: SerializeField] public bool IsNowPaint { get; set; } = false;
+    [SerializeField] private GameObject _colorPanel;
+    [field: SerializeField] public Dirt _dirt { get; set; }
 
     public void OnClickNumberColor(int color)
     {
         ColorNumber = color;
+        _colorPanel.SetActive(false);
+        _dirt.OnDate();
+    }
 
-        if (IsNowPaint == false)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Dirt")
         {
-            IsNowPaint = true;
-        }
-        else
-        {
-            IsNowPaint = false;
+            _dirt = collision.gameObject.GetComponent<Dirt>();
         }
     }
 }

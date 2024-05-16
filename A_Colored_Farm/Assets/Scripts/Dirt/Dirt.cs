@@ -5,6 +5,7 @@ using UnityEngine;
 public class Dirt : MonoBehaviour
 {
     [field :SerializeField] public bool SeedPlaced { get; set; }
+    [field: SerializeField] public bool ColorPlaced { get; set; }
     [SerializeField] private GameObject _wichButtonToPress;
     [SerializeField] private TMP_Text _wichButtonToPressText;
     [SerializeField] private List<GameObject> _seedsList;
@@ -12,6 +13,14 @@ public class Dirt : MonoBehaviour
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private SeedMain _seedMain;
     private float _currentTime;
+    [SerializeField] private SeedColor _seedColor;
+    [SerializeField] private WichColor _wichColor;
+    [SerializeField] private PlaceColor _placeColor;
+    [SerializeField] private InventoryColor _inventoryColor;
+    [SerializeField] private PaintColor _paintColor;
+    [SerializeField] private GameObject _colorPanel;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
+    [SerializeField] private List<Sprite> _dirtColorSprite;
 
     private void Start()
     {
@@ -30,35 +39,125 @@ public class Dirt : MonoBehaviour
             {
                 if (_placeSeed.IsPlanting == true)
                 {
-                    switch (_keepItem.Id)
+                    if (_keepItem.Id != 12)
                     {
-                        case 8:
-                            Instantiate(_seedsList[0], transform.position, transform.rotation);
-                            _keepItem.Id = 0;
-                            _placeSeed.IsPlanting = false;
-                            _keepItem.Here = false;
-                            break;
-                        case 9:
-                            Instantiate(_seedsList[1], transform.position, transform.rotation);
-                            _keepItem.Id = 0;
-                            _placeSeed.IsPlanting = false;
-                            _keepItem.Here = false;
-                            break;
-                        case 10:
-                            Instantiate(_seedsList[2], transform.position, transform.rotation);
-                            _keepItem.Id = 0;
-                            _placeSeed.IsPlanting = false;
-                            _keepItem.Here = false;
-                            break;
-                        case 11:
-                            Instantiate(_seedsList[3], transform.position, transform.rotation);
-                            _keepItem.Id = 0;
-                            _placeSeed.IsPlanting = false;
-                            _keepItem.Here = false;
-                            break;
+                        switch (_keepItem.Id)
+                        {
+                            case 8:
+                                Instantiate(_seedsList[0], transform.position, transform.rotation);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                _seedColor.Seed = (SeedColor.ColorSeed)0;
+                                break;
+                            case 9:
+                                Instantiate(_seedsList[1], transform.position, transform.rotation);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                _seedColor.Seed = (SeedColor.ColorSeed)1;
+                                break;
+                            case 10:
+                                Instantiate(_seedsList[2], transform.position, transform.rotation);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                _seedColor.Seed = (SeedColor.ColorSeed)2;
+                                break;
+                            case 11:
+                                Instantiate(_seedsList[3], transform.position, transform.rotation);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                _seedColor.Seed = (SeedColor.ColorSeed)3;
+                                break;
+                        }
                     }
+                    else
+                    {
+                        if (ColorPlaced == false)
+                        {
+                            if(_placeColor.IsPainting == true)
+                            {
+                                _colorPanel.SetActive(true);
+                                
+                            }
+                            
+                        }
+                    }  
                 }
             }
+        }
+    }
+
+    public void OnDate()
+    {
+        Debug.Log("Hi Bitch");
+        switch (_wichColor.ColorNumber)
+        {
+            case 0:
+                if (_inventoryColor.GetAmount("Grey") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[1];
+                    _inventoryColor.RemoveSeed("Grey", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)0;
+                }
+                break;
+            case 1:
+                if (_inventoryColor.GetAmount("Blue") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[2];
+                    _inventoryColor.RemoveSeed("Blue", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)1;
+                }
+                break;
+            case 2:
+                if (_inventoryColor.GetAmount("Yellow") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[3];
+                    _inventoryColor.RemoveSeed("Yellow", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)2;
+                }
+                break;
+            case 3:
+                if (_inventoryColor.GetAmount("Red") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[4];
+                    _inventoryColor.RemoveSeed("Red", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)3;
+                }
+                break;
+            case 4:
+                if (_inventoryColor.GetAmount("Purple") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[5];
+                    _inventoryColor.RemoveSeed("Purple", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)4;
+                }
+                break;
+            case 5:
+                if (_inventoryColor.GetAmount("Green") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[6];
+                    _inventoryColor.RemoveSeed("Green", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)5;
+                }
+                break;
+            case 6:
+                if (_inventoryColor.GetAmount("Orange") > 0)
+                {
+                    _spriteRenderer.sprite = _dirtColorSprite[7];
+                    _inventoryColor.RemoveSeed("Orange", 1);
+                    _placeColor.IsPainting = false;
+                    _paintColor.Paint = (PaintColor.ColorPaint)6;
+                }
+                break;
         }
     }
 

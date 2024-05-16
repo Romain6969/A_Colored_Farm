@@ -12,7 +12,7 @@ public class SeedColorMix : MonoBehaviour
 
     private ResultMix.ColorResult[,] ColorSomething;
 
-    private void EveryMix(int paintColor, int seedColor)
+    public void EveryMix(int paintColor, int seedColor)
     {
         if (ColorSomething[paintColor, seedColor] == ColorSomething[1, 1])
         {
@@ -56,11 +56,16 @@ public class SeedColorMix : MonoBehaviour
         }
     }
 
+    public void MixThem()
+    {
+        EveryMix((int)_paintColor.Paint, (int)_seedColor.Seed);
+    }
+
     private void FixedUpdate()
     {
         if (_dirt.SeedPlaced == true && _detectColors.ColorPlaced == true)
         {
-            EveryMix((int)_paintColor.Paint, (int)_seedColor.Seed);
+            MixThem();
         }
     }
 }
