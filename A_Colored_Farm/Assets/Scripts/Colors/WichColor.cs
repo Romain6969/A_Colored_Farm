@@ -3,19 +3,13 @@ using UnityEngine;
 public class WichColor : MonoBehaviour
 {
     [field : SerializeField] public int ColorNumber { get; set; }
-    [field: SerializeField] public bool IsNowPaint { get; set; } = false;
+    [SerializeField] private GameObject _colorPanel;
+    [SerializeField] private Dirt _dirt;
 
     public void OnClickNumberColor(int color)
     {
         ColorNumber = color;
-
-        if (IsNowPaint == false)
-        {
-            IsNowPaint = true;
-        }
-        else
-        {
-            IsNowPaint = false;
-        }
+        _colorPanel.SetActive(false);
+        _dirt.OnDate();
     }
 }

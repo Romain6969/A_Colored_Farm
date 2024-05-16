@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class KeepVegetable : MonoBehaviour
 {
+    public InventoryColor InventoryColor;
     public int id;
     
-    public void UpdateSprite()
+    private void Start()
     {
-
+        InventoryColor.AddSeed("Yellow", 1);
     }
     
 }
