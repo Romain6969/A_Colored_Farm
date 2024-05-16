@@ -11,6 +11,8 @@ public class KeepItem : MonoBehaviour
     private void Update()
     {
         UpdateSprite();
+
+        if (Id != 0) Here = true;
     }
 
     public void UpdateSprite()

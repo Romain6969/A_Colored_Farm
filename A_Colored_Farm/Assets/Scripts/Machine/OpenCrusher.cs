@@ -19,11 +19,14 @@ public class OpenCrusher : MonoBehaviour
             {
                 if (_keepItem.Id == 1 || _keepItem.Id == 2 || _keepItem.Id == 3 || _keepItem.Id == 4 || _keepItem.Id == 5 || _keepItem.Id == 6 || _keepItem.Id == 7)
                 {
-                    if (_keepItem.Here == true)
+                    if (_crusher.Activate == false)
                     {
-                        _crusher.OnActivated();
-                        _keepItem.Id = 0;
-                        _keepItem.Here = false;
+                        if (_crusher.Ready == false)
+                        {
+                            _crusher.OnActivated();
+                            _keepItem.Id = 0;
+                            _keepItem.Here = false;
+                        }
                     }
                 }
 
