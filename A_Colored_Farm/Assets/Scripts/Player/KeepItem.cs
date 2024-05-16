@@ -10,12 +10,7 @@ public class KeepItem : MonoBehaviour
 
     private void Update()
     {
-        time += Time.deltaTime;
-
-        if (time > 2.5f)
-        {
-            UpdateSprite();
-        }
+        UpdateSprite();
     }
 
     public void UpdateSprite()
@@ -60,6 +55,27 @@ public class KeepItem : MonoBehaviour
                 break;
             case 12:
                 _sprite.sprite = _spriteList.SpriteList[12];
+                break;
+            case 13:
+                _sprite.sprite = _spriteList.SpriteList[13];
+                break;
+            case 14:
+                _sprite.sprite = _spriteList.SpriteList[14];
+                break;
+            case 15:
+                _sprite.sprite = _spriteList.SpriteList[15];
+                break;
+            case 16:
+                _sprite.sprite = _spriteList.SpriteList[16];
+                break;
+            case 17:
+                _sprite.sprite = _spriteList.SpriteList[17];
+                break;
+            case 18:
+                _sprite.sprite = _spriteList.SpriteList[18];
+                break;
+            case 19:
+                _sprite.sprite = _spriteList.SpriteList[19];
                 break;
         }
     }

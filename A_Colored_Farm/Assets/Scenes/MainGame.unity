@@ -3647,6 +3647,7 @@ GameObject:
   - component: {fileID: 318151024}
   - component: {fileID: 318151023}
   - component: {fileID: 318151022}
+  - component: {fileID: 318151026}
   m_Layer: 0
   m_Name: Crusher
   m_TagString: Crusher
@@ -3793,6 +3794,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1942834515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &318151026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318151021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 833808673a525484781fd320e30e335c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _keepItem: {fileID: 534477681}
+  <CopyId>k__BackingField: 0
+  _activate: 0
+  <Ready>k__BackingField: 0
+  _time: 0
 --- !u!1 &325412448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5783,7 +5801,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 634756030003194801}
@@ -5844,7 +5862,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5873,19 +5891,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 280c86c6696f0614eaedfe6d0ff21d91, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
+  - {fileID: 21300000, guid: a577c465a724383419156e01f024aa0f, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
+  - {fileID: 21300000, guid: 1930b919181715a40993e07562bfbefc, type: 3}
+  - {fileID: 21300000, guid: 43e8c141485b71f4a817602be87305c6, type: 3}
+  - {fileID: 21300000, guid: c100b3a42ac34784db833ea5bae6f2c4, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
-  - {fileID: 21300000, guid: 83cb8ee0bf2590842b372c88e20c77cf, type: 3}
-  - {fileID: 21300000, guid: 0aca16ef4f297c846a2f3347e5a96e15, type: 3}
+  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
+  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
+  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 0f200159255149943bb8b0dd6d27e08e, type: 3}
-  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
-  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
-  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
-  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
-  - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
   - {fileID: 21300000, guid: 945310f2af83cb244b9d5474041d9453, type: 3}
@@ -23673,9 +23691,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Open>k__BackingField: 0
-  _crusherPanel: {fileID: 1486705652}
-  _openInventory: {fileID: 634756030003194795}
   _playerInput: {fileID: 1517065703}
+  _keepItem: {fileID: 534477681}
+  _crusher: {fileID: 318151026}
 --- !u!4 &634756030003194801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
