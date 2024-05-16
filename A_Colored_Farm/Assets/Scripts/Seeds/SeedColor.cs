@@ -2,16 +2,10 @@ using UnityEngine;
 
 public class SeedColor : MonoBehaviour
 {
-    public enum ColorSeed
-    {
-        Grey,
-        Blue,
-        Yellow,
-        Red,
-        Purple,
-        Green,
-        Orange,
-    }
+    [field: SerializeField] public Colors Seed { get; set; }
 
-    [field: SerializeField] public ColorSeed Seed { get; set; }
+    private void Start()
+    {
+        Seed = Colors.None;
+    }
 }
