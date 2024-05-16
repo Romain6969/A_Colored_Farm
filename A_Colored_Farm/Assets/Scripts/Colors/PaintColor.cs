@@ -2,17 +2,10 @@ using UnityEngine;
 
 public class PaintColor : MonoBehaviour
 {
-    public enum ColorPaint
+    [field: SerializeField] public Colors Paint { get; set; }
+
+    private void Start()
     {
-        Grey,
-        Blue,
-        Yellow,
-        Red,
-        Purple,
-        Green,
-        Orange,
+        Paint = Colors.None;
     }
-
-    [field: SerializeField] public ColorPaint Paint { get; set; }
-
 }

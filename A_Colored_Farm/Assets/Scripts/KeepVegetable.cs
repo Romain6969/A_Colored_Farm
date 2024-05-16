@@ -10,6 +10,7 @@ public class KeepVegetable : MonoBehaviour
     private void Start()
     {
         InventoryColor.AddSeed("Yellow", 1);
+        InventoryColor.AddSeed("Red", 1);
     }
     
 }

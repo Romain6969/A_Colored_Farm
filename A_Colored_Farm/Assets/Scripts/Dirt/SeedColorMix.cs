@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class SeedColorMix : MonoBehaviour
 {
-    [SerializeField] private DetectColors _detectColors;
     [SerializeField] private Dirt _dirt;
     [field: SerializeField] public ColorData TheColor;
     [field: SerializeField] public SeedData TheSeed;
@@ -10,62 +9,40 @@ public class SeedColorMix : MonoBehaviour
     [SerializeField] private SeedColor _seedColor;
     [SerializeField] private ResultMix _resultMix;
 
-    private ResultMix.ColorResult[,] ColorSomething;
-
-    public void EveryMix(int paintColor, int seedColor)
+    public Colors EveryMix(Colors paintColor, Colors seedColor)
     {
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[1, 1])
+        if (paintColor == Colors.Blue && seedColor == Colors.Blue)
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Blue;
+            return _resultMix.Result = Colors.Blue;
         }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[1, 2])
+        if ((paintColor == Colors.Blue && seedColor == Colors.Yellow) || (paintColor == Colors.Yellow && seedColor == Colors.Blue))
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Green;
+            return _resultMix.Result = Colors.Green;
         }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[1, 3])
+        if ((paintColor == Colors.Blue && seedColor == Colors.Red) || (paintColor == Colors.Red && seedColor == Colors.Blue))
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Purple;
+            return _resultMix.Result = Colors.Purple;
         }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[2, 1])
+        if (paintColor == Colors.Yellow && seedColor == Colors.Yellow)
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Green;
+            return _resultMix.Result = Colors.Yellow;
         }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[2, 2])
+        if ((paintColor == Colors.Yellow && seedColor == Colors.Red) || (paintColor == Colors.Red && seedColor == Colors.Yellow))
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Yellow;
+            return _resultMix.Result = Colors.Orange;
         }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[2, 3])
+        if (paintColor == Colors.Red && seedColor == Colors.Red)
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Orange;
-        }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[3, 1])
-        {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Purple;
-        }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[3, 2])
-        {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Orange;
-        }
-        if (ColorSomething[paintColor, seedColor] == ColorSomething[3, 3])
-        {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Red;
+            return _resultMix.Result = Colors.Red;
         }
         else
         {
-            ColorSomething[paintColor, seedColor] = ResultMix.ColorResult.Grey;
+            return _resultMix.Result = Colors.Grey;
         }
     }
 
     public void MixThem()
     {
-        EveryMix((int)_paintColor.Paint, (int)_seedColor.Seed);
-    }
-
-    private void FixedUpdate()
-    {
-        if (_dirt.SeedPlaced == true && _detectColors.ColorPlaced == true)
-        {
-            MixThem();
-        }
+        Colors result = EveryMix(_paintColor.Paint, _seedColor.Seed);
     }
 }
