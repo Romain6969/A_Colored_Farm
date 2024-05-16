@@ -5,7 +5,6 @@ public class PlaceSeed : MonoBehaviour
 {
     [field: SerializeField] public bool IsPlanting { get; set; }
     [SerializeField] private PlayerInput _playerInput;
-    private float _time;
     private bool _triggered;
 
     public PlayerInput PlayerInput => _playerInput;
