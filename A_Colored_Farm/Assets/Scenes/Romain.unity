@@ -1831,7 +1831,7 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   _seedColor: {fileID: 1855514195}
-  _wichColor: {fileID: 1855514193}
+  _wichColor: {fileID: 0}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   _paintColor: {fileID: 1855514194}
@@ -7029,7 +7029,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1855514193}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
         m_MethodName: OnClickNumberColor
         m_Mode: 3
@@ -7237,7 +7237,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1855514193}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
         m_MethodName: OnClickNumberColor
         m_Mode: 3
@@ -10232,7 +10232,7 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   _seedColor: {fileID: 1855514195}
-  _wichColor: {fileID: 1855514193}
+  _wichColor: {fileID: 0}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   _paintColor: {fileID: 1855514194}
@@ -17520,7 +17520,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1855514193}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
         m_MethodName: set_ColorNumber
         m_Mode: 3
@@ -20247,7 +20247,6 @@ GameObject:
   - component: {fileID: 1855514177}
   - component: {fileID: 1855514191}
   - component: {fileID: 1855514192}
-  - component: {fileID: 1855514193}
   - component: {fileID: 1855514196}
   - component: {fileID: 1855514195}
   - component: {fileID: 1855514194}
@@ -20501,21 +20500,6 @@ MonoBehaviour:
   _blueText: {fileID: 1653436985}
   _yellowText: {fileID: 1739718037}
   _redText: {fileID: 496333659}
---- !u!114 &1855514193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855514176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81cbc2701e3e59045ad18a92a7a46f34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <ColorNumber>k__BackingField: 0
-  _colorPanel: {fileID: 210837368}
-  _dirt: {fileID: 173493917}
 --- !u!114 &1855514194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23422,6 +23406,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128386368401183454}
+    - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2128386368401183455}
     - targetCorrespondingSourceObject: {fileID: 8618662406233919062, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2128386368401183451}
@@ -23522,6 +23509,21 @@ MonoBehaviour:
   _playerInput: {fileID: 2128386368401183448}
   _keepItem: {fileID: 457592883}
   _isTrigger: 0
+--- !u!114 &2128386368401183455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128386368401183447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cbc2701e3e59045ad18a92a7a46f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ColorNumber>k__BackingField: 0
+  _colorPanel: {fileID: 210837368}
+  <_dirt>k__BackingField: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
