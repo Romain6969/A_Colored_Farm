@@ -6,7 +6,7 @@ public class GrowColors : MonoBehaviour
     [SerializeField] private float _seedsGrowTime;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private PlaceSeed _placeSeed;
-    [SerializeField] private PaintColor _paintColor;
+    [field :SerializeField] public PaintColor PaintColor { get; set; }
     [SerializeField] private SeedColorMix _seedColorMix;
     private bool _collision = false;
     [field: SerializeField] public int CopyId { get; set; }
@@ -16,7 +16,6 @@ public class GrowColors : MonoBehaviour
         _seedMain = FindObjectOfType<SeedMain>();
         _keepItem = FindObjectOfType<KeepItem>();
         _placeSeed = FindObjectOfType<PlaceSeed>();
-        _paintColor = FindObjectOfType<PaintColor>();
         _seedColorMix = FindObjectOfType<SeedColorMix>();
         CopyId = _keepItem.Id;
     }
@@ -28,7 +27,7 @@ public class GrowColors : MonoBehaviour
 
         if (_collision == true)
         {
-            if (_paintColor.Paint == Colors.None)
+            if (PaintColor.Paint == Colors.None)
             {
                 if (_keepItem.Here == false)
                 {
@@ -180,6 +179,10 @@ public class GrowColors : MonoBehaviour
         if (collision.tag == "Player")
         {
             _collision = true;
+        }
+        if (collision.gameObject.tag == "Dirt")
+        {
+            PaintColor = collision.gameObject.GetComponent<PaintColor>();
         }
     }
 
