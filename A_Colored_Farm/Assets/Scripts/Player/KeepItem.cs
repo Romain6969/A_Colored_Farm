@@ -13,6 +13,7 @@ public class KeepItem : MonoBehaviour
         UpdateSprite();
 
         if (Id != 0) Here = true;
+        if (Id == 0) Here = false;
     }
 
     public void UpdateSprite()

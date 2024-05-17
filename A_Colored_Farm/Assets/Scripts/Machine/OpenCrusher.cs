@@ -58,6 +58,7 @@ public class OpenCrusher : MonoBehaviour
                                 _keepItem.Id = 19;
                                 break;
                         }
+                        _crusher.Ready = false;
                     }
                 }
             }
