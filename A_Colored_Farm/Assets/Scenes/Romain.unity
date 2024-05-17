@@ -1846,6 +1846,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _seedColorMix: {fileID: 1855514198}
 --- !u!61 &173493918
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5210,7 +5211,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10247,6 +10248,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  _seedColorMix: {fileID: 1855514198}
 --- !u!61 &938801762
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23240,9 +23242,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2128386368401183451}
     - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _keepItem
+      value: 
+      objectReference: {fileID: 457592883}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _seedMain
+      value: 
+      objectReference: {fileID: 1931216649}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _colorMain
+      value: 
+      objectReference: {fileID: 1490764686}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _shopPanel
       value: 
       objectReference: {fileID: 245196898}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _inventoryMain
+      value: 
+      objectReference: {fileID: 2019296159}
     - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _shopSeedPanel
       value: 
@@ -23251,6 +23269,10 @@ PrefabInstance:
       propertyPath: _shopColorPanel
       value: 
       objectReference: {fileID: 145662515}
+    - target: {fileID: 5530560406653768934, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 4
