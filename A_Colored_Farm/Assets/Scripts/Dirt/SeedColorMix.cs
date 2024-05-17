@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class SeedColorMix : MonoBehaviour
 {
-    [SerializeField] private Dirt _dirt;
-    [field: SerializeField] public ColorData TheColor;
-    [field: SerializeField] public SeedData TheSeed;
     [SerializeField] private PaintColor _paintColor;
     [SerializeField] private SeedColor _seedColor;
     [SerializeField] private ResultMix _resultMix;
@@ -41,8 +38,8 @@ public class SeedColorMix : MonoBehaviour
         }
     }
 
-    public void MixThem()
+    public int MixThem()
     {
-        Colors result = EveryMix(_paintColor.Paint, _seedColor.Seed);
+        return (int)EveryMix(_paintColor.Paint, _seedColor.Seed);
     }
 }
