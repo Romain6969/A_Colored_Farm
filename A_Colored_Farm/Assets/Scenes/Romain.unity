@@ -20251,6 +20251,7 @@ GameObject:
   - component: {fileID: 1855514195}
   - component: {fileID: 1855514194}
   - component: {fileID: 1855514197}
+  - component: {fileID: 1855514198}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -20553,6 +20554,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InventoryColor: {fileID: 52861831}
   id: 0
+--- !u!114 &1855514198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855514176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7520db73b63eb489619dc38282b83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paintColor: {fileID: 1855514194}
+  _seedColor: {fileID: 1855514195}
+  _resultMix: {fileID: 1855514196}
 --- !u!1 &1857285780
 GameObject:
   m_ObjectHideFlags: 0
@@ -23473,9 +23489,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Open>k__BackingField: 0
-  _crusherPanel: {fileID: 2057248991}
-  _openInventory: {fileID: 1595115007}
   _playerInput: {fileID: 2128386368401183448}
+  _keepItem: {fileID: 0}
+  _crusher: {fileID: 0}
 --- !u!114 &2128386368401183453
 MonoBehaviour:
   m_ObjectHideFlags: 0
