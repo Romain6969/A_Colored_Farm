@@ -4,7 +4,7 @@ public class Crusher : MonoBehaviour
 {
     [SerializeField] private KeepItem _keepItem;
     [field : SerializeField] public int CopyId { get; set; }
-    [SerializeField] private bool _activate = false;
+    [field : SerializeField] public bool Activate { get; set; } = false;
     [field : SerializeField] public bool Ready { get; set; } = false;
     [SerializeField] private float _time;
 
@@ -12,12 +12,12 @@ public class Crusher : MonoBehaviour
     public void OnActivated()
     {
         CopyId = _keepItem.Id;
-        _activate = true;
+        Activate = true;
     }
 
     void Update()
     {
-        if (_activate == true)
+        if (Activate == true)
         {
             _time += Time.deltaTime;
 
@@ -25,7 +25,7 @@ public class Crusher : MonoBehaviour
             {
                 Ready = true;
                 _time = 0;
-                _activate = false;
+                Activate = false;
             }
         }
     }

@@ -1,5 +1,6 @@
 public enum Colors
 {
+    None,
     Grey,
     Blue,
     Yellow,
@@ -7,5 +8,4 @@ public enum Colors
     Purple,
     Green,
     Orange,
-    None,
 }
