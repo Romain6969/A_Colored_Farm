@@ -21,6 +21,7 @@ public class Dirt : MonoBehaviour
     [SerializeField] private GameObject _colorPanel;
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [SerializeField] private List<Sprite> _dirtColorSprite;
+    [SerializeField] private SeedColorMix _seedColorMix;
 
     private void Start()
     {
@@ -41,36 +42,73 @@ public class Dirt : MonoBehaviour
                 {
                     if (_keepItem.Id != 12)
                     {
-                        switch (_keepItem.Id)
+                        if (_paintColor.Paint == Colors.None)
                         {
-                            case 8:
-                                Instantiate(_seedsList[0], transform.position, transform.rotation);
-                                _keepItem.Id = 0;
-                                _placeSeed.IsPlanting = false;
-                                _keepItem.Here = false;
-                                _seedColor.Seed = Colors.Grey;
-                                break;
-                            case 9:
-                                Instantiate(_seedsList[1], transform.position, transform.rotation);
-                                _keepItem.Id = 0;
-                                _placeSeed.IsPlanting = false;
-                                _keepItem.Here = false;
-                                _seedColor.Seed = Colors.Blue;
-                                break;
-                            case 10:
-                                Instantiate(_seedsList[2], transform.position, transform.rotation);
-                                _keepItem.Id = 0;
-                                _placeSeed.IsPlanting = false;
-                                _keepItem.Here = false;
-                                _seedColor.Seed = Colors.Yellow;
-                                break;
-                            case 11:
-                                Instantiate(_seedsList[3], transform.position, transform.rotation);
-                                _keepItem.Id = 0;
-                                _placeSeed.IsPlanting = false;
-                                _keepItem.Here = false;
-                                _seedColor.Seed = Colors.Red;
-                                break;
+                            switch (_keepItem.Id)
+                            {
+                                case 8:
+                                    Instantiate(_seedsList[0], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    _seedColor.Seed = Colors.Grey;
+                                    break;
+                                case 9:
+                                    Instantiate(_seedsList[1], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    _seedColor.Seed = Colors.Blue;
+                                    break;
+                                case 10:
+                                    Instantiate(_seedsList[2], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    _seedColor.Seed = Colors.Yellow;
+                                    break;
+                                case 11:
+                                    Instantiate(_seedsList[3], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    _seedColor.Seed = Colors.Red;
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            switch (_keepItem.Id) 
+                            {
+                                case 8:
+                                    _seedColor.Seed = Colors.Grey;
+                                    Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    break;
+                                case 9:
+                                    _seedColor.Seed = Colors.Blue;
+                                    Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    break;
+                                case 10:
+                                    _seedColor.Seed = Colors.Yellow;
+                                    Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    break;
+                                case 11:
+                                    _seedColor.Seed = Colors.Red;
+                                    Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                    _keepItem.Id = 0;
+                                    _placeSeed.IsPlanting = false;
+                                    _keepItem.Here = false;
+                                    break;
+                            }
                         }
                     }
                     else
@@ -80,7 +118,6 @@ public class Dirt : MonoBehaviour
                             if(_placeColor.IsPainting == true)
                             {
                                 _colorPanel.SetActive(true);
-                                
                             }
                             
                         }
