@@ -2588,7 +2588,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 262335577}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634756030003194809}
+        m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
+        m_MethodName: OnClickNumberColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &262335577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6534,7 +6546,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 588355103}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634756030003194809}
+        m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
+        m_MethodName: OnClickNumberColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &588355103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7993,7 +8017,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: jaune
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10430,14 +10454,23 @@ MonoBehaviour:
   _placeSeed: {fileID: 634756030003194794}
   _keepItem: {fileID: 534477681}
   _seedMain: {fileID: 1398405673}
-  _seedColor: {fileID: 0}
-  _wichColor: {fileID: 0}
-  _placeColor: {fileID: 0}
-  _inventoryColor: {fileID: 0}
-  _paintColor: {fileID: 0}
-  _colorPanel: {fileID: 0}
-  _spriteRenderer: {fileID: 0}
-  _dirtColorSprite: []
+  _seedColor: {fileID: 1837061898}
+  _wichColor: {fileID: 634756030003194809}
+  _placeColor: {fileID: 634756030003194807}
+  _inventoryColor: {fileID: 634756030003194792}
+  _paintColor: {fileID: 1837061897}
+  _colorPanel: {fileID: 1229437455}
+  _spriteRenderer: {fileID: 983280359}
+  _dirtColorSprite:
+  - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
+  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _seedColorMix: {fileID: 1837061895}
 --- !u!1 &994739202
 GameObject:
   m_ObjectHideFlags: 0
@@ -13738,14 +13771,23 @@ MonoBehaviour:
   _placeSeed: {fileID: 634756030003194794}
   _keepItem: {fileID: 534477681}
   _seedMain: {fileID: 1398405673}
-  _seedColor: {fileID: 0}
-  _wichColor: {fileID: 0}
-  _placeColor: {fileID: 0}
-  _inventoryColor: {fileID: 0}
-  _paintColor: {fileID: 0}
-  _colorPanel: {fileID: 0}
-  _spriteRenderer: {fileID: 0}
-  _dirtColorSprite: []
+  _seedColor: {fileID: 1837061898}
+  _wichColor: {fileID: 634756030003194809}
+  _placeColor: {fileID: 634756030003194807}
+  _inventoryColor: {fileID: 634756030003194792}
+  _paintColor: {fileID: 1837061897}
+  _colorPanel: {fileID: 1229437455}
+  _spriteRenderer: {fileID: 1270124130}
+  _dirtColorSprite:
+  - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
+  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _seedColorMix: {fileID: 1837061895}
 --- !u!61 &1270124129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17054,7 +17096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Bleu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -20633,6 +20675,11 @@ GameObject:
   - component: {fileID: 1837061894}
   - component: {fileID: 1837061893}
   - component: {fileID: 1837061892}
+  - component: {fileID: 1837061896}
+  - component: {fileID: 1837061898}
+  - component: {fileID: 1837061897}
+  - component: {fileID: 1837061895}
+  - component: {fileID: 1837061899}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -20687,6 +20734,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837061895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7520db73b63eb489619dc38282b83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _paintColor: {fileID: 1837061897}
+  _seedColor: {fileID: 1837061898}
+  _resultMix: {fileID: 1837061896}
+--- !u!114 &1837061896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f5dbff702dad648a2e6d4a45007b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Result>k__BackingField: 0
+--- !u!114 &1837061897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98195ee6baeb412478f526fd740707b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Paint>k__BackingField: 0
+--- !u!114 &1837061898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7628622d59e7c4e90c9529400a5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Seed>k__BackingField: 0
+--- !u!114 &1837061899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab61675e8ab0ee845859695ed84de810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InventoryColor: {fileID: 634756030003194792}
+  id: 0
 --- !u!1 &1839876818
 GameObject:
   m_ObjectHideFlags: 0
@@ -22045,7 +22160,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1958147276}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634756030003194809}
+        m_TargetAssemblyTypeName: WichColor, Assembly-CSharp
+        m_MethodName: OnClickNumberColor
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1958147276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22525,7 +22652,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 49958877}
   m_HandleRect: {fileID: 49958876}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.9999997
   m_Size: 0.6666667
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -23286,6 +23413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2057839644}
   - component: {fileID: 2057839646}
+  - component: {fileID: 2057839647}
   - component: {fileID: 2057839645}
   m_Layer: 0
   m_Name: Fridge
@@ -23374,6 +23502,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &2057839647
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057839643}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.5255192}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.0510383}
+  m_EdgeRadius: 0
 --- !u!114 &2078742838 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3030685884229560691, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -24074,7 +24247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.size
@@ -24090,6 +24263,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_Mode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -24109,6 +24286,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 634756030003194806}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 634756030003194807}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 634756030003194798}
@@ -24122,6 +24303,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -24141,6 +24326,10 @@ PrefabInstance:
       value: OnQueue
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: OnPaint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnPause
       objectReference: {fileID: 0}
@@ -24157,6 +24346,10 @@ PrefabInstance:
       value: OpenFridge, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: PlaceColor, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: OpenPause, Assembly-CSharp
       objectReference: {fileID: 0}
@@ -24170,6 +24363,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6226090527064342290, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -24259,6 +24456,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194806}
+    - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 634756030003194809}
+    - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 634756030003194807}
     - targetCorrespondingSourceObject: {fileID: 8618662406233919062, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194797}
@@ -24416,6 +24619,35 @@ MonoBehaviour:
   _playerInput: {fileID: 1517065703}
   _keepItem: {fileID: 534477681}
   _queue: {fileID: 2057839645}
+--- !u!114 &634756030003194807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136859935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f53e45695d6255e4582702470090f9e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <IsPainting>k__BackingField: 0
+  _playerInput: {fileID: 1517065703}
+--- !u!114 &634756030003194809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136859935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81cbc2701e3e59045ad18a92a7a46f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ColorNumber>k__BackingField: 0
+  _colorPanel: {fileID: 1229437455}
+  <_dirt>k__BackingField: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -24424,11 +24656,11 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 634756030003194790}
   - {fileID: 562314607}
-  - {fileID: 1398405674}
   - {fileID: 1492410386}
   - {fileID: 388580014}
   - {fileID: 2045087716}
   - {fileID: 303027189}
+  - {fileID: 1398405674}
   - {fileID: 1837061894}
   - {fileID: 1510798534}
   - {fileID: 1305526962}
