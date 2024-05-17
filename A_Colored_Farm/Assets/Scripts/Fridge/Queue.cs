@@ -9,15 +9,16 @@ public class Queue : MonoBehaviour
     
     public void AddVegetable(int vegetable)
     {
-        if (_queue.Count >= 10)
+        if (_queue.Count == 10)
         {
             return;
         }
 
         _queue.Enqueue(vegetable);
+        _keepItem.Id = 0;
     }
 
-    public void RemoveVegetable(int vegetable)
+    public void RemoveVegetable()
     {
         if (_queue.Count == 0)
         {
