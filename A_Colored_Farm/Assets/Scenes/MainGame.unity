@@ -10308,6 +10308,9 @@ GameObject:
   - component: {fileID: 983280359}
   - component: {fileID: 983280358}
   - component: {fileID: 983280361}
+  - component: {fileID: 983280364}
+  - component: {fileID: 983280363}
+  - component: {fileID: 983280362}
   m_Layer: 0
   m_Name: Dirt
   m_TagString: Dirt
@@ -10421,7 +10424,7 @@ Transform:
   m_GameObject: {fileID: 983280357}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.28, y: -0.23, z: 0}
+  m_LocalPosition: {x: -5.28, y: -2.81, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -10454,11 +10457,11 @@ MonoBehaviour:
   _placeSeed: {fileID: 634756030003194794}
   _keepItem: {fileID: 534477681}
   _seedMain: {fileID: 1398405673}
-  _seedColor: {fileID: 1837061898}
+  <SeedColor>k__BackingField: {fileID: 0}
   _wichColor: {fileID: 634756030003194809}
   _placeColor: {fileID: 634756030003194807}
   _inventoryColor: {fileID: 634756030003194792}
-  _paintColor: {fileID: 1837061897}
+  <PaintColor>k__BackingField: {fileID: 0}
   _colorPanel: {fileID: 1229437455}
   _spriteRenderer: {fileID: 983280359}
   _dirtColorSprite:
@@ -10470,7 +10473,46 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _seedColorMix: {fileID: 1837061895}
+  _seedColorMix: {fileID: 634756030003194811}
+--- !u!114 &983280362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983280357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f5dbff702dad648a2e6d4a45007b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Result>k__BackingField: 0
+--- !u!114 &983280363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983280357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98195ee6baeb412478f526fd740707b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Paint>k__BackingField: 0
+--- !u!114 &983280364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983280357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7628622d59e7c4e90c9529400a5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Seed>k__BackingField: 0
 --- !u!1 &994739202
 GameObject:
   m_ObjectHideFlags: 0
@@ -13737,6 +13779,9 @@ GameObject:
   - component: {fileID: 1270124130}
   - component: {fileID: 1270124129}
   - component: {fileID: 1270124128}
+  - component: {fileID: 1270124134}
+  - component: {fileID: 1270124133}
+  - component: {fileID: 1270124132}
   m_Layer: 0
   m_Name: Dirt (1)
   m_TagString: Dirt
@@ -13771,11 +13816,11 @@ MonoBehaviour:
   _placeSeed: {fileID: 634756030003194794}
   _keepItem: {fileID: 534477681}
   _seedMain: {fileID: 1398405673}
-  _seedColor: {fileID: 1837061898}
+  <SeedColor>k__BackingField: {fileID: 0}
   _wichColor: {fileID: 634756030003194809}
   _placeColor: {fileID: 634756030003194807}
   _inventoryColor: {fileID: 634756030003194792}
-  _paintColor: {fileID: 1837061897}
+  <PaintColor>k__BackingField: {fileID: 0}
   _colorPanel: {fileID: 1229437455}
   _spriteRenderer: {fileID: 1270124130}
   _dirtColorSprite:
@@ -13787,7 +13832,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _seedColorMix: {fileID: 1837061895}
+  _seedColorMix: {fileID: 634756030003194811}
 --- !u!61 &1270124129
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13900,6 +13945,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305526962}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270124132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270124127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6f5dbff702dad648a2e6d4a45007b02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Result>k__BackingField: 0
+--- !u!114 &1270124133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270124127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb7628622d59e7c4e90c9529400a5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Seed>k__BackingField: 0
+--- !u!114 &1270124134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270124127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98195ee6baeb412478f526fd740707b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Paint>k__BackingField: 0
 --- !u!1 &1271125453
 GameObject:
   m_ObjectHideFlags: 0
@@ -20675,10 +20759,6 @@ GameObject:
   - component: {fileID: 1837061894}
   - component: {fileID: 1837061893}
   - component: {fileID: 1837061892}
-  - component: {fileID: 1837061896}
-  - component: {fileID: 1837061898}
-  - component: {fileID: 1837061897}
-  - component: {fileID: 1837061895}
   - component: {fileID: 1837061899}
   m_Layer: 0
   m_Name: GameManager
@@ -20734,60 +20814,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1837061895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837061891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb7520db73b63eb489619dc38282b83e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _paintColor: {fileID: 1837061897}
-  _seedColor: {fileID: 1837061898}
-  _resultMix: {fileID: 1837061896}
---- !u!114 &1837061896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837061891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6f5dbff702dad648a2e6d4a45007b02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Result>k__BackingField: 0
---- !u!114 &1837061897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837061891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98195ee6baeb412478f526fd740707b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Paint>k__BackingField: 0
---- !u!114 &1837061898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1837061891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb7628622d59e7c4e90c9529400a5392, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  <Seed>k__BackingField: 0
 --- !u!114 &1837061899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24462,6 +24488,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194807}
+    - targetCorrespondingSourceObject: {fileID: 6284860028164395308, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 634756030003194811}
     - targetCorrespondingSourceObject: {fileID: 8618662406233919062, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 634756030003194797}
@@ -24648,6 +24677,21 @@ MonoBehaviour:
   <ColorNumber>k__BackingField: 0
   _colorPanel: {fileID: 1229437455}
   <_dirt>k__BackingField: {fileID: 0}
+--- !u!114 &634756030003194811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136859935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb7520db73b63eb489619dc38282b83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <PaintColor>k__BackingField: {fileID: 0}
+  <SeedColor>k__BackingField: {fileID: 0}
+  <ResultMix>k__BackingField: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
