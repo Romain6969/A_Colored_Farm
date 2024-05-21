@@ -23,13 +23,13 @@ public class Dirt : MonoBehaviour
     [SerializeField] private List<Sprite> _dirtColorSprite;
     [SerializeField] private SeedColorMix _seedColorMix;
 
-    private void Start()
+    private void FixedUpdate()
     {
-        SeedPlaced = false;
-        if (gameObject.tag == "Dirt")
+        if (PaintColor.PaintUses <= 0)
         {
-            SeedColor = gameObject.GetComponent<SeedColor>();
-            PaintColor = gameObject.GetComponent<PaintColor>();
+            PaintColor.Paint = Colors.None;
+            _spriteRenderer.sprite = _dirtColorSprite[0];
+            PaintColor.PaintUses = 2;
         }
     }
 
@@ -134,7 +134,6 @@ public class Dirt : MonoBehaviour
 
     public void OnDate()
     {
-        Debug.Log("Hi Bitch");
         switch (_wichColor.ColorNumber)
         {
             case 0:

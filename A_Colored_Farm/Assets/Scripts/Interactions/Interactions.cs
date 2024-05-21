@@ -4,27 +4,19 @@ using UnityEngine.InputSystem;
 public class Interactions : MonoBehaviour
 {
     [SerializeField] private PlayerInput _playerInput;
-    [field: SerializeField] public bool IsPerformed { get; set; }
+    [field: SerializeField] public bool IsPerformed { get; set; } = false;
 
     public PlayerInput PlayerInput => _playerInput;
 
-    private void Start()
+    public void OnInteract(InputAction.CallbackContext context)
     {
-        IsPerformed = false;
-    }
-
-    public void OnShop(InputAction.CallbackContext context)
-    {
-        if (context.performed == true)
+        if (context.performed)
         {
-            if (IsPerformed == false)
-            {
-                IsPerformed = true;
-            }
-            else
-            {
-                IsPerformed = false;
-            }
+            IsPerformed = true;
+        }
+        if (context.canceled)
+        {
+            IsPerformed = false;
         }
     }
 }
