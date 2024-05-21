@@ -22,14 +22,21 @@ public class OpenChest : MonoBehaviour
                 {
                     switch (_chest)
                     {
+                        case 0:
+                            if (_chestInventory.GraySeed >= 1)
+                            {
+                                _keepItem.Id = 8;
+                                _chestInventory.GraySeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
                         case 1:
                             if (_chestInventory.BlueSeed >= 1)
                             {
-                                Debug.Log("je fonctionne 2");
                                 _keepItem.Id = 9;
                                 _chestInventory.BlueSeed -= 1;
                                 _keepItem.Here = true;
-                                Debug.Log(_chestInventory.BlueSeed);
                                 return;
                             }
                             break;
@@ -62,6 +69,15 @@ public class OpenChest : MonoBehaviour
             {
                 switch (_chest)
                 {
+                    case 0:
+                        if (_keepItem.Id == 8)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.GraySeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
                     case 1:
                         if (_keepItem.Id == 9)
                         {
@@ -96,6 +112,12 @@ public class OpenChest : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "ChestGray")
+        {
+            _isTrigger = true;
+            _chest = 0;
+        }
+
         if (collision.gameObject.tag == "ChestBlue")
         {
             _isTrigger = true;
@@ -117,22 +139,28 @@ public class OpenChest : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "ChestGray")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
         if (collision.gameObject.tag == "ChestBlue")
         {
             _isTrigger = false;
-            _chest = 0;
+            _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestYellow")
         {
             _isTrigger = false;
-            _chest = 0;
+            _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestRed")
         {
             _isTrigger = false;
-            _chest = 0;
+            _chest = -1;
         }
     }
 }

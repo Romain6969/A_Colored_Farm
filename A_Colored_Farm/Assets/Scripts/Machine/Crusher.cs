@@ -7,6 +7,7 @@ public class Crusher : MonoBehaviour
     [field : SerializeField] public bool Activate { get; set; } = false;
     [field : SerializeField] public bool Ready { get; set; } = false;
     [SerializeField] private float _time;
+    [field : SerializeField] public float TimeObjectif { get; set; } = 15;
 
 
     public void OnActivated()
@@ -21,7 +22,7 @@ public class Crusher : MonoBehaviour
         {
             _time += Time.deltaTime;
 
-            if (_time >= 15)
+            if (_time >= TimeObjectif)
             {
                 Ready = true;
                 _time = 0;

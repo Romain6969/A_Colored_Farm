@@ -11,6 +11,13 @@ public class PurchaseSeed : MonoBehaviour
     {
         switch (_id)
         {
+            case 0:
+                if (_inventoryMain.Money >= _seedMain.GreySeed.PurchaseValue)
+                {
+                    _inventoryMain.Money -= _seedMain.GreySeed.PurchaseValue;
+                    _chestInventory.GraySeed += 1;
+                }
+                break;
             case 1:
                 if (_inventoryMain.Money >= _seedMain.BlueSeed.PurchaseValue)
                 {

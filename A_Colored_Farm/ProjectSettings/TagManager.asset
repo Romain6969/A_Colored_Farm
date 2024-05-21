@@ -14,6 +14,8 @@ TagManager:
   - ChestBlue
   - ChestRed
   - Fridge
+  - ChestGray
+  - Brush
   layers:
   - Default
   - TransparentFX
