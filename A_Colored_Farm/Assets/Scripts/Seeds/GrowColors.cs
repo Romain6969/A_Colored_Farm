@@ -74,7 +74,6 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    Debug.Log("je fais le bon truc");
                                     _keepItem.Id = 4;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -98,6 +97,7 @@ public class GrowColors : MonoBehaviour
                                 {
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
                                     _keepItem.Here = true;
                                     return;
                                 }
@@ -110,6 +110,7 @@ public class GrowColors : MonoBehaviour
                                 {
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
                                     _keepItem.Here = true;
                                     return;
                                 }
@@ -122,6 +123,7 @@ public class GrowColors : MonoBehaviour
                                 {
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
                                     _keepItem.Here = true;
                                     return;
                                 }
@@ -132,9 +134,9 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    Debug.Log("je fais le bon truc");
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
                                     _keepItem.Here = true;
                                     return;
                                 }
