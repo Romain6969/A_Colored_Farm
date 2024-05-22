@@ -4,9 +4,11 @@ public class Client : MonoBehaviour
 {
     [field : SerializeField] public bool Received { get; set; }
     [SerializeField] private InventoryMain _inventoryMain;
+    [SerializeField] private KeepItem _keepItem;
     [SerializeField] private SeedMain _seedMain;
+    [SerializeField] private ColorMain _colorMain;
+    [SerializeField] public int RandomLimit { get; set; } = 8;
     private int _command;
-    
 
     void Start()
     {
@@ -15,7 +17,7 @@ public class Client : MonoBehaviour
 
     public void OnRandom()
     {
-        _command = Random.Range(0, 7);
+        _command = Random.Range(0,RandomLimit);
         Debug.Log($"La commande numéro {_command}");
     }
 
@@ -26,69 +28,111 @@ public class Client : MonoBehaviour
             switch (_command)
             {
                 case 0:
-                    if (_inventoryMain.InventoryColor.GetAmount("GreyColor") > 0)
+                    if (_keepItem.Id == 1)
                     {
-                        _inventoryMain.Money += (_seedMain.GreySeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("GreyColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_seedMain.GreySeed.SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 1:
-                    if (_inventoryMain.InventoryColor.GetAmount("BlueColor") > 0)
+                    if (_keepItem.Id == 2)
                     {
-                        _inventoryMain.Money += (_seedMain.BlueSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("BlueColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_seedMain.BlueSeed.SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 2:
-                    if (_inventoryMain.InventoryColor.GetAmount("YellowColor") > 0)
+                    if (_keepItem.Id == 3)
                     {
-                        _inventoryMain.Money += (_seedMain.YellowSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("YellowColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_seedMain.YellowSeed.SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 3:
-                    if (_inventoryMain.InventoryColor.GetAmount("RedColor") > 0)
+                    if (_keepItem.Id == 4)
                     {
-                        _inventoryMain.Money += (_seedMain.RedSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("RedColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_seedMain.RedSeed.SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 4:
-                    if (_inventoryMain.InventoryColor.GetAmount("PurpleColor") > 0)
+                    if (_keepItem.Id == 5)
                     {
-                        _inventoryMain.Money += (_seedMain.PurpleSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("PurpleColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_colorMain.ColorsList[0].SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 5:
-                    if (_inventoryMain.InventoryColor.GetAmount("GreenColor") > 0)
+                    if (_keepItem.Id == 6)
                     {
-                        _inventoryMain.Money += (_seedMain.GreenSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("GreenColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_colorMain.ColorsList[1].SellValue * 3);
+                        OnRestart();
                     }
                     break;
                 case 6:
-                    if (_inventoryMain.InventoryColor.GetAmount("OrangeColor") > 0)
+                    if (_keepItem.Id == 7)
                     {
-                        _inventoryMain.Money += (_seedMain.OrangeSeed.SellValue * 2);
-                        _inventoryMain.InventoryColor.RemoveSeed("OrangeColor", 1);
-                        Received = true;
-                        _command = -1;
+                        _inventoryMain.Money += (_colorMain.ColorsList[2].SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 7:
+                    if (_keepItem.Id == 13)
+                    {
+                        _inventoryMain.Money += (_colorMain.ColorsList[3].SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 8:
+                    if (_keepItem.Id == 14)
+                    {
+                        _inventoryMain.Money += (_seedMain.PurpleSeed.SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 9:
+                    if (_keepItem.Id == 15)
+                    {
+                        _inventoryMain.Money += (_seedMain.GreenSeed.SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 10:
+                    if (_keepItem.Id == 16)
+                    {
+                        _inventoryMain.Money += (_seedMain.OrangeSeed.SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 11:
+                    if (_keepItem.Id == 17)
+                    {
+                        _inventoryMain.Money += (_colorMain.ColorsList[4].SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 12:
+                    if (_keepItem.Id == 18)
+                    {
+                        _inventoryMain.Money += (_colorMain.ColorsList[5].SellValue * 3);
+                        OnRestart();
+                    }
+                    break;
+                case 13:
+                    if (_keepItem.Id == 19)
+                    {
+                        _inventoryMain.Money += (_colorMain.ColorsList[6].SellValue * 3);
+                        OnRestart();
                     }
                     break;
             }
         }
+    }
+
+    public void OnRestart()
+    {
+        _keepItem.Id = 0;
+        Received = true;
+        _command = -1;
     }
 }

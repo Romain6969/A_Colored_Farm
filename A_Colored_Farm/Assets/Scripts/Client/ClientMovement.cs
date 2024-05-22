@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ClientMovement : MonoBehaviour
 {
+    [SerializeField] private InteractClient _interactClient;
     [field : SerializeField] public bool Back {  get; set; }
-    [SerializeField] private Client _client;
     private float _speed = 6;
     private float _time = 0;
     private bool _position = false;
@@ -28,7 +28,7 @@ public class ClientMovement : MonoBehaviour
 
             if (_time >= 10)
             {
-                _client.OnRandom();
+                _interactClient.OnRandom();
                 _time = 0;
                 Back = false;
                 _position = false;
