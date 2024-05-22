@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: YellowColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 2
-  <SellValue>k__BackingField: 45
+  <SellValue>k__BackingField: 65
   <PrefabColor>k__BackingField: {fileID: 1024926535482939777, guid: c38034b43c642604db847161dddbcdfb, type: 3}

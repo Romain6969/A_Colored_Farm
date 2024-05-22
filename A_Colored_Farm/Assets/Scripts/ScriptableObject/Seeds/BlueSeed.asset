@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BlueSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 1
-  <PurchaseValue>k__BackingField: 3
-  <SellValue>k__BackingField: 9
-  <GrowTime>k__BackingField: 5
+  <PurchaseValue>k__BackingField: 15
+  <SellValue>k__BackingField: 20
+  <GrowTime>k__BackingField: 10
