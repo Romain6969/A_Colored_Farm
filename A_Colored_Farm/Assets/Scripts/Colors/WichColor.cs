@@ -13,11 +13,16 @@ public class WichColor : MonoBehaviour
         SetSeed.SeedSet();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Dirt")
         {
             SetSeed = collision.gameObject.GetComponent<SetSeed>();
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        SetSeed = null;
     }
 }

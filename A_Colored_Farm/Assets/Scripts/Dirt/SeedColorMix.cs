@@ -6,7 +6,7 @@ public class SeedColorMix : MonoBehaviour
     [field :SerializeField] public SeedColor SeedColor { get; set; }
     [field :SerializeField] public ResultMix ResultMix { get; set; }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Dirt")
         {
@@ -14,6 +14,13 @@ public class SeedColorMix : MonoBehaviour
             SeedColor = collision.gameObject.GetComponent<SeedColor>();
             ResultMix = collision.gameObject.GetComponent<ResultMix>();
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        PaintColor = null;
+        SeedColor = null;
+        ResultMix = null;
     }
     public Colors EveryMix(Colors paintColor, Colors seedColor)
     {

@@ -16,6 +16,7 @@ public class BuyDirt : MonoBehaviour
     {
         if (_interaction.IsPerformed == true)
         {
+            Time.timeScale = 0;
             _confirmPanel.SetActive(true);
         }
     }
@@ -37,11 +38,13 @@ public class BuyDirt : MonoBehaviour
             _confirmPanel.SetActive(false);
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
+            Time.timeScale = 1;
         }
         else
         {
             _confirmPanel.SetActive(false);
             Debug.Log("You're poor ha ha, looser !");
+            Time.timeScale = 1;
         }
     }
 }

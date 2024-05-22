@@ -6,8 +6,6 @@ public class Dirt : MonoBehaviour
 {
     [field :SerializeField] public bool SeedPlaced { get; set; }
     [field: SerializeField] public bool ColorPlaced { get; set; }
-    [SerializeField] private GameObject _wichButtonToPress;
-    [SerializeField] private TMP_Text _wichButtonToPressText;
     [SerializeField] private List<GameObject> _seedsList;
     [SerializeField] private PlaceSeed _placeSeed;
     [SerializeField] private KeepItem _keepItem;
