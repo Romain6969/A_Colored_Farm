@@ -1835,6 +1835,7 @@ GameObject:
   - component: {fileID: 173493923}
   - component: {fileID: 173493922}
   - component: {fileID: 173493921}
+  - component: {fileID: 173493924}
   m_Layer: 0
   m_Name: Dirt (2)
   m_TagString: Dirt
@@ -1870,18 +1871,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 173493923}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 173493922}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 173493919}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -2038,6 +2038,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Seed>k__BackingField: 0
+--- !u!114 &173493924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173493916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 173493917}
+  _spriteRenderer: {fileID: 173493919}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 173493922}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &173544041
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,6 +5894,134 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &474668605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 474668607}
+  - component: {fileID: 474668606}
+  m_Layer: 0
+  m_Name: SoundsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &474668606
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474668605}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
+  m_audioClip: {fileID: 8300000, guid: db3ea5b97ccdbc546ae00d459043b126, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &474668607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474668605}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484630414
 GameObject:
   m_ObjectHideFlags: 0
@@ -10895,6 +11042,7 @@ GameObject:
   - component: {fileID: 938801767}
   - component: {fileID: 938801766}
   - component: {fileID: 938801765}
+  - component: {fileID: 938801768}
   m_Layer: 0
   m_Name: Dirt (1)
   m_TagString: Dirt
@@ -10930,18 +11078,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 938801767}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 938801766}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 938801763}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -11098,6 +11245,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <Seed>k__BackingField: 0
+--- !u!114 &938801768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938801760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 938801761}
+  _spriteRenderer: {fileID: 938801763}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 938801766}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &947947791
 GameObject:
   m_ObjectHideFlags: 0
@@ -16538,6 +16704,7 @@ GameObject:
   - component: {fileID: 1455589871}
   - component: {fileID: 1455589870}
   - component: {fileID: 1455589869}
+  - component: {fileID: 1455589875}
   m_Layer: 0
   m_Name: Dirt (4)
   m_TagString: Dirt
@@ -16628,18 +16795,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 1455589871}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 1455589870}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 1455589874}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -16741,6 +16907,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1455589875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455589867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 1455589872}
+  _spriteRenderer: {fileID: 1455589874}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 1455589870}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &1459910727
 GameObject:
   m_ObjectHideFlags: 0
@@ -17368,6 +17553,7 @@ GameObject:
   - component: {fileID: 1517636756}
   - component: {fileID: 1517636755}
   - component: {fileID: 1517636754}
+  - component: {fileID: 1517636760}
   m_Layer: 0
   m_Name: Dirt (5)
   m_TagString: Dirt
@@ -17458,18 +17644,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 1517636756}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 1517636755}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 1517636759}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -17571,6 +17756,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1517636760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517636752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 1517636757}
+  _spriteRenderer: {fileID: 1517636759}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 1517636755}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &1519647688
 GameObject:
   m_ObjectHideFlags: 0
@@ -19174,6 +19378,7 @@ GameObject:
   - component: {fileID: 1649345342}
   - component: {fileID: 1649345341}
   - component: {fileID: 1649345340}
+  - component: {fileID: 1649345347}
   m_Layer: 0
   m_Name: Dirt (6)
   m_TagString: Dirt
@@ -19249,18 +19454,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 1649345342}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 1649345341}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 1649345345}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -19377,6 +19581,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2131395382}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1649345347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649345339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 1649345343}
+  _spriteRenderer: {fileID: 1649345345}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 1649345341}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &1653436983
 GameObject:
   m_ObjectHideFlags: 0
@@ -22158,7 +22381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f089bedf03c1d8043a4d4c2d4ea09703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <GreenSeed>k__BackingField: 0
+  <GraySeed>k__BackingField: 0
   <BlueSeed>k__BackingField: 0
   <YellowSeed>k__BackingField: 0
   <RedSeed>k__BackingField: 0
@@ -22178,6 +22401,7 @@ MonoBehaviour:
   _blueText: {fileID: 1653436985}
   _yellowText: {fileID: 1739718037}
   _redText: {fileID: 496333659}
+  _grayTest: {fileID: 529479065}
 --- !u!114 &1855514197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23942,6 +24166,7 @@ GameObject:
   - component: {fileID: 2057500946}
   - component: {fileID: 2057500945}
   - component: {fileID: 2057500944}
+  - component: {fileID: 2057500950}
   m_Layer: 0
   m_Name: Dirt (3)
   m_TagString: Dirt
@@ -24032,18 +24257,17 @@ MonoBehaviour:
   _keepItem: {fileID: 457592883}
   _seedMain: {fileID: 1931216649}
   <SeedColor>k__BackingField: {fileID: 2057500946}
-  _wichColor: {fileID: 2128386368401183455}
   _placeColor: {fileID: 2128386368401183449}
   _inventoryColor: {fileID: 52861831}
   <PaintColor>k__BackingField: {fileID: 2057500945}
   _colorPanel: {fileID: 210837368}
   _spriteRenderer: {fileID: 2057500949}
-  _dirtColorSprite:
+  <DirtColorSprite>k__BackingField:
   - {fileID: 21300000, guid: f3916db5bb1588b4f89172b58625e16c, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 21300000, guid: 84fce9a5cbf8b3a42b9d8dc3586b2ff8, type: 3}
-  - {fileID: 21300000, guid: badb45fd425850a4c8187c0b4e045eb4, type: 3}
+  - {fileID: 21300000, guid: 5e6c3ed7150bd6b4890d04350a7790f0, type: 3}
+  - {fileID: 21300000, guid: 99bb2fa1f9acfe949a76237c8d9a4bba, type: 3}
+  - {fileID: 21300000, guid: fb0a708e51cfa70438e1c25c361cd4d8, type: 3}
+  - {fileID: 21300000, guid: 885b08dc515f62240bcc73609759a92e, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -24145,6 +24369,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2057500950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057500942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e1b5638bbbcc34eaf6ba720ec5e141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wichColor: {fileID: 2128386368401183455}
+  _inventoryColor: {fileID: 52861831}
+  _dirt: {fileID: 2057500947}
+  _spriteRenderer: {fileID: 2057500949}
+  _placeColor: {fileID: 2128386368401183449}
+  _paintColor: {fileID: 2057500945}
+  _audioSource: {fileID: 474668606}
 --- !u!1 &2080244101
 GameObject:
   m_ObjectHideFlags: 0
@@ -25599,7 +25842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ColorNumber>k__BackingField: 0
   _colorPanel: {fileID: 210837368}
-  <_dirt>k__BackingField: {fileID: 0}
+  <SetSeed>k__BackingField: {fileID: 0}
 --- !u!114 &2128386368401183460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25652,3 +25895,4 @@ SceneRoots:
   - {fileID: 831413387}
   - {fileID: 15959351}
   - {fileID: 531405299}
+  - {fileID: 474668607}
