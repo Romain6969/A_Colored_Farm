@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OrangeSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 6
-  <PurchaseValue>k__BackingField: 9
-  <SellValue>k__BackingField: 27
-  <GrowTime>k__BackingField: 15
+  <PurchaseValue>k__BackingField: 140
+  <SellValue>k__BackingField: 182
+  <GrowTime>k__BackingField: 23

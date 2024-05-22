@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GreySeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 0
-  <PurchaseValue>k__BackingField: 1
-  <SellValue>k__BackingField: 3
+  <PurchaseValue>k__BackingField: 5
+  <SellValue>k__BackingField: 7
   <GrowTime>k__BackingField: 7

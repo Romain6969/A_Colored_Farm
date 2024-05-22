@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: OrangeColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 6
-  <SellValue>k__BackingField: 70
+  <SellValue>k__BackingField: 208
   <PrefabColor>k__BackingField: {fileID: 1024926535482939777, guid: e8ebee471302c3046b8fe642614e9a7f, type: 3}

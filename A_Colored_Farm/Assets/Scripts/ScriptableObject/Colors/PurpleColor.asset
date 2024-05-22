@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PurpleColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 4
-  <SellValue>k__BackingField: 70
+  <SellValue>k__BackingField: 170
   <PrefabColor>k__BackingField: {fileID: 1024926535482939777, guid: ef01e8afcb3cfd9478b9acec100edfab, type: 3}

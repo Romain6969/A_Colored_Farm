@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PurpleSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 4
-  <PurchaseValue>k__BackingField: 9
-  <SellValue>k__BackingField: 27
-  <GrowTime>k__BackingField: 15
+  <PurchaseValue>k__BackingField: 115
+  <SellValue>k__BackingField: 151
+  <GrowTime>k__BackingField: 20
