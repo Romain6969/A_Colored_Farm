@@ -911,8 +911,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -1801,8 +1799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -2186,8 +2182,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -2782,8 +2776,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -3055,8 +3047,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -3549,8 +3539,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -4175,8 +4163,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -4407,6 +4393,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334549822}
+        m_TargetAssemblyTypeName: PlaySounds, Assembly-CSharp
+        m_MethodName: PlayAudio
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5210,8 +5208,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -6082,6 +6078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 334549821}
+  - component: {fileID: 334549822}
   - component: {fileID: 334549820}
   m_Layer: 0
   m_Name: SoundsManager
@@ -6101,7 +6098,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: db3ea5b97ccdbc546ae00d459043b126, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -6201,6 +6198,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334549822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334549819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4559d42125a1b0a4087e5dc96bf2307f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _audioSources:
+  - {fileID: 334549820}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &361430195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6469,8 +6489,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -7264,8 +7282,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -7955,8 +7971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -8362,8 +8376,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -9184,7 +9196,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 09c75ad5644e4314b929dd0df0c4eff7, type: 3}
   - {fileID: 21300000, guid: 4cab27245c3a14c48a7a69badec3bd00, type: 3}
   - {fileID: 21300000, guid: 2dd2839d4f686b243901589449288216, type: 3}
-  - {fileID: 21300000, guid: e689f6218ed904e41bb45e8223bfcbba, type: 3}
+  - {fileID: 21300000, guid: 3ffc47e4387c5cf4cb96a2f642659a23, type: 3}
   - {fileID: 21300000, guid: 71b03ba138006c943b60bc37662c7005, type: 3}
   - {fileID: 21300000, guid: 1930b919181715a40993e07562bfbefc, type: 3}
   - {fileID: 21300000, guid: 43e8c141485b71f4a817602be87305c6, type: 3}
@@ -9396,6 +9408,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334549822}
+        m_TargetAssemblyTypeName: PlaySounds, Assembly-CSharp
+        m_MethodName: PlayAudio
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10075,8 +10099,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -10978,7 +11000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d4f1ea7dc40be4d97e5690e1da7788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _dirtCost: 100
+  _dirtCost: 50
   _dirts:
   - {fileID: 720290114}
   - {fileID: 1248607227}
@@ -11626,8 +11648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -11863,8 +11883,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -12100,8 +12118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -13138,8 +13154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -13611,8 +13625,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -14004,8 +14016,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -14462,8 +14472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -16839,8 +16847,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -17210,8 +17216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -18415,8 +18419,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -19507,8 +19509,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -20669,8 +20669,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -21128,8 +21126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -22897,8 +22893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -26297,8 +26291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -26705,8 +26697,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -29879,8 +29869,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -30116,8 +30104,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -30520,6 +30506,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 334549822}
+        m_TargetAssemblyTypeName: PlaySounds, Assembly-CSharp
+        m_MethodName: PlayAudio
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -31483,8 +31481,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedPlaced>k__BackingField: 0
   <ColorPlaced>k__BackingField: 0
-  _wichButtonToPress: {fileID: 0}
-  _wichButtonToPressText: {fileID: 0}
   _seedsList:
   - {fileID: 5087735658909163549, guid: 7f1ff9d4997c5cd4da2bf11413de3a15, type: 3}
   - {fileID: 2585689864510546037, guid: f269ef149e2a78a4eb5648ae2d0a0138, type: 3}
@@ -33382,7 +33378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2085709398979622099, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: <Money>k__BackingField
-      value: 10000
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2085709398979622099, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: <InventoryVegetable>k__BackingField
