@@ -856,7 +856,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 44388445}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 44388441}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &44388440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1744,7 +1744,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 108050371}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 108050367}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &108050366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +2127,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 146963770}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 146963766}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &146963765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2721,7 +2721,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 185619254}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 185619250}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &185619249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2992,7 +2992,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 208961399}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 208961395}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &208961394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3484,7 +3484,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 232411473}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 232411469}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &232411468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4108,7 +4108,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 261674700}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 261674696}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &261674695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5153,7 +5153,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 289868160}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 289868156}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &289868155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5934,6 +5934,7 @@ MonoBehaviour:
   <Ready>k__BackingField: 0
   _time: 0
   <TimeObjectif>k__BackingField: 15
+  _playSounds: {fileID: 0}
 --- !u!1 &325412448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6080,6 +6081,8 @@ GameObject:
   - component: {fileID: 334549821}
   - component: {fileID: 334549822}
   - component: {fileID: 334549820}
+  - component: {fileID: 334549824}
+  - component: {fileID: 334549823}
   m_Layer: 0
   m_Name: SoundsManager
   m_TagString: Untagged
@@ -6212,6 +6215,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSources:
   - {fileID: 334549820}
+  - {fileID: 334549824}
+  - {fileID: 334549823}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -6219,8 +6224,198 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+--- !u!82 &334549823
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334549819}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 88f10c8fd53a2bd4cb9bb266efe99cf7, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &334549824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334549819}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
+  m_audioClip: {fileID: 8300000, guid: cf57ef3f89dddff4a90eeb78f6b32a58, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &361430195
 GameObject:
   m_ObjectHideFlags: 0
@@ -6434,7 +6629,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 374004991}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 374004987}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &374004986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7227,7 +7422,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 404045224}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 404045220}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &404045219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7916,7 +8111,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 464638729}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 464638725}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &464638724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8321,7 +8516,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 497733042}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 497733038}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &497733037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10044,7 +10239,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 607865686}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 607865682}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &607865681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11593,7 +11788,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 712627464}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 712627460}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &712627459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11828,7 +12023,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 719769734}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 719769730}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &719769729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12063,7 +12258,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 720290121}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 720290117}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &720290116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13099,7 +13294,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 806436888}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 806436884}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &806436883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13570,7 +13765,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 827418160}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 827418156}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &827418155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13961,7 +14156,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 845789879}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 845789875}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &845789874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14417,7 +14612,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 918021452}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 918021448}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &918021447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16792,7 +16987,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1103668012}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1103668008}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1103668007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17161,7 +17356,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1139141003}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1139140999}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1139140998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18364,7 +18559,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1187143646}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1187143642}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1187143641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19454,7 +19649,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1248607234}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1248607230}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1248607229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20614,7 +20809,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1314953249}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1314953245}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1314953244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21071,7 +21266,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1352127932}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1352127928}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1352127927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22838,7 +23033,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1487306769}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1487306765}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1487306764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26236,7 +26431,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1714525457}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1714525453}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1714525452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26642,7 +26837,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1719756110}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1719756106}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1719756105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29814,7 +30009,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1938923122}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1938923118}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1938923117
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30049,7 +30244,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 1939783362}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 1939783358}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &1939783357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31426,7 +31621,7 @@ MonoBehaviour:
   _spriteRenderer: {fileID: 2025601372}
   _placeColor: {fileID: 634756030003194807}
   _paintColor: {fileID: 2025601368}
-  _audioSource: {fileID: 334549820}
+  _playSounds: {fileID: 0}
 --- !u!114 &2025601367
 MonoBehaviour:
   m_ObjectHideFlags: 0
