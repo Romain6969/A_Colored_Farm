@@ -18,6 +18,7 @@ public class Dirt : MonoBehaviour
     [SerializeField] private SpriteRenderer _spriteRenderer;
     [field: SerializeField] public List<Sprite> DirtColorSprite { get; set; }
     [SerializeField] private SeedColorMix _seedColorMix;
+    [SerializeField] private PlaySounds _playSounds;
 
     private void FixedUpdate()
     {
@@ -45,6 +46,7 @@ public class Dirt : MonoBehaviour
                         {
                             case 8:
                                 Instantiate(_seedsList[0], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -52,6 +54,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 9:
                                 Instantiate(_seedsList[1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -59,6 +62,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 10:
                                 Instantiate(_seedsList[2], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -66,6 +70,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 11:
                                 Instantiate(_seedsList[3], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -80,6 +85,7 @@ public class Dirt : MonoBehaviour
                             case 8:
                                 SeedColor.Seed = Colors.Grey;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -87,6 +93,7 @@ public class Dirt : MonoBehaviour
                             case 9:
                                 SeedColor.Seed = Colors.Blue;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -94,6 +101,7 @@ public class Dirt : MonoBehaviour
                             case 10:
                                 SeedColor.Seed = Colors.Yellow;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
@@ -101,6 +109,7 @@ public class Dirt : MonoBehaviour
                             case 11:
                                 SeedColor.Seed = Colors.Red;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
                                 _keepItem.Here = false;
