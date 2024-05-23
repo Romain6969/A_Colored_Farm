@@ -6,7 +6,7 @@ public class AmeliorationCrusher : MonoBehaviour
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private Crusher _crusher;
     [SerializeField] private TMP_Text _priceText;
-    private int _price = 100;
+    private int _price = 50;
     private int _use = 10;
 
     public void OnClick()
@@ -15,7 +15,7 @@ public class AmeliorationCrusher : MonoBehaviour
         {
             _crusher.TimeObjectif -= 1;
             _inventoryMain.Money -= _price;
-            _price += 500;
+            _price += 25;
             _use -= 1;
         }
     }

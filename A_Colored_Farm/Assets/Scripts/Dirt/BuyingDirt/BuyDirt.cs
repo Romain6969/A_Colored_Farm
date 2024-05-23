@@ -47,4 +47,10 @@ public class BuyDirt : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    public void CloseConfirm()
+    {
+        _confirmPanel.SetActive(false);
+        Time.timeScale = 1;
+    }
 }
