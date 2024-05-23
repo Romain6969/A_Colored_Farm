@@ -9,4 +9,9 @@ public class PlaySounds : MonoBehaviour
     {
         _audioSources[wichAudio].Play();
     }
+
+    public void StopAudio(int wichAudio)
+    {
+        _audioSources[wichAudio].Stop();
+    }
 }
