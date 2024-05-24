@@ -5908,6 +5908,8 @@ GameObject:
   - component: {fileID: 318151023}
   - component: {fileID: 318151022}
   - component: {fileID: 318151026}
+  - component: {fileID: 318151029}
+  - component: {fileID: 318151027}
   m_Layer: 0
   m_Name: Crusher
   m_TagString: Crusher
@@ -6028,7 +6030,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6116cef2e4abf0d41a730be6b8bba92e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3dfb4d3b82781374486fc4775c934bf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6047,7 +6049,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318151021}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6, y: 4, z: 0}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
@@ -6073,6 +6075,60 @@ MonoBehaviour:
   _time: 0
   <TimeObjectif>k__BackingField: 15
   _playSounds: {fileID: 334549822}
+  _listAnimation: {fileID: 318151027}
+--- !u!114 &318151027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318151021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f000f5009707b14f9e895a37397089a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationList:
+  - {fileID: 0}
+  - {fileID: 7400000, guid: 20a7daacef8542d4f90b4d451cd2eefc, type: 2}
+  - {fileID: 7400000, guid: 4199fd4a78eb37746a0a5e7f0bc98652, type: 2}
+  - {fileID: 7400000, guid: e8e3554e19000ab43b686dd3f7d87cfe, type: 2}
+  - {fileID: 7400000, guid: a8d1bb88a5f506d409201ca63664d69d, type: 2}
+  - {fileID: 7400000, guid: e0005866eacc8d741a9ebaa962a12ce6, type: 2}
+  - {fileID: 7400000, guid: 3a6bb6cc5e2be844a802b6533385cf19, type: 2}
+  - {fileID: 7400000, guid: 1c4997ef30d6ad943a80c864645a1e1e, type: 2}
+  _spriteList:
+  - {fileID: 21300000, guid: 3dfb4d3b82781374486fc4775c934bf5, type: 3}
+  - {fileID: 21300000, guid: b1f235b5e60869041b1b3857d0a81cac, type: 3}
+  - {fileID: 21300000, guid: 5b5605d8566a46e4797e75f62874a517, type: 3}
+  - {fileID: 21300000, guid: ef5ec0df2273a244da9b17d4ae094fa2, type: 3}
+  - {fileID: 21300000, guid: e3d505cd6d16ec94aa0776550d9c3068, type: 3}
+  - {fileID: 21300000, guid: f5f00774ae9353446893488e4ab2233e, type: 3}
+  - {fileID: 21300000, guid: cfb7afeafff006444acd6e320b3a547b, type: 3}
+  - {fileID: 21300000, guid: 30741483fd5bcd144886df62eac79a06, type: 3}
+  _animator: {fileID: 318151029}
+  _spriteRenderer: {fileID: 318151024}
+--- !u!95 &318151029
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318151021}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa132607e6c409a448c297ecbcb0853f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &325412448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6566,7 +6622,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: 094fab89c7dbc8d4d859bf97251209cb, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -35046,6 +35102,7 @@ MonoBehaviour:
   _playerInput: {fileID: 1517065703}
   _keepItem: {fileID: 534477681}
   _crusher: {fileID: 318151026}
+  _listAnimation: {fileID: 318151027}
 --- !u!4 &634756030003194801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}

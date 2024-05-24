@@ -9,13 +9,14 @@ public class Crusher : MonoBehaviour
     [SerializeField] private float _time;
     [field : SerializeField] public float TimeObjectif { get; set; } = 15;
     [SerializeField] private PlaySounds _playSounds;
-
+    [SerializeField] private ListAnimation _listAnimation;
 
     public void OnActivated()
     {
         CopyId = _keepItem.Id;
         Activate = true;
         _playSounds.PlayAudio(1);
+        _listAnimation.PlayAnimation(CopyId);
     }
 
     void Update()
@@ -31,6 +32,7 @@ public class Crusher : MonoBehaviour
                 Activate = false;
                 _playSounds.StopAudio(1);
                 _playSounds.PlayAudio(2);
+                _listAnimation.StopAnimation(CopyId);
             }
         }
     }

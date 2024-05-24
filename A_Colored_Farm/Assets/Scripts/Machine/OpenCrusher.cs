@@ -7,6 +7,7 @@ public class OpenCrusher : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private Crusher _crusher;
+    [SerializeField] private ListAnimation _listAnimation;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -59,6 +60,7 @@ public class OpenCrusher : MonoBehaviour
                                 break;
                         }
                         _crusher.Ready = false;
+                        _listAnimation.Restart();
                     }
                 }
             }
