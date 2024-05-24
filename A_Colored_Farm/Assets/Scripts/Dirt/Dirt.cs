@@ -126,7 +126,6 @@ public class Dirt : MonoBehaviour
                             _colorPanel.SetActive(true);
                             Time.timeScale = 0;
                         }
-
                     }
                 }
             }
