@@ -35,5 +35,13 @@ public class Crusher : MonoBehaviour
                 _listAnimation.StopAnimation(CopyId);
             }
         }
+        if (Time.timeScale == 0)
+        {
+            _playSounds.PauseAudio(1);
+        }
+        if (Time.timeScale == 1)
+        {
+            _playSounds.UnPauseAudio(1);
+        }
     }
 }

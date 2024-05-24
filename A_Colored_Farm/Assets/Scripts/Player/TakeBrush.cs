@@ -25,7 +25,7 @@ public class TakeBrush : MonoBehaviour
                         _keepItem.Id = 0;
                         break;
                     case 13:
-                        InventoryColor.AddSeed("Gray", 1);
+                        InventoryColor.AddSeed("Grey", 1);
                         _keepItem.Id = 0;
                         break;
                     case 14:
