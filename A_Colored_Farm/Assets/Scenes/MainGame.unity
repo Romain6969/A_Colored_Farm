@@ -1971,6 +1971,7 @@ GameObject:
   - component: {fileID: 116017388}
   - component: {fileID: 116017387}
   - component: {fileID: 116017386}
+  - component: {fileID: 116017389}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -2042,10 +2043,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 999824537}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 116017389}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2092,6 +2093,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116017384}
   m_CullTransparentMesh: 1
+--- !u!114 &116017389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116017384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 999824537}
 --- !u!1 &146963762
 GameObject:
   m_ObjectHideFlags: 0
@@ -5533,6 +5547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ddf341b7378ae49bdb18884914f81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isItFull: 0
 --- !u!4 &303027189
 Transform:
   m_ObjectHideFlags: 0
@@ -6990,7 +7005,7 @@ MonoBehaviour:
       - m_Target: {fileID: 303027188}
         m_TargetAssemblyTypeName: SettingFull, Assembly-CSharp
         m_MethodName: SetfullScreen
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6999,7 +7014,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &383229658
 GameObject:
   m_ObjectHideFlags: 0
@@ -11203,6 +11218,7 @@ GameObject:
   - component: {fileID: 679432943}
   - component: {fileID: 679432942}
   - component: {fileID: 679432941}
+  - component: {fileID: 679432944}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -11274,10 +11290,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963259934}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 679432944}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11324,6 +11340,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679432939}
   m_CullTransparentMesh: 1
+--- !u!114 &679432944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679432939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 963259934}
 --- !u!1 &686160694
 GameObject:
   m_ObjectHideFlags: 0
@@ -16478,6 +16507,7 @@ GameObject:
   - component: {fileID: 1076551461}
   - component: {fileID: 1076551460}
   - component: {fileID: 1076551459}
+  - component: {fileID: 1076551462}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -16549,10 +16579,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 176137332}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1076551462}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16599,6 +16629,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1076551457}
   m_CullTransparentMesh: 1
+--- !u!114 &1076551462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076551457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 176137332}
 --- !u!1 &1079666532
 GameObject:
   m_ObjectHideFlags: 0
@@ -23446,6 +23489,7 @@ GameObject:
   - component: {fileID: 1469014314}
   - component: {fileID: 1469014313}
   - component: {fileID: 1469014312}
+  - component: {fileID: 1469014315}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -23517,10 +23561,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1400726641}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1469014315}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -23567,6 +23611,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469014310}
   m_CullTransparentMesh: 1
+--- !u!114 &1469014315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469014310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 1400726641}
 --- !u!1 &1469787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -24712,6 +24769,7 @@ GameObject:
   - component: {fileID: 1546208829}
   - component: {fileID: 1546208828}
   - component: {fileID: 1546208827}
+  - component: {fileID: 1546208830}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -24783,10 +24841,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 948593103}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1546208830}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -24833,6 +24891,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1546208825}
   m_CullTransparentMesh: 1
+--- !u!114 &1546208830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546208825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 948593103}
 --- !u!1 &1550528510
 GameObject:
   m_ObjectHideFlags: 0
@@ -29517,7 +29588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryColor: {fileID: 634756030003194792}
-  id: 0
 --- !u!114 &1837061900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30285,6 +30355,7 @@ GameObject:
   - component: {fileID: 1874863646}
   - component: {fileID: 1874863645}
   - component: {fileID: 1874863644}
+  - component: {fileID: 1874863647}
   m_Layer: 5
   m_Name: OrDont
   m_TagString: Untagged
@@ -30356,10 +30427,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 618759654}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1874863647}
+        m_TargetAssemblyTypeName: JustForClosingPanel, Assembly-CSharp
+        m_MethodName: ClosePanel
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30406,6 +30477,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874863642}
   m_CullTransparentMesh: 1
+--- !u!114 &1874863647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874863642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _panel: {fileID: 618759654}
 --- !u!1 &1877917663
 GameObject:
   m_ObjectHideFlags: 0
@@ -33677,7 +33761,7 @@ MonoBehaviour:
       - m_Target: {fileID: 303027187}
         m_TargetAssemblyTypeName: SettingResolution, Assembly-CSharp
         m_MethodName: SetResolution
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -35533,6 +35617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsPainting>k__BackingField: 0
+  <IsOpen>k__BackingField: 0
   _playerInput: {fileID: 1517065703}
 --- !u!114 &634756030003194809
 MonoBehaviour:

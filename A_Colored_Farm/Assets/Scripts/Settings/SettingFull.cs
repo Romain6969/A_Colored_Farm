@@ -2,16 +2,19 @@ using UnityEngine;
 
 public class SettingFull : MonoBehaviour
 {
+    public int _isItFull = 0;
 
-    public void SetfullScreen(bool isFullScreen)
+    public void SetfullScreen()
     {
-        if (isFullScreen == true)
+        _isItFull += 1;
+        if (_isItFull == 1)
         {
-            Screen.fullScreen = isFullScreen;
+            Screen.fullScreen = true;
         }
         else
         {
-            Screen.fullScreen = isFullScreen;
+            Screen.fullScreen = false;
+            _isItFull = 0;
         }
     }
 }
