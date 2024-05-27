@@ -8,7 +8,7 @@ public class Client : MonoBehaviour
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private ColorMain _colorMain;
     [SerializeField] public int RandomLimit { get; set; } = 8;
-    private int _command;
+    [SerializeField] public int Command { get; set; }
 
     void Start()
     {
@@ -17,15 +17,15 @@ public class Client : MonoBehaviour
 
     public void OnRandom()
     {
-        _command = Random.Range(0,RandomLimit);
-        Debug.Log($"La commande numéro {_command}");
+        Command = Random.Range(0,RandomLimit);
+        Debug.Log($"La commande numéro {Command}");
     }
 
     void Update()
     {
         if (Received == false)
         {
-            switch (_command)
+            switch (Command)
             {
                 case 0:
                     if (_keepItem.Id == 1)
@@ -133,6 +133,6 @@ public class Client : MonoBehaviour
     {
         _keepItem.Id = 0;
         Received = true;
-        _command = -1;
+        Command = -1;
     }
 }

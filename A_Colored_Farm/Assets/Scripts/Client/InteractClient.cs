@@ -10,7 +10,7 @@ public class InteractClient : MonoBehaviour
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private ColorMain _colorMain;
     [SerializeField] public int RandomLimit { get; set; } = 8;
-    private int _command;
+    [SerializeField] public int Command { get; set; }
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -22,8 +22,8 @@ public class InteractClient : MonoBehaviour
 
     public void OnRandom()
     {
-        _command = Random.Range(0, RandomLimit);
-        Debug.Log($"La commande numéro {_command}");
+        Command = Random.Range(0, RandomLimit);
+        Debug.Log($"La commande numéro {Command}");
     }
 
     public void OnInteract(InputAction.CallbackContext context)
@@ -32,7 +32,7 @@ public class InteractClient : MonoBehaviour
         {
             if (context.performed) 
             {
-                switch (_command)
+                switch (Command)
                 {
                     case 0:
                         if (_keepItem.Id == 1)
@@ -140,7 +140,7 @@ public class InteractClient : MonoBehaviour
     public void OnRestart()
     {
         _keepItem.Id = 0;
-        _command = -1;
+        Command = -1;
         _movement.Back = true;
     }
 
