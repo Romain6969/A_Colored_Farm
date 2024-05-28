@@ -51,6 +51,6 @@ public class RebindingDesplayMovementup : MonoBehaviour
 
     private void Update()
     {
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[1].effectivePath);
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[1].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
     }
 }
