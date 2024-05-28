@@ -50,6 +50,6 @@ public class RebidingdesplayMovementLeft : MonoBehaviour
 
     private void Update()
     {
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[3].effectivePath);
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[3].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
     }
 }
