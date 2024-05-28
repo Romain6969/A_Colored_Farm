@@ -12,30 +12,30 @@ public class PurchaseSeed : MonoBehaviour
         switch (_id)
         {
             case 0:
-                if (_inventoryMain.Money >= _seedMain.GreySeed.PurchaseValue)
+                if (_inventoryMain.TargetValue >= _seedMain.GreySeed.PurchaseValue)
                 {
-                    _inventoryMain.Money -= _seedMain.GreySeed.PurchaseValue;
+                    _inventoryMain.RemoveValue(_seedMain.GreySeed.PurchaseValue);
                     _chestInventory.GraySeed += 1;
                 }
                 break;
             case 1:
-                if (_inventoryMain.Money >= _seedMain.BlueSeed.PurchaseValue)
+                if (_inventoryMain.TargetValue >= _seedMain.BlueSeed.PurchaseValue)
                 {
-                    _inventoryMain.Money -= _seedMain.BlueSeed.PurchaseValue;
+                    _inventoryMain.RemoveValue(_seedMain.BlueSeed.PurchaseValue);
                     _chestInventory.BlueSeed += 1;
                 }
                 break;
             case 2:
-                if (_inventoryMain.Money >= _seedMain.YellowSeed.PurchaseValue)
+                if (_inventoryMain.TargetValue >= _seedMain.YellowSeed.PurchaseValue)
                 {
-                    _inventoryMain.Money -= _seedMain.YellowSeed.PurchaseValue;
+                    _inventoryMain.RemoveValue(_seedMain.YellowSeed.PurchaseValue);
                     _chestInventory.YellowSeed += 1;
                 }
                 break;
             case 3:
-                if (_inventoryMain.Money >= _seedMain.RedSeed.PurchaseValue)
+                if (_inventoryMain.TargetValue >= _seedMain.RedSeed.PurchaseValue)
                 {
-                    _inventoryMain.Money -= _seedMain.RedSeed.PurchaseValue;
+                    _inventoryMain.RemoveValue(_seedMain.RedSeed.PurchaseValue);
                     _chestInventory.RedSeed += 1;
                 }
                 break;
