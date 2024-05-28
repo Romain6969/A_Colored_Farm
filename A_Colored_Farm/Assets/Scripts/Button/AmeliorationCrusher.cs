@@ -11,10 +11,10 @@ public class AmeliorationCrusher : MonoBehaviour
 
     public void OnClick()
     {
-        if (_inventoryMain.Money >= _price)
+        if (_inventoryMain.TargetValue >= _price)
         {
             _crusher.TimeObjectif -= 1;
-            _inventoryMain.Money -= _price;
+            _inventoryMain.RemoveValue(_price);
             _price += 25;
             _use -= 1;
         }

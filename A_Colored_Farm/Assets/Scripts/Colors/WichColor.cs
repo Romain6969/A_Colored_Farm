@@ -10,6 +10,7 @@ public class WichColor : MonoBehaviour
     {
         ColorNumber = color;
         _colorPanel.SetActive(false);
+        Time.timeScale = 1;
         SetSeed.SeedSet();
     }
 

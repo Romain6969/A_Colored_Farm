@@ -124,8 +124,8 @@ public class Dirt : MonoBehaviour
                         if (_placeColor.IsPainting == true)
                         {
                             _colorPanel.SetActive(true);
+                            Time.timeScale = 0;
                         }
-
                     }
                 }
             }

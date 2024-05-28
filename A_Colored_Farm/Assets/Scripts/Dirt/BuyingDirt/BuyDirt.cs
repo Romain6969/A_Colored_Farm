@@ -28,9 +28,9 @@ public class BuyDirt : MonoBehaviour
 
     public void ConfirmDirt()
     {
-        if (_inventoryMain.Money >= _dirtCost)
+        if (_inventoryMain.TargetValue >= _dirtCost)
         {
-            _inventoryMain.Money -= _dirtCost;
+            _inventoryMain.RemoveValue(_dirtCost);
             _dirts[0].SetActive(true);
             _dirts[1].SetActive(true);
             _dirts[2].SetActive(true);

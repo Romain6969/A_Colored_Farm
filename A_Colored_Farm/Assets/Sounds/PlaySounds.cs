@@ -14,4 +14,14 @@ public class PlaySounds : MonoBehaviour
     {
         _audioSources[wichAudio].Stop();
     }
+
+    public void PauseAudio(int wichAudio)
+    {
+        _audioSources[wichAudio].Pause();
+    }
+
+    public void UnPauseAudio(int wichAudio)
+    {
+        _audioSources[wichAudio].UnPause();
+    }
 }

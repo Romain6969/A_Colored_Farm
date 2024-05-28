@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlaceColor : MonoBehaviour
 {
     [field: SerializeField] public bool IsPainting { get; set; } = false;
+    [field: SerializeField] public bool IsOpen { get; set; }
     [SerializeField] private PlayerInput _playerInput;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -19,4 +20,18 @@ public class PlaceColor : MonoBehaviour
             IsPainting = false;
         }
     }
+
+    /*
+    public bool Open()
+    {
+        if (IsOpen == true)
+        {
+            return IsOpen = false;
+        }
+        else
+        {
+            return IsOpen = true;
+        }
+    }
+    */
 }
