@@ -56,28 +56,28 @@ public class ChestAnimation : MonoBehaviour
 
     IEnumerator Wait0()
     {
-        yield return new WaitForSeconds(0.27f);
+        yield return new WaitForSeconds(0.267f);
         _animatorList[0].enabled = false;
         _gameObjectList[0].transform.localScale = new Vector3(0.75f, 0.75f, 0);
     }
 
     IEnumerator Wait1()
     {
-        yield return new WaitForSeconds(0.27f);
+        yield return new WaitForSeconds(0.267f);
         _animatorList[1].enabled = false;
         _gameObjectList[1].transform.localScale = new Vector3(0.75f, 0.75f, 0);
     }
 
     IEnumerator Wait2()
     {
-        yield return new WaitForSeconds(0.27f);
+        yield return new WaitForSeconds(0.267f);
         _animatorList[2].enabled = false;
         _gameObjectList[2].transform.localScale = new Vector3(0.75f, 0.75f, 0);
     }
 
     IEnumerator Wait3()
     {
-        yield return new WaitForSeconds(0.27f);
+        yield return new WaitForSeconds(0.267f);
         _animatorList[3].enabled = false;
         _gameObjectList[3].transform.localScale = new Vector3(0.75f, 0.75f, 0);
     }

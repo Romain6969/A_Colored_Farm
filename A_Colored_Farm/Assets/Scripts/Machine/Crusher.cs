@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Crusher : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Crusher : MonoBehaviour
     [field : SerializeField] public float TimeObjectif { get; set; } = 15;
     [SerializeField] private PlaySounds _playSounds;
     [SerializeField] private ListAnimation _listAnimation;
+    [SerializeField] private Image _image;
+    [SerializeField] private GameObject _progressBarGameObject;
 
     public void OnActivated()
     {
@@ -23,7 +26,9 @@ public class Crusher : MonoBehaviour
     {
         if (Activate == true)
         {
+            _progressBarGameObject.SetActive(true);
             _time += Time.deltaTime;
+            _image.fillAmount = _time / TimeObjectif;
 
             if (_time >= TimeObjectif)
             {

@@ -10,6 +10,7 @@ public class OpenShop : MonoBehaviour
     [SerializeField] private ColorMain _colorMain;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private KeepItem _keepItem;
+    [SerializeField] private Movement _movement;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -26,14 +27,14 @@ public class OpenShop : MonoBehaviour
                         if (Open == false)
                         {
                             _shopPanel.SetActive(true);
+                            _movement.CanMove = false;
                             Open = true;
-                            Time.timeScale = 0;
                         }
                         else
                         {
                             _shopPanel.SetActive(false);
+                            _movement.CanMove = true;
                             Open = false;
-                            Time.timeScale = 1;
                         }
                         break;
                     case 1:

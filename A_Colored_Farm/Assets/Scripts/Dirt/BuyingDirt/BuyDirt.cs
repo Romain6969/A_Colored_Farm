@@ -11,12 +11,13 @@ public class BuyDirt : MonoBehaviour
     [SerializeField] private TMP_Text _textCost;
     [SerializeField] private Interactions _interaction;
     [SerializeField] private InventoryMain _inventoryMain;
+    [SerializeField] private Movement _movement;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (_interaction.IsPerformed == true)
         {
-            Time.timeScale = 0;
+            _movement.CanMove = false;
             _confirmPanel.SetActive(true);
         }
     }
@@ -38,19 +39,19 @@ public class BuyDirt : MonoBehaviour
             _confirmPanel.SetActive(false);
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
-            Time.timeScale = 1;
+            _movement.CanMove = true;
         }
         else
         {
             _confirmPanel.SetActive(false);
             Debug.Log("You're poor ha ha, looser !");
-            Time.timeScale = 1;
+            _movement.CanMove = true;
         }
     }
 
     public void CloseConfirm()
     {
         _confirmPanel.SetActive(false);
-        Time.timeScale = 1;
+        _movement.CanMove = true;
     }
 }

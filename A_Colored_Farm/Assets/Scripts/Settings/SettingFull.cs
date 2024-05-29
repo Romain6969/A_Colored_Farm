@@ -4,6 +4,11 @@ public class SettingFull : MonoBehaviour
 {
     public int _isItFull = 0;
 
+    private void Start()
+    {
+        Screen.fullScreen = false;
+    }
+
     public void SetfullScreen()
     {
         _isItFull += 1;

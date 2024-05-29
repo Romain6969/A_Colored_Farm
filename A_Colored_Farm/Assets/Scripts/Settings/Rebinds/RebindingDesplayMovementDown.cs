@@ -50,6 +50,7 @@ public class RebindingDesplayMovementDown : MonoBehaviour
 
     private void Update()
     {
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[2].effectivePath);
+        //_bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[2].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
+        _bindingDisplayNameText.text = _actionMovement.action.GetBindingDisplayString(2);
     }
 }
