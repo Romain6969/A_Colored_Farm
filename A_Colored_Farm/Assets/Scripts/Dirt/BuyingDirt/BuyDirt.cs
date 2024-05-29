@@ -17,7 +17,7 @@ public class BuyDirt : MonoBehaviour
     {
         if (_interaction.IsPerformed == true)
         {
-            _movement.MovementBool = false;
+            _movement.CanMove = false;
             _confirmPanel.SetActive(true);
         }
     }
@@ -39,19 +39,19 @@ public class BuyDirt : MonoBehaviour
             _confirmPanel.SetActive(false);
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
-            _movement.MovementBool = true;
+            _movement.CanMove = true;
         }
         else
         {
             _confirmPanel.SetActive(false);
             Debug.Log("You're poor ha ha, looser !");
-            _movement.MovementBool = true;
+            _movement.CanMove = true;
         }
     }
 
     public void CloseConfirm()
     {
         _confirmPanel.SetActive(false);
-        _movement.MovementBool = true;
+        _movement.CanMove = true;
     }
 }

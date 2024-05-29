@@ -27,13 +27,13 @@ public class OpenShop : MonoBehaviour
                         if (Open == false)
                         {
                             _shopPanel.SetActive(true);
-                            _movement.MovementBool = false;
+                            _movement.CanMove = false;
                             Open = true;
                         }
                         else
                         {
                             _shopPanel.SetActive(false);
-                            _movement.MovementBool = true;
+                            _movement.CanMove = true;
                             Open = false;
                         }
                         break;
