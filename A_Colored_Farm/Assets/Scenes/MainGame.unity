@@ -2022,6 +2022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 999824537}
+  _movement: {fileID: 2078742838}
 --- !u!1 &117503588
 GameObject:
   m_ObjectHideFlags: 0
@@ -2034,7 +2035,7 @@ GameObject:
   - component: {fileID: 117503591}
   - component: {fileID: 117503590}
   m_Layer: 0
-  m_Name: ClentNeed
+  m_Name: ClientNeed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2124,7 +2125,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9729,6 +9730,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 18de3ece4f8e4404ba738f3a3a1c5683, type: 3}
+    - target: {fileID: 6668623096770151256, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6668623096770151256, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6668623096770151256, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8260129227302661688, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
       propertyPath: m_Name
       value: Client
@@ -11599,6 +11612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 963259934}
+  _movement: {fileID: 2078742838}
 --- !u!1 &686160694
 GameObject:
   m_ObjectHideFlags: 0
@@ -11695,6 +11709,7 @@ MonoBehaviour:
   _textCost: {fileID: 2023769965}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &690563448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13655,6 +13670,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 1229437455}
+  _movement: {fileID: 0}
 --- !u!1 &804398174
 GameObject:
   m_ObjectHideFlags: 0
@@ -14498,6 +14514,7 @@ MonoBehaviour:
   _textCost: {fileID: 1920826895}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &827818862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16889,6 +16906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 176137332}
+  _movement: {fileID: 2078742838}
 --- !u!1 &1079666532
 GameObject:
   m_ObjectHideFlags: 0
@@ -17083,6 +17101,7 @@ MonoBehaviour:
   _textCost: {fileID: 387981713}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &1083647975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24240,7 +24259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a24b5d8da30b2241972f5948eec1d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _panel: {fileID: 0}
+  _panel: {fileID: 1400726641}
+  _movement: {fileID: 2078742838}
 --- !u!1 &1469787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -25523,6 +25543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 948593103}
+  _movement: {fileID: 2078742838}
 --- !u!1 &1550528510
 GameObject:
   m_ObjectHideFlags: 0
@@ -29058,6 +29079,7 @@ MonoBehaviour:
   _textCost: {fileID: 1079666533}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &1715791182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29920,6 +29942,7 @@ MonoBehaviour:
   _textCost: {fileID: 12253455}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &1779195502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -31449,6 +31472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _panel: {fileID: 618759654}
+  _movement: {fileID: 2078742838}
 --- !u!1 &1877917663
 GameObject:
   m_ObjectHideFlags: 0
@@ -36018,6 +36042,7 @@ MonoBehaviour:
   _textCost: {fileID: 502570072}
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
+  _movement: {fileID: 2078742838}
 --- !u!61 &2114269391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36524,6 +36549,10 @@ PrefabInstance:
       propertyPath: _keepItem
       value: 
       objectReference: {fileID: 534477681}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _movement
+      value: 
+      objectReference: {fileID: 2078742838}
     - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _seedMain
       value: 

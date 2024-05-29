@@ -7,12 +7,16 @@ public class Movement : MonoBehaviour
     [SerializeField] private Rigidbody2D _rigidbody;
     [SerializeField] private float _speed;
     [SerializeField] private PlayerInput _playerInput;
+    [field : SerializeField] public bool MovementBool { get; set; } = true;
 
     public PlayerInput PlayerInput => _playerInput;
 
     public void OnMovement(InputAction.CallbackContext context)
     {
-        _movement = context.ReadValue<Vector2>();
+        if (MovementBool == true)
+        {
+            _movement = context.ReadValue<Vector2>();
+        }
     }
 
     private void FixedUpdate()
