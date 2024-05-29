@@ -5928,7 +5928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &319546634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33850,7 +33850,8 @@ MonoBehaviour:
   _playerInput: {fileID: 1517065703}
   _keepItem: {fileID: 534477681}
   _crusher: {fileID: 318151026}
-  _listAnimation: {fileID: 0}
+  _listAnimation: {fileID: 318151027}
+  _progressBarGameObject: {fileID: 319546633}
 --- !u!4 &634756030003194801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
