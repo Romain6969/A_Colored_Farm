@@ -47,6 +47,6 @@ public class RebindingDesplayPlant : MonoBehaviour
     {
         int bindingIndex = _plantAction.action.GetBindingIndexForControl(_plantAction.action.controls[0]);
 
-        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_plantAction.action.bindings[bindingIndex].effectivePath);
+        _bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_plantAction.action.bindings[bindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
     }
 }
