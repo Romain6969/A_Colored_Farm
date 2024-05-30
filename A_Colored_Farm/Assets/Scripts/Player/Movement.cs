@@ -9,6 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
     [SerializeField] private Animator _animationCloseShowInputs;
+    [SerializeField] private Tutorial _tutorial;
     private float _time;
     private bool _didNotClose = true;
 
@@ -67,6 +68,10 @@ public class Movement : MonoBehaviour
             if (_time >= 1)
             {
                 _animationCloseShowInputs.enabled = false;
+                if (_tutorial.WhenMove == false)
+                {
+                    _tutorial.IndicatorsList[0].SetActive(true);
+                }
             }
         }
     }

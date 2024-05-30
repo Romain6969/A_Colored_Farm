@@ -5,6 +5,7 @@ public class PurchaseSeed : MonoBehaviour
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private ChestInventory _chestInventory;
+    [SerializeField] private Tutorial _tutorial;
     [SerializeField] private float _id;
 
     public void OnClick()
@@ -16,6 +17,13 @@ public class PurchaseSeed : MonoBehaviour
                 {
                     _inventoryMain.RemoveValue(_seedMain.GreySeed.PurchaseValue);
                     _chestInventory.GraySeed += 1;
+                    
+                    if(_tutorial.WhenMove == false)
+                    {
+                        _tutorial.IndicatorsList[0].SetActive(false);
+                        _tutorial.IndicatorsList[1].SetActive(true);
+                        _tutorial.WhenMove = true;
+                    }
                 }
                 break;
             case 1:

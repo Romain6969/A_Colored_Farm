@@ -16173,6 +16173,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
+  _tutorial: {fileID: 0}
   _id: 2
 --- !u!114 &1011683286
 MonoBehaviour:
@@ -21324,6 +21325,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
+  _tutorial: {fileID: 1837061901}
   _id: 0
 --- !u!114 &1347168525
 MonoBehaviour:
@@ -25365,6 +25367,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
+  _tutorial: {fileID: 0}
   _id: 3
 --- !u!114 &1628214611
 MonoBehaviour:
@@ -26072,6 +26075,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
+  _tutorial: {fileID: 0}
   _id: 1
 --- !u!114 &1658146987
 MonoBehaviour:
@@ -28220,6 +28224,7 @@ GameObject:
   - component: {fileID: 1837061892}
   - component: {fileID: 1837061899}
   - component: {fileID: 1837061900}
+  - component: {fileID: 1837061901}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28302,6 +28307,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _keepItem: {fileID: 534477681}
   _interactClient: {fileID: 634756030003194820}
+--- !u!114 &1837061901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837061891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 393aa6a6bd008574386f2fe9103bc726, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IndicatorsList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  WhenMove: 0
 --- !u!1 &1839876818
 GameObject:
   m_ObjectHideFlags: 0
@@ -33842,6 +33868,10 @@ PrefabInstance:
       propertyPath: _animator
       value: 
       objectReference: {fileID: 634756030003194827}
+    - target: {fileID: 3030685884229560691, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _tutorial
+      value: 
+      objectReference: {fileID: 1837061901}
     - target: {fileID: 3030685884229560691, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _animationCloseShowInputs
       value: 
