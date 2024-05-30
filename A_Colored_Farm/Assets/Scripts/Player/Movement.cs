@@ -8,6 +8,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
+    [SerializeField] private Animator _animationCloseShowInputs;
+    private float _time;
+    private bool _didNotClose = true;
 
     [SerializeField]
     private bool _canMove = true;
@@ -37,6 +40,7 @@ public class Movement : MonoBehaviour
             _animator.SetBool("IsWalking", true);
             _animator.SetFloat("Right", _movement.x);
             _animator.SetFloat("Left", _movement.y);
+            _didNotClose = false;
         }
         else
         {
@@ -54,6 +58,16 @@ public class Movement : MonoBehaviour
         {
             _rigidbody.velocity = Vector2.zero;
             _animator.SetBool("IsWalking", false);
+        }
+        if (_didNotClose == false)
+        {
+            _time += Time.deltaTime;
+            _animationCloseShowInputs.enabled = true;
+            _animationCloseShowInputs.Play("ShowInputsAnimReturn");
+            if (_time >= 1)
+            {
+                _animationCloseShowInputs.enabled = false;
+            }
         }
     }
 }

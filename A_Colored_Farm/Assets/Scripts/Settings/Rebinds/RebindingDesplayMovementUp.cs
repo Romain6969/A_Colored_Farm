@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class RebindingDesplayMovementup : MonoBehaviour
 {
-    [SerializeField] private InputActionReference _actionMovement;
+    [field: SerializeField] public InputActionReference ActionMovement { get; private set; }
     [SerializeField] private Movement _movement;
     [SerializeField] private TMP_Text _bindingDisplayNameText;
     [SerializeField] private GameObject _startRebindObject;
@@ -29,7 +29,7 @@ public class RebindingDesplayMovementup : MonoBehaviour
             .With("Left", "<Keyboard>/a")
             .With("Right", "<Keyboard>/d");
 
-        _rebindingOperation = _actionMovement.action.PerformInteractiveRebinding()
+        _rebindingOperation = ActionMovement.action.PerformInteractiveRebinding()
             .WithControlsExcluding("Mouse")
             .WithTargetBinding(1)
             .OnMatchWaitForAnother(.1f)
@@ -52,6 +52,6 @@ public class RebindingDesplayMovementup : MonoBehaviour
     private void Update()
     {
         //_bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_actionMovement.action.bindings[1].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
-        _bindingDisplayNameText.text = _actionMovement.action.GetBindingDisplayString(1);
+        _bindingDisplayNameText.text = ActionMovement.action.GetBindingDisplayString(1);
     }
 }
