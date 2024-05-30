@@ -20,6 +20,7 @@ public class Dirt : MonoBehaviour
     [SerializeField] private SeedColorMix _seedColorMix;
     [SerializeField] private PlaySounds _playSounds;
     [SerializeField] private Movement _movement;
+    [SerializeField] private OpenPause _pause;
 
     private void FixedUpdate()
     {
@@ -126,6 +127,8 @@ public class Dirt : MonoBehaviour
                         {
                             _colorPanel.SetActive(true);
                             _movement.CanMove = false;
+                            _pause.Open = 1;
+
                         }
                     }
                 }
