@@ -21,7 +21,6 @@ public class SeedColorMix : MonoBehaviour
         PaintColor = null;
         SeedColor = null;
         ResultMix = null;
-        _canTake = true;
     }
     public Colors EveryMix(Colors paintColor, Colors seedColor)
     {
