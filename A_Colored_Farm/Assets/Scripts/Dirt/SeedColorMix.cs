@@ -48,6 +48,32 @@ public class SeedColorMix : MonoBehaviour
         {
             return ResultMix.Result = Colors.Red;
         }
+        /*
+        if ((paintColor == Colors.Grey && seedColor == Colors.Blue) || (paintColor == Colors.Blue && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Blue
+        }
+        if ((paintColor == Colors.Grey && seedColor == Colors.Yellow) || (paintColor == Colors.Yellow && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Yellow
+        }
+        if ((paintColor == Colors.Grey && seedColor == Colors.Red) || (paintColor == Colors.Red && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Red
+        }
+        if ((paintColor == Colors.Grey && seedColor == Colors.Purple) || (paintColor == Colors.Purple && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Purple
+        }
+        if ((paintColor == Colors.Grey && seedColor == Colors.Green) || (paintColor == Colors.Green && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Green
+        }
+        if ((paintColor == Colors.Grey && seedColor == Colors.Orange) || (paintColor == Colors.Orange && seedColor == Colors.Grey))
+        {
+            return ResultMix.Result = Colors.Orange
+        }
+        */
         else
         {
             return ResultMix.Result = Colors.Grey;
