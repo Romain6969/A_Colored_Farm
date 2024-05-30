@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,27 +8,33 @@ public class OpenPause : MonoBehaviour
     [SerializeField] private GameObject _pausePanel;
     [SerializeField] private GameObject _RebindsPanel;
     [SerializeField] private GameObject _SettingsPanel;
+    [SerializeField] private List<GameObject> _exitPanel;
 
     public void OnPause(InputAction.CallbackContext context)
     {
-        if (Open == false)
+        if (context.performed)
         {
-            if (context.performed)
+            if (_exitPanel[0] || _exitPanel[1])
             {
-                _pausePanel.SetActive(true);
-                Open = true;
-                Time.timeScale = 0;
+                _exitPanel[0].SetActive(false);
+                _exitPanel[1].SetActive(false);
             }
-        }
-        else
-        {
-            if (context.performed)
+            else
             {
-                _pausePanel.SetActive(false);
-                _RebindsPanel.SetActive(false);
-                _SettingsPanel.SetActive(false);
-                Open = false;
-                Time.timeScale = 1;
+                if (Open == false)
+                {
+                    _pausePanel.SetActive(true);
+                    Open = true;
+                    Time.timeScale = 0;
+                }
+                else
+                {
+                    _pausePanel.SetActive(false);
+                    _RebindsPanel.SetActive(false);
+                    _SettingsPanel.SetActive(false);
+                    Open = false;
+                    Time.timeScale = 1;
+                }
             }
         }
     }
