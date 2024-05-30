@@ -19,6 +19,7 @@ public class Dirt : MonoBehaviour
     [field: SerializeField] public List<Sprite> DirtColorSprite { get; set; }
     [SerializeField] private SeedColorMix _seedColorMix;
     [SerializeField] private PlaySounds _playSounds;
+    [SerializeField] private Movement _movement;
 
     private void FixedUpdate()
     {
@@ -124,7 +125,7 @@ public class Dirt : MonoBehaviour
                         if (_placeColor.IsPainting == true)
                         {
                             _colorPanel.SetActive(true);
-                            Time.timeScale = 0;
+                            _movement.CanMove = false;
                         }
                     }
                 }
