@@ -16768,7 +16768,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
   _id: 2
 --- !u!114 &1011683286
 MonoBehaviour:
@@ -26129,7 +26129,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
   _id: 3
 --- !u!114 &1628214611
 MonoBehaviour:
@@ -26837,7 +26837,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _seedMain: {fileID: 1398405673}
   _chestInventory: {fileID: 1837061893}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
   _id: 1
 --- !u!114 &1658146987
 MonoBehaviour:
@@ -34934,6 +34934,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1363597508881975594, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2085709398979622099, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _textMoney
       value: 
@@ -35546,6 +35550,7 @@ MonoBehaviour:
   <PaintColor>k__BackingField: {fileID: 0}
   <SeedColor>k__BackingField: {fileID: 0}
   <ResultMix>k__BackingField: {fileID: 0}
+  _listCollision: []
 --- !u!114 &634756030003194815
 MonoBehaviour:
   m_ObjectHideFlags: 0
