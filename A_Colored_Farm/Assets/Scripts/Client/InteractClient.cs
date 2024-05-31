@@ -10,7 +10,7 @@ public class InteractClient : MonoBehaviour
     [SerializeField] private SeedMain _seedMain;
     [SerializeField] private ColorMain _colorMain;
     [SerializeField] public int RandomLimit { get; set; } = 8;
-    [SerializeField] public int Command { get; set; }
+    [field : SerializeField] public int Command { get; set; }
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;

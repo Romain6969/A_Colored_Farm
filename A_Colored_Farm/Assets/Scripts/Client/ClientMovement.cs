@@ -16,7 +16,7 @@ public class ClientMovement : MonoBehaviour
             transform.Translate(Vector2.down * _speed * Time.deltaTime);
         }
 
-        if (transform.position.y <= 3.5 && transform.position.y >= 3)
+        if (transform.position.y <= 4 && transform.position.y >= 3.5)
         {
             _position = true;
         }
