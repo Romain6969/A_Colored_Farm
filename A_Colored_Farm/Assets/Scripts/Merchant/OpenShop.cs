@@ -12,6 +12,7 @@ public class OpenShop : MonoBehaviour
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
+    [SerializeField] private Tutorial _tutorial;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -43,6 +44,11 @@ public class OpenShop : MonoBehaviour
                     case 1:
                         _inventoryMain.AddValue(_seedMain.GreySeed.SellValue);
                         _keepItem.Id = 0;
+                        if (_tutorial.WhenplayerSellPlant == false)
+                        {
+                            _tutorial.IndicatorsList[0].SetActive(false);
+                            _tutorial.WhenplayerSellPlant = true;
+                        }
                         break;
                     case 2:
                         _inventoryMain.AddValue(_seedMain.BlueSeed.SellValue);

@@ -4,7 +4,7 @@ using TMPro;
 
 public class RebindingDesplayPlant : MonoBehaviour
 {
-    [SerializeField] private InputActionReference _plantAction;
+    [field: SerializeField] public InputActionReference PlantAction { get; private set; }
     [SerializeField] private PlaceSeed _plantSeed;
     [SerializeField] private OpenShop _openShop;
     [SerializeField] private TMP_Text _bindingDisplayNameText;
@@ -23,7 +23,7 @@ public class RebindingDesplayPlant : MonoBehaviour
         _plantSeed.PlayerInput.SwitchCurrentActionMap("UI");
         _openShop.PlayerInput.SwitchCurrentActionMap("UI");
 
-        _rebindingOperation = _plantAction.action.PerformInteractiveRebinding()
+        _rebindingOperation = PlantAction.action.PerformInteractiveRebinding()
             .WithControlsExcluding("Mouse")
             .OnMatchWaitForAnother(0.1f)
             .OnComplete(operation => RebindComplete())
@@ -45,9 +45,9 @@ public class RebindingDesplayPlant : MonoBehaviour
 
     private void Update()
     {
-        int bindingIndex = _plantAction.action.GetBindingIndexForControl(_plantAction.action.controls[0]);
+        int bindingIndex = PlantAction.action.GetBindingIndexForControl(PlantAction.action.controls[0]);
 
         //_bindingDisplayNameText.text = InputControlPath.ToHumanReadableString(_plantAction.action.bindings[bindingIndex].effectivePath, InputControlPath.HumanReadableStringOptions.OmitDevice);
-        _bindingDisplayNameText.text = _plantAction.action.GetBindingDisplayString(bindingIndex);
+        _bindingDisplayNameText.text = PlantAction.action.GetBindingDisplayString(bindingIndex);
     }
 }
