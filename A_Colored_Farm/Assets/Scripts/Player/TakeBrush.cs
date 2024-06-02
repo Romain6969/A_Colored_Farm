@@ -6,6 +6,7 @@ public class TakeBrush : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] InventoryColor InventoryColor;
     [SerializeField] private KeepItem _keepItem;
+    [SerializeField] private SpriteSwap _spriteswap;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -20,9 +21,11 @@ public class TakeBrush : MonoBehaviour
                 {
                     case 0:
                         _keepItem.Id = 12;
+                        _spriteswap.Use = true;
                         break;
                     case 12:
                         _keepItem.Id = 0;
+                        _spriteswap.Use = false;
                         break;
                     case 13:
                         InventoryColor.AddSeed("Grey", 1);

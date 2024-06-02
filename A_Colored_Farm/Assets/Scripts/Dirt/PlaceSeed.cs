@@ -6,6 +6,8 @@ public class PlaceSeed : MonoBehaviour
     [field: SerializeField] public bool IsPlanting { get; set; }
     [SerializeField] private PlayerInput _playerInput;
     private bool _triggered;
+    [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private KeepItem _keepItem;
 
     public PlayerInput PlayerInput => _playerInput;
 
@@ -21,6 +23,10 @@ public class PlaceSeed : MonoBehaviour
             if (context.performed)
             {
                 IsPlanting = true;
+                if (_keepItem.Id == 8)
+                {
+                    _tutorial.WhenPlayerPlant = true;
+                }
             }
 
             if (context.canceled)
@@ -35,6 +41,14 @@ public class PlaceSeed : MonoBehaviour
         if (collision.tag == "Dirt")
         {
             _triggered = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Dirt")
+        {
+            _triggered = false;
         }
     }
 }

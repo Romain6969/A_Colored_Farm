@@ -5,12 +5,15 @@ public class WichColor : MonoBehaviour
     [field : SerializeField] public int ColorNumber { get; set; }
     [SerializeField] private GameObject _colorPanel;
     [field: SerializeField] public SetSeed SetSeed { get; set; }
+    [SerializeField] private Movement _movement;
+    [SerializeField] private OpenPause _pause;
 
     public void OnClickNumberColor(int color)
     {
         ColorNumber = color;
         _colorPanel.SetActive(false);
-        Time.timeScale = 1;
+        _movement.CanMove = true;
+        _pause.Open = 2;
         SetSeed.SeedSet();
     }
 
