@@ -9,7 +9,10 @@ public class Verif : MonoBehaviour
     private bool _key1 = false;
     private bool _key2 = false;
     private bool _key3 = false;
-
+    void Awake()
+    {
+        Time.timeScale = 1;
+    }
     void Update()
     {
         switch (_keepItem.Id)
