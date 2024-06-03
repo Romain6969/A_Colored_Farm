@@ -5530,9 +5530,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2cb53d13bd28e40a8e26d06bdd3f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settingGeneral: {fileID: 1098081733}
-  _settingMusic: {fileID: 1098081734}
-  _settingSounds: {fileID: 1098081735}
+  <SettingGeneral>k__BackingField: {fileID: 1098081733}
+  <SettingMusic>k__BackingField: {fileID: 1098081734}
+  <SettingSounds>k__BackingField: {fileID: 1098081735}
 --- !u!114 &1098081730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5559,6 +5559,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isItFull: 0
+  _toggle: {fileID: 1416186414}
+  _number: 0
 --- !u!4 &1098081732
 Transform:
   m_ObjectHideFlags: 0
@@ -6364,6 +6366,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fullScreen: {fileID: 1098081731}
+  _volume: {fileID: 1098081729}
+  _sliderGeneral: {fileID: 207981195}
+  _sliderMusic: {fileID: 2101942843}
+  _sliderSounds: {fileID: 1532737889}
 --- !u!4 &1296451745
 Transform:
   m_ObjectHideFlags: 0

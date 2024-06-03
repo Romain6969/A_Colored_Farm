@@ -1373,7 +1373,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &84841197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1387,6 +1387,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fullScreen: {fileID: 303027188}
+  _volume: {fileID: 303027186}
+  _sliderGeneral: {fileID: 1870626061}
+  _sliderMusic: {fileID: 1211689415}
+  _sliderSounds: {fileID: 443833737}
 --- !u!4 &84841198
 Transform:
   m_ObjectHideFlags: 0
@@ -5674,9 +5678,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b2cb53d13bd28e40a8e26d06bdd3f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _settingGeneral: {fileID: 303027183}
-  _settingMusic: {fileID: 303027184}
-  _settingSounds: {fileID: 303027185}
+  <SettingGeneral>k__BackingField: {fileID: 303027183}
+  <SettingMusic>k__BackingField: {fileID: 303027184}
+  <SettingSounds>k__BackingField: {fileID: 303027185}
 --- !u!114 &303027187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5703,6 +5707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isItFull: 0
+  _toggle: {fileID: 378617277}
+  _number: 0
 --- !u!4 &303027189
 Transform:
   m_ObjectHideFlags: 0
