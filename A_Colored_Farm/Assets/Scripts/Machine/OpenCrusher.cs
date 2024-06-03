@@ -39,25 +39,25 @@ public class OpenCrusher : MonoBehaviour
                         switch (_crusher.CopyId)
                         {
                             case 1:
-                                _keepItem.Id = 13;
-                                break;
-                            case 2:
-                                _keepItem.Id = 14;
-                                break;
-                            case 3:
-                                _keepItem.Id = 15;
-                                break;
-                            case 4:
                                 _keepItem.Id = 16;
                                 break;
-                            case 5:
+                            case 2:
                                 _keepItem.Id = 17;
                                 break;
-                            case 6:
+                            case 3:
                                 _keepItem.Id = 18;
                                 break;
-                            case 7:
+                            case 4:
                                 _keepItem.Id = 19;
+                                break;
+                            case 5:
+                                _keepItem.Id = 20;
+                                break;
+                            case 6:
+                                _keepItem.Id = 21;
+                                break;
+                            case 7:
+                                _keepItem.Id = 22;
                                 break;
                         }
                         _progressBarGameObject.SetActive(false);

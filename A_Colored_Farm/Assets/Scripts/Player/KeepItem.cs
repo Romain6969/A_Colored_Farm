@@ -6,7 +6,6 @@ public class KeepItem : MonoBehaviour
     [SerializeField] private SpriteMain _spriteList;
     [field : SerializeField] public int Id { get; set; }
     [field : SerializeField] public bool Here { get; set; }
-    private float time;
 
     private void Update()
     {
@@ -80,6 +79,34 @@ public class KeepItem : MonoBehaviour
             case 19:
                 _sprite.sprite = _spriteList.SpriteList[19];
                 break;
+            case 20:
+                _sprite.sprite = _spriteList.SpriteList[20];
+                break;
+            case 21:
+                _sprite.sprite = _spriteList.SpriteList[21];
+                break;
+            case 22:
+                _sprite.sprite = _spriteList.SpriteList[22];
+                break;
+            case 23:
+                _sprite.sprite = _spriteList.SpriteList[23];
+                break;
+            case 24:
+                _sprite.sprite = _spriteList.SpriteList[24];
+                break;
+            case 25:
+                _sprite.sprite = _spriteList.SpriteList[25];
+                break;
+            case 26:
+                _sprite.sprite = _spriteList.SpriteList[26];
+                break;
+            case 27:
+                _sprite.sprite = _spriteList.SpriteList[27];
+                break;
+            case 28:
+                _sprite.sprite = _spriteList.SpriteList[28];
+                break;
+
         }
     }
 }

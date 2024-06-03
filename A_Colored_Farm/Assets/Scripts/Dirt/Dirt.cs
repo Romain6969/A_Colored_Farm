@@ -40,7 +40,7 @@ public class Dirt : MonoBehaviour
         {
             if (_placeSeed.IsPlanting == true)
             {
-                if (_keepItem.Id != 12)
+                if (_keepItem.Id != 15)
                 {
                     if (PaintColor.Paint == Colors.None)
                     {
@@ -78,6 +78,30 @@ public class Dirt : MonoBehaviour
                                 _keepItem.Here = false;
                                 SeedColor.Seed = Colors.Red;
                                 break;
+                            case 12:
+                                Instantiate(_seedsList[4], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                SeedColor.Seed = Colors.Purple;
+                                break;
+                            case 13:
+                                Instantiate(_seedsList[5], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                SeedColor.Seed = Colors.Green;
+                                break;
+                            case 14:
+                                Instantiate(_seedsList[6], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                SeedColor.Seed = Colors.Orange;
+                                break;
                         }
                     }
                     else
@@ -110,6 +134,30 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 11:
                                 SeedColor.Seed = Colors.Red;
+                                Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                break;
+                            case 12:
+                                SeedColor.Seed = Colors.Purple;
+                                Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                break;
+                            case 13:
+                                SeedColor.Seed = Colors.Green;
+                                Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                _playSounds.PlayAudio(3);
+                                _keepItem.Id = 0;
+                                _placeSeed.IsPlanting = false;
+                                _keepItem.Here = false;
+                                break;
+                            case 14:
+                                SeedColor.Seed = Colors.Orange;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;

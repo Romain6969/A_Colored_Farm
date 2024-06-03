@@ -58,6 +58,33 @@ public class OpenChest : MonoBehaviour
                                 return;
                             }
                             break;
+                        case 4:
+                            if (_chestInventory.PurpleSeed >= 1)
+                            {
+                                _keepItem.Id = 12;
+                                _chestInventory.PurpleSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
+                        case 5:
+                            if (_chestInventory.GreenSeed >= 1)
+                            {
+                                _keepItem.Id = 13;
+                                _chestInventory.GreenSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
+                        case 6:
+                            if (_chestInventory.OrangeSeed >= 1)
+                            {
+                                _keepItem.Id = 14;
+                                _chestInventory.OrangeSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
                     }
                 }
             }
@@ -105,6 +132,33 @@ public class OpenChest : MonoBehaviour
                             return;
                         }
                         break;
+                    case 4:
+                        if (_keepItem.Id == 12)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.PurpleSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
+                    case 5:
+                        if (_keepItem.Id == 13)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.GreenSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
+                    case 6:
+                        if (_keepItem.Id == 14)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.OrangeSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
                 }
             }
         }
@@ -135,6 +189,24 @@ public class OpenChest : MonoBehaviour
             _isTrigger = true;
             _chest = 3;
         }
+
+        if (collision.gameObject.tag == "ChestPurple")
+        {
+            _isTrigger = true;
+            _chest = 4;
+        }
+
+        if (collision.gameObject.tag == "ChestGreen")
+        {
+            _isTrigger = true;
+            _chest = 5;
+        }
+
+        if (collision.gameObject.tag == "ChestOrange")
+        {
+            _isTrigger = true;
+            _chest = 6;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -158,6 +230,24 @@ public class OpenChest : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "ChestRed")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestPurple")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestGreen")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestOrange")
         {
             _isTrigger = false;
             _chest = -1;
