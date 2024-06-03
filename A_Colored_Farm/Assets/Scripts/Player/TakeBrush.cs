@@ -7,6 +7,7 @@ public class TakeBrush : MonoBehaviour
     [SerializeField] InventoryColor InventoryColor;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private SpriteSwap _spriteswap;
+    [SerializeField] private AnimationFridge _animationFridge;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -56,6 +57,7 @@ public class TakeBrush : MonoBehaviour
                         _keepItem.Id = 0;
                         break;
                 }
+                _animationFridge.OnAnimation();
             }
         }
     }
