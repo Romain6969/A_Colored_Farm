@@ -9,6 +9,18 @@ public class SettingFull : MonoBehaviour
         Screen.fullScreen = false;
     }
 
+    private void Update()
+    {
+        if (_isItFull == 0)
+        {
+            Screen.fullScreen = false;
+        }
+        else
+        {
+            Screen.fullScreen = true;
+        }
+    }
+
     public void SetfullScreen()
     {
         _isItFull += 1;
