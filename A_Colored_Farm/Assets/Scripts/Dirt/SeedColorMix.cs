@@ -1,10 +1,20 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class SeedColorMix : MonoBehaviour
 {
     [field :SerializeField] public PaintColor PaintColor { get; set; }
     [field :SerializeField] public SeedColor SeedColor { get; set; }
     [field :SerializeField] public ResultMix ResultMix { get; set; }
+    [SerializeField] private List<GameObject> _listCollision;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Dirt")
+        {
+            _listCollision.Add(collision.gameObject);
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -21,6 +31,11 @@ public class SeedColorMix : MonoBehaviour
         PaintColor = null;
         SeedColor = null;
         ResultMix = null;
+
+        if (collision.tag == "Dirt")
+        {
+            _listCollision.Remove(collision.gameObject);
+        }
     }
     public Colors EveryMix(Colors paintColor, Colors seedColor)
     {
