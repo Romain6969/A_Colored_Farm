@@ -20,38 +20,38 @@ public class TakeBrush : MonoBehaviour
                 switch (_keepItem.Id)
                 {
                     case 0:
-                        _keepItem.Id = 12;
+                        _keepItem.Id = 15;
                         _spriteswap.Use = true;
                         break;
-                    case 12:
+                    case 15:
                         _keepItem.Id = 0;
                         _spriteswap.Use = false;
                         break;
-                    case 13:
+                    case 16:
                         InventoryColor.AddSeed("Grey", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 14:
+                    case 17:
                         InventoryColor.AddSeed("Blue", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 15:
+                    case 18:
                         InventoryColor.AddSeed("Yellow", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 16:
+                    case 19:
                         InventoryColor.AddSeed("Red", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 17:
+                    case 20:
                         InventoryColor.AddSeed("Purple", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 18:
+                    case 21:
                         InventoryColor.AddSeed("Green", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 19:
+                    case 22:
                         InventoryColor.AddSeed("Orange", 1);
                         _keepItem.Id = 0;
                         break;

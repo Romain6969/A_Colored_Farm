@@ -74,31 +74,31 @@ public class OpenShop : MonoBehaviour
                         _inventoryMain.AddValue(_seedMain.OrangeSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 13:
+                    case 16:
                         _inventoryMain.AddValue(_colorMain.ColorsList[0].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 14:
+                    case 17:
                         _inventoryMain.AddValue(_colorMain.ColorsList[1].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 15:
+                    case 18:
                         _inventoryMain.AddValue(_colorMain.ColorsList[2].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 16:
+                    case 19:
                         _inventoryMain.AddValue(_colorMain.ColorsList[3].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 17:
+                    case 20:
                         _inventoryMain.AddValue(_colorMain.ColorsList[4].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 18:
+                    case 21:
                         _inventoryMain.AddValue(_colorMain.ColorsList[5].SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 19:
+                    case 22:
                         _inventoryMain.AddValue(_colorMain.ColorsList[6].SellValue);
                         _keepItem.Id = 0;
                         break;

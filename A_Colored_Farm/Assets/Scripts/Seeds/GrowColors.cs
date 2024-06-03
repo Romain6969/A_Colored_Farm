@@ -81,6 +81,42 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
+                        case 12:
+                            if (_seedsGrowTime > _seedMain.PurpleSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = 5;
+                                    Destroy(gameObject);
+                                    _keepItem.Here = true;
+                                    return;
+                                }
+                            }
+                            break;
+                        case 13:
+                            if (_seedsGrowTime > _seedMain.GreenSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = 6;
+                                    Destroy(gameObject);
+                                    _keepItem.Here = true;
+                                    return;
+                                }
+                            }
+                            break;
+                        case 14:
+                            if (_seedsGrowTime > _seedMain.OrangeSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = 7;
+                                    Destroy(gameObject);
+                                    _keepItem.Here = true;
+                                    return;
+                                }
+                            }
+                            break;
                     }
                 }
             }
