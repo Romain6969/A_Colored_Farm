@@ -25,7 +25,7 @@ public class OpenChest : MonoBehaviour
                         case 0:
                             if (_chestInventory.GraySeed >= 1)
                             {
-                                _keepItem.Id = 8;
+                                _keepItem.Id = 14;
                                 _chestInventory.GraySeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -34,7 +34,7 @@ public class OpenChest : MonoBehaviour
                         case 1:
                             if (_chestInventory.BlueSeed >= 1)
                             {
-                                _keepItem.Id = 9;
+                                _keepItem.Id = 15;
                                 _chestInventory.BlueSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -43,7 +43,7 @@ public class OpenChest : MonoBehaviour
                         case 2:
                             if (_chestInventory.YellowSeed >= 1)
                             {
-                                _keepItem.Id = 10;
+                                _keepItem.Id = 16;
                                 _chestInventory.YellowSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -52,7 +52,7 @@ public class OpenChest : MonoBehaviour
                         case 3:
                             if (_chestInventory.RedSeed >= 1)
                             {
-                                _keepItem.Id = 11;
+                                _keepItem.Id = 17;
                                 _chestInventory.RedSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -61,7 +61,7 @@ public class OpenChest : MonoBehaviour
                         case 4:
                             if (_chestInventory.PurpleSeed >= 1)
                             {
-                                _keepItem.Id = 12;
+                                _keepItem.Id = 18;
                                 _chestInventory.PurpleSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -70,7 +70,7 @@ public class OpenChest : MonoBehaviour
                         case 5:
                             if (_chestInventory.GreenSeed >= 1)
                             {
-                                _keepItem.Id = 13;
+                                _keepItem.Id = 19;
                                 _chestInventory.GreenSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -79,7 +79,7 @@ public class OpenChest : MonoBehaviour
                         case 6:
                             if (_chestInventory.OrangeSeed >= 1)
                             {
-                                _keepItem.Id = 14;
+                                _keepItem.Id = 20;
                                 _chestInventory.OrangeSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -97,7 +97,7 @@ public class OpenChest : MonoBehaviour
                 switch (_chest)
                 {
                     case 0:
-                        if (_keepItem.Id == 8)
+                        if (_keepItem.Id == 14)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.GraySeed += 1;
@@ -106,7 +106,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 1:
-                        if (_keepItem.Id == 9)
+                        if (_keepItem.Id == 15)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.BlueSeed += 1;
@@ -115,7 +115,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 2:
-                        if (_keepItem.Id == 10)
+                        if (_keepItem.Id == 16)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.YellowSeed += 1;
@@ -124,7 +124,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 3:
-                        if (_keepItem.Id == 11)
+                        if (_keepItem.Id == 17)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.RedSeed += 1;
@@ -133,7 +133,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 4:
-                        if (_keepItem.Id == 12)
+                        if (_keepItem.Id == 18)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.PurpleSeed += 1;
@@ -142,7 +142,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 5:
-                        if (_keepItem.Id == 13)
+                        if (_keepItem.Id == 19)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.GreenSeed += 1;
@@ -151,7 +151,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 6:
-                        if (_keepItem.Id == 14)
+                        if (_keepItem.Id == 20)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.OrangeSeed += 1;

@@ -33,7 +33,7 @@ public class GrowColors : MonoBehaviour
                 {
                     switch (CopyId)
                     {
-                        case 8:
+                        case 14:
                             if (_seedsGrowTime > _seedMain.GreySeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -45,7 +45,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 9:
+                        case 15:
                             if (_seedsGrowTime > _seedMain.BlueSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -57,7 +57,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 10:
+                        case 16:
                             if (_seedsGrowTime > _seedMain.YellowSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -69,7 +69,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 11:
+                        case 17:
                             if (_seedsGrowTime > _seedMain.RedSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -81,7 +81,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 12:
+                        case 18:
                             if (_seedsGrowTime > _seedMain.PurpleSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -93,7 +93,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 13:
+                        case 19:
                             if (_seedsGrowTime > _seedMain.GreenSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -105,7 +105,7 @@ public class GrowColors : MonoBehaviour
                                 }
                             }
                             break;
-                        case 14:
+                        case 20:
                             if (_seedsGrowTime > _seedMain.OrangeSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
@@ -204,6 +204,78 @@ public class GrowColors : MonoBehaviour
                             break;
                         case 7:
                             if (_seedsGrowTime > _seedMain.OrangeSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 8:
+                            if (_seedsGrowTime > _seedMain.CyanSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 9:
+                            if (_seedsGrowTime > _seedMain.IndigoSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 10:
+                            if (_seedsGrowTime > _seedMain.LimeSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 11:
+                            if (_seedsGrowTime > _seedMain.OcreSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 12:
+                            if (_seedsGrowTime > _seedMain.MagentaSeed.GrowTime)
+                            {
+                                if (_placeSeed.IsPlanting == true)
+                                {
+                                    _keepItem.Id = _seedColorMix.MixThem();
+                                    Destroy(gameObject);
+                                    PaintColor.PaintUses -= 1;
+                                    _keepItem.Here = true;
+                                }
+                            }
+                            break;
+                        case 13:
+                            if (_seedsGrowTime > _seedMain.OrSeed.GrowTime)
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
