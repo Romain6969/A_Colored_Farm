@@ -87,6 +87,30 @@ public class SeedColorMix : MonoBehaviour
         {
             return ResultMix.Result = Colors.Or;
         }
+        if (paintColor == Colors.Cyan && seedColor == Colors.Cyan)
+        {
+            return ResultMix.Result = Colors.Cyan;
+        }
+        if (paintColor == Colors.Indigo && seedColor == Colors.Indigo)
+        {
+            return ResultMix.Result = Colors.Indigo;
+        }
+        if (paintColor == Colors.Lime && seedColor == Colors.Lime)
+        {
+            return ResultMix.Result = Colors.Lime;
+        }
+        if (paintColor == Colors.Ocre && seedColor == Colors.Ocre)
+        {
+            return ResultMix.Result = Colors.Ocre;
+        }
+        if (paintColor == Colors.Magenta && seedColor == Colors.Magenta)
+        {
+            return ResultMix.Result = Colors.Magenta;
+        }
+        if (paintColor == Colors.Or && seedColor == Colors.Or)
+        {
+            return ResultMix.Result = Colors.Or;
+        }
         /*
         if ((paintColor == Colors.Grey && seedColor == Colors.Blue) || (paintColor == Colors.Blue && seedColor == Colors.Grey))
         {

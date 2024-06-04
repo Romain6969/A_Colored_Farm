@@ -22,7 +22,7 @@ public class Tutorial : MonoBehaviour
 
         if (WhenPlayerPlant == false)
         {
-            if (_keepItem.Id == 8)
+            if (_keepItem.Id == 14)
             {
                 IndicatorsList[2].SetActive(true);
                 IndicatorsList[3].SetActive(true);
