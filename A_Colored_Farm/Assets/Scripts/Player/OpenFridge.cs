@@ -16,7 +16,7 @@ public class OpenFridge : MonoBehaviour
             {
                 if (_keepItem.Here == true)
                 {
-                    if (_keepItem.Id == 1 || _keepItem.Id == 2 || _keepItem.Id == 3 || _keepItem.Id == 4 || _keepItem.Id == 5 || _keepItem.Id == 6 || _keepItem.Id == 7)
+                    if (_keepItem.Id == 1 || _keepItem.Id == 2 || _keepItem.Id == 3 || _keepItem.Id == 4 || _keepItem.Id == 5 || _keepItem.Id == 6 || _keepItem.Id == 7 || _keepItem.Id == 8 || _keepItem.Id == 9 || _keepItem.Id == 10 || _keepItem.Id == 11 || _keepItem.Id == 12 || _keepItem.Id == 13)
                     {
                         _queue.AddVegetable(_keepItem.Id);
                     }

@@ -74,32 +74,80 @@ public class OpenShop : MonoBehaviour
                         _inventoryMain.AddValue(_seedMain.OrangeSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 16:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[0].SellValue);
+                    case 8:
+                        _inventoryMain.AddValue(_seedMain.CyanSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 17:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[1].SellValue);
+                    case 9:
+                        _inventoryMain.AddValue(_seedMain.IndigoSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 18:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[2].SellValue);
+                    case 10:
+                        _inventoryMain.AddValue(_seedMain.LimeSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 19:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[3].SellValue);
+                    case 11:
+                        _inventoryMain.AddValue(_seedMain.OcreSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 20:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[4].SellValue);
+                    case 12:
+                        _inventoryMain.AddValue(_seedMain.MagentaSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
-                    case 21:
-                        _inventoryMain.AddValue(_colorMain.ColorsList[5].SellValue);
+                    case 13:
+                        _inventoryMain.AddValue(_seedMain.OrSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 22:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[0].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 23:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[1].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 24:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[2].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 25:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[3].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 26:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[4].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 27:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[5].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 28:
                         _inventoryMain.AddValue(_colorMain.ColorsList[6].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 29:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[7].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 30:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[8].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 31:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[9].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 32:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[10].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 33:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[11].SellValue);
+                        _keepItem.Id = 0;
+                        break;
+                    case 34:
+                        _inventoryMain.AddValue(_colorMain.ColorsList[12].SellValue);
                         _keepItem.Id = 0;
                         break;
                 }
