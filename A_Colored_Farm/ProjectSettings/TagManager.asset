@@ -19,6 +19,7 @@ TagManager:
   - ChestPurple
   - ChestGreen
   - ChestOrange
+  - Button
   layers:
   - Default
   - TransparentFX

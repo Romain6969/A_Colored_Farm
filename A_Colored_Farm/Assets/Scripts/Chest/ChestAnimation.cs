@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class ChestAnimation : MonoBehaviour
@@ -16,6 +15,9 @@ public class ChestAnimation : MonoBehaviour
         _verifList[1] = _chestInventory.BlueSeed;
         _verifList[2] = _chestInventory.YellowSeed;
         _verifList[3] = _chestInventory.RedSeed;
+        _verifList[4] = _chestInventory.GreenSeed;
+        _verifList[5] = _chestInventory.PurpleSeed;
+        _verifList[6] = _chestInventory.OrangeSeed;
 
         for (var i = 0; i < _animatorList.Count; i++)
         {
@@ -52,6 +54,27 @@ public class ChestAnimation : MonoBehaviour
             StartCoroutine(Wait3());
             _verifList[3] = _chestInventory.RedSeed;
         }
+
+        if (_verifList[4] != _chestInventory.GreenSeed)
+        {
+            _animatorList[4].enabled = true;
+            StartCoroutine(Wait4());
+            _verifList[4] = _chestInventory.GreenSeed;
+        }
+
+        if (_verifList[5] != _chestInventory.PurpleSeed)
+        {
+            _animatorList[5].enabled = true;
+            StartCoroutine(Wait5());
+            _verifList[5] = _chestInventory.PurpleSeed;
+        }
+
+        if (_verifList[6] != _chestInventory.OrangeSeed)
+        {
+            _animatorList[6].enabled = true;
+            StartCoroutine(Wait6());
+            _verifList[6] = _chestInventory.OrangeSeed;
+        }
     }
 
     IEnumerator Wait0()
@@ -80,5 +103,26 @@ public class ChestAnimation : MonoBehaviour
         yield return new WaitForSeconds(0.267f);
         _animatorList[3].enabled = false;
         _gameObjectList[3].transform.localScale = new Vector3(0.75f, 0.75f, 0);
+    }
+
+    IEnumerator Wait4()
+    {
+        yield return new WaitForSeconds(0.267f);
+        _animatorList[4].enabled = false;
+        _gameObjectList[4].transform.localScale = new Vector3(0.75f, 0.75f, 0);
+    }
+
+    IEnumerator Wait5()
+    {
+        yield return new WaitForSeconds(0.267f);
+        _animatorList[5].enabled = false;
+        _gameObjectList[5].transform.localScale = new Vector3(0.75f, 0.75f, 0);
+    }
+
+    IEnumerator Wait6()
+    {
+        yield return new WaitForSeconds(0.267f);
+        _animatorList[6].enabled = false;
+        _gameObjectList[6].transform.localScale = new Vector3(0.75f, 0.75f, 0);
     }
 }
