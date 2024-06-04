@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: IndigoColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 8
-  <SellValue>k__BackingField: 0
+  <SellValue>k__BackingField: 270
   <PrefabColor>k__BackingField: {fileID: 0}

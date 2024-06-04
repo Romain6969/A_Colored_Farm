@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CyanSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 7
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 0
+  <PurchaseValue>k__BackingField: 110
+  <SellValue>k__BackingField: 130
+  <GrowTime>k__BackingField: 27

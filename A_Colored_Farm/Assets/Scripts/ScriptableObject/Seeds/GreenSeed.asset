@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 5
   <PurchaseValue>k__BackingField: 75
-  <SellValue>k__BackingField: 90
+  <SellValue>k__BackingField: 100
   <GrowTime>k__BackingField: 16

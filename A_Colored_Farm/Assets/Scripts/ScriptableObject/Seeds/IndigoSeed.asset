@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: IndigoSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 8
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 5
+  <PurchaseValue>k__BackingField: 167
+  <SellValue>k__BackingField: 187
+  <GrowTime>k__BackingField: 34

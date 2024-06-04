@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: MagentaColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 11
-  <SellValue>k__BackingField: 0
+  <SellValue>k__BackingField: 420
   <PrefabColor>k__BackingField: {fileID: 0}

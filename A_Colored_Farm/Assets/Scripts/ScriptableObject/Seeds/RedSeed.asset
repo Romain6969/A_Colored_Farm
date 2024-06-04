@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RedSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 3
-  <PurchaseValue>k__BackingField: 100
-  <SellValue>k__BackingField: 117
+  <PurchaseValue>k__BackingField: 90
+  <SellValue>k__BackingField: 119
   <GrowTime>k__BackingField: 18

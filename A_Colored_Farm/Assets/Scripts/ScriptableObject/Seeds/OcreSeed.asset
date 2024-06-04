@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OcreSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 10
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 0
+  <PurchaseValue>k__BackingField: 310
+  <SellValue>k__BackingField: 335
+  <GrowTime>k__BackingField: 45

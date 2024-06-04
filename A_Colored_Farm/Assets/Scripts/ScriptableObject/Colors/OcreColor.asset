@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: OcreColor
   m_EditorClassIdentifier: 
   <ColorID>k__BackingField: 10
-  <SellValue>k__BackingField: 0
+  <SellValue>k__BackingField: 465
   <PrefabColor>k__BackingField: {fileID: 0}

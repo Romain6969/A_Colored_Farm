@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MagentaSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 11
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 0
+  <PurchaseValue>k__BackingField: 175
+  <SellValue>k__BackingField: 192
+  <GrowTime>k__BackingField: 41

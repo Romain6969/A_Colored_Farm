@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OrSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 12
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 0
+  <PurchaseValue>k__BackingField: 195
+  <SellValue>k__BackingField: 255
+  <GrowTime>k__BackingField: 37

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: LimeSeed
   m_EditorClassIdentifier: 
   <SeedID>k__BackingField: 9
-  <PurchaseValue>k__BackingField: 0
-  <SellValue>k__BackingField: 0
-  <GrowTime>k__BackingField: 0
+  <PurchaseValue>k__BackingField: 130
+  <SellValue>k__BackingField: 164
+  <GrowTime>k__BackingField: 30
