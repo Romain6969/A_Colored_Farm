@@ -106,7 +106,24 @@ public class KeepItem : MonoBehaviour
             case 28:
                 _sprite.sprite = _spriteList.SpriteList[28];
                 break;
-
+            case 29:
+                _sprite.sprite = _spriteList.SpriteList[29];
+                break;
+            case 30:
+                _sprite.sprite = _spriteList.SpriteList[30];
+                break;
+            case 31:
+                _sprite.sprite = _spriteList.SpriteList[31];
+                break;
+            case 32:
+                _sprite.sprite = _spriteList.SpriteList[32];
+                break;
+            case 33:
+                _sprite.sprite = _spriteList.SpriteList[33];
+                break;
+            case 34:
+                _sprite.sprite = _spriteList.SpriteList[34];
+                break;
         }
     }
 }

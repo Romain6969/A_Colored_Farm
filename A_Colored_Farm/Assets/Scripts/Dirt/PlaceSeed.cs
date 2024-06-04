@@ -23,7 +23,7 @@ public class PlaceSeed : MonoBehaviour
             if (context.performed)
             {
                 IsPlanting = true;
-                if (_keepItem.Id == 8)
+                if (_keepItem.Id == 14)
                 {
                     _tutorial.WhenPlayerPlant = true;
                 }

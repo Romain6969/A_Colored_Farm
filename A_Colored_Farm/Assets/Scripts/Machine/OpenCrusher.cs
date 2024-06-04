@@ -19,7 +19,7 @@ public class OpenCrusher : MonoBehaviour
         {
             if (context.performed)
             {
-                if (_keepItem.Id == 1 || _keepItem.Id == 2 || _keepItem.Id == 3 || _keepItem.Id == 4 || _keepItem.Id == 5 || _keepItem.Id == 6 || _keepItem.Id == 7)
+                if (_keepItem.Id == 1 || _keepItem.Id == 2 || _keepItem.Id == 3 || _keepItem.Id == 4 || _keepItem.Id == 5 || _keepItem.Id == 6 || _keepItem.Id == 7 || _keepItem.Id == 8 || _keepItem.Id == 9 || _keepItem.Id == 10 || _keepItem.Id == 11 || _keepItem.Id == 12 || _keepItem.Id == 13)
                 {
                     if (_crusher.Activate == false)
                     {
@@ -39,25 +39,43 @@ public class OpenCrusher : MonoBehaviour
                         switch (_crusher.CopyId)
                         {
                             case 1:
-                                _keepItem.Id = 16;
+                                _keepItem.Id = 22;
                                 break;
                             case 2:
-                                _keepItem.Id = 17;
+                                _keepItem.Id = 23;
                                 break;
                             case 3:
-                                _keepItem.Id = 18;
+                                _keepItem.Id = 24;
                                 break;
                             case 4:
-                                _keepItem.Id = 19;
+                                _keepItem.Id = 25;
                                 break;
                             case 5:
-                                _keepItem.Id = 20;
+                                _keepItem.Id = 26;
                                 break;
                             case 6:
-                                _keepItem.Id = 21;
+                                _keepItem.Id = 27;
                                 break;
                             case 7:
-                                _keepItem.Id = 22;
+                                _keepItem.Id = 28;
+                                break;
+                            case 8:
+                                _keepItem.Id = 29;
+                                break;
+                            case 9:
+                                _keepItem.Id = 30;
+                                break;
+                            case 10:
+                                _keepItem.Id = 31;
+                                break;
+                            case 11:
+                                _keepItem.Id = 32;
+                                break;
+                            case 12:
+                                _keepItem.Id = 33;
+                                break;
+                            case 13:
+                                _keepItem.Id = 34;
                                 break;
                         }
                         _progressBarGameObject.SetActive(false);
