@@ -7,6 +7,7 @@ public class TakeBrush : MonoBehaviour
     [SerializeField] InventoryColor InventoryColor;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private SpriteSwap _spriteswap;
+    [SerializeField] private AnimationFridge _animationFridge;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -20,42 +21,43 @@ public class TakeBrush : MonoBehaviour
                 switch (_keepItem.Id)
                 {
                     case 0:
-                        _keepItem.Id = 12;
+                        _keepItem.Id = 21;
                         _spriteswap.Use = true;
                         break;
-                    case 12:
+                    case 21:
                         _keepItem.Id = 0;
                         _spriteswap.Use = false;
                         break;
-                    case 13:
+                    case 22:
                         InventoryColor.AddSeed("Grey", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 14:
+                    case 23:
                         InventoryColor.AddSeed("Blue", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 15:
+                    case 24:
                         InventoryColor.AddSeed("Yellow", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 16:
+                    case 25:
                         InventoryColor.AddSeed("Red", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 17:
+                    case 26:
                         InventoryColor.AddSeed("Purple", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 18:
+                    case 27:
                         InventoryColor.AddSeed("Green", 1);
                         _keepItem.Id = 0;
                         break;
-                    case 19:
+                    case 28:
                         InventoryColor.AddSeed("Orange", 1);
                         _keepItem.Id = 0;
                         break;
                 }
+                _animationFridge.OnAnimation();
             }
         }
     }

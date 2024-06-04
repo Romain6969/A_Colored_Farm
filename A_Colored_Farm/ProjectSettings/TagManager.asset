@@ -16,6 +16,10 @@ TagManager:
   - Fridge
   - ChestGray
   - Brush
+  - ChestPurple
+  - ChestGreen
+  - ChestOrange
+  - Button
   layers:
   - Default
   - TransparentFX

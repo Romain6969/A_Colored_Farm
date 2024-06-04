@@ -47,6 +47,27 @@ public class PurchaseSeed : MonoBehaviour
                     _chestInventory.RedSeed += 1;
                 }
                 break;
+            case 4:
+                if (_inventoryMain.TargetValue >= _seedMain.PurpleSeed.PurchaseValue)
+                {
+                    _inventoryMain.RemoveValue(_seedMain.PurpleSeed.PurchaseValue);
+                    _chestInventory.PurpleSeed += 1;
+                }
+                break;
+            case 5:
+                if (_inventoryMain.TargetValue >= _seedMain.GreenSeed.PurchaseValue)
+                {
+                    _inventoryMain.RemoveValue(_seedMain.GreenSeed.PurchaseValue);
+                    _chestInventory.GreenSeed += 1;
+                }
+                break;
+            case 6:
+                if (_inventoryMain.TargetValue >= _seedMain.OrangeSeed.PurchaseValue)
+                {
+                    _inventoryMain.RemoveValue(_seedMain.OrangeSeed.PurchaseValue);
+                    _chestInventory.OrangeSeed += 1;
+                }
+                break;
         }
     }
 }

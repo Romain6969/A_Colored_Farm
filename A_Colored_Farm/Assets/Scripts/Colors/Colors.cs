@@ -8,4 +8,10 @@ public enum Colors
     Purple,
     Green,
     Orange,
+    Cyan,
+    Indigo,
+    Lime,
+    Ocre,
+    Magenta,
+    Or,
 }

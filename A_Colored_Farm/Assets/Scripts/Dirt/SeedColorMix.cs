@@ -63,6 +63,54 @@ public class SeedColorMix : MonoBehaviour
         {
             return ResultMix.Result = Colors.Red;
         }
+        if ((paintColor == Colors.Blue && seedColor == Colors.Green) || (paintColor == Colors.Green && seedColor == Colors.Blue))
+        {
+            return ResultMix.Result = Colors.Cyan;
+        }
+        if ((paintColor == Colors.Blue && seedColor == Colors.Purple) || (paintColor == Colors.Purple && seedColor == Colors.Blue))
+        {
+            return ResultMix.Result = Colors.Indigo;
+        }
+        if ((paintColor == Colors.Yellow && seedColor == Colors.Green) || (paintColor == Colors.Green && seedColor == Colors.Yellow))
+        {
+            return ResultMix.Result = Colors.Lime;
+        }
+        if ((paintColor == Colors.Red && seedColor == Colors.Orange) || (paintColor == Colors.Orange && seedColor == Colors.Red))
+        {
+            return ResultMix.Result = Colors.Ocre;
+        }
+        if ((paintColor == Colors.Purple && seedColor == Colors.Red) || (paintColor == Colors.Red && seedColor == Colors.Purple))
+        {
+            return ResultMix.Result = Colors.Magenta;
+        }
+        if ((paintColor == Colors.Orange && seedColor == Colors.Yellow) || (paintColor == Colors.Yellow && seedColor == Colors.Orange))
+        {
+            return ResultMix.Result = Colors.Or;
+        }
+        if (paintColor == Colors.Cyan && seedColor == Colors.Cyan)
+        {
+            return ResultMix.Result = Colors.Cyan;
+        }
+        if (paintColor == Colors.Indigo && seedColor == Colors.Indigo)
+        {
+            return ResultMix.Result = Colors.Indigo;
+        }
+        if (paintColor == Colors.Lime && seedColor == Colors.Lime)
+        {
+            return ResultMix.Result = Colors.Lime;
+        }
+        if (paintColor == Colors.Ocre && seedColor == Colors.Ocre)
+        {
+            return ResultMix.Result = Colors.Ocre;
+        }
+        if (paintColor == Colors.Magenta && seedColor == Colors.Magenta)
+        {
+            return ResultMix.Result = Colors.Magenta;
+        }
+        if (paintColor == Colors.Or && seedColor == Colors.Or)
+        {
+            return ResultMix.Result = Colors.Or;
+        }
         /*
         if ((paintColor == Colors.Grey && seedColor == Colors.Blue) || (paintColor == Colors.Blue && seedColor == Colors.Grey))
         {

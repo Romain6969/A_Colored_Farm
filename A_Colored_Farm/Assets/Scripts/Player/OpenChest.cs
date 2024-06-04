@@ -25,7 +25,7 @@ public class OpenChest : MonoBehaviour
                         case 0:
                             if (_chestInventory.GraySeed >= 1)
                             {
-                                _keepItem.Id = 8;
+                                _keepItem.Id = 14;
                                 _chestInventory.GraySeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -34,7 +34,7 @@ public class OpenChest : MonoBehaviour
                         case 1:
                             if (_chestInventory.BlueSeed >= 1)
                             {
-                                _keepItem.Id = 9;
+                                _keepItem.Id = 15;
                                 _chestInventory.BlueSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -43,7 +43,7 @@ public class OpenChest : MonoBehaviour
                         case 2:
                             if (_chestInventory.YellowSeed >= 1)
                             {
-                                _keepItem.Id = 10;
+                                _keepItem.Id = 16;
                                 _chestInventory.YellowSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
@@ -52,8 +52,35 @@ public class OpenChest : MonoBehaviour
                         case 3:
                             if (_chestInventory.RedSeed >= 1)
                             {
-                                _keepItem.Id = 11;
+                                _keepItem.Id = 17;
                                 _chestInventory.RedSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
+                        case 4:
+                            if (_chestInventory.PurpleSeed >= 1)
+                            {
+                                _keepItem.Id = 18;
+                                _chestInventory.PurpleSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
+                        case 5:
+                            if (_chestInventory.GreenSeed >= 1)
+                            {
+                                _keepItem.Id = 19;
+                                _chestInventory.GreenSeed -= 1;
+                                _keepItem.Here = true;
+                                return;
+                            }
+                            break;
+                        case 6:
+                            if (_chestInventory.OrangeSeed >= 1)
+                            {
+                                _keepItem.Id = 20;
+                                _chestInventory.OrangeSeed -= 1;
                                 _keepItem.Here = true;
                                 return;
                             }
@@ -70,7 +97,7 @@ public class OpenChest : MonoBehaviour
                 switch (_chest)
                 {
                     case 0:
-                        if (_keepItem.Id == 8)
+                        if (_keepItem.Id == 14)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.GraySeed += 1;
@@ -79,7 +106,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 1:
-                        if (_keepItem.Id == 9)
+                        if (_keepItem.Id == 15)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.BlueSeed += 1;
@@ -88,7 +115,7 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 2:
-                        if (_keepItem.Id == 10)
+                        if (_keepItem.Id == 16)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.YellowSeed += 1;
@@ -97,10 +124,37 @@ public class OpenChest : MonoBehaviour
                         }
                         break;
                     case 3:
-                        if (_keepItem.Id == 11)
+                        if (_keepItem.Id == 17)
                         {
                             _keepItem.Id = 0;
                             _chestInventory.RedSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
+                    case 4:
+                        if (_keepItem.Id == 18)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.PurpleSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
+                    case 5:
+                        if (_keepItem.Id == 19)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.GreenSeed += 1;
+                            _keepItem.Here = false;
+                            return;
+                        }
+                        break;
+                    case 6:
+                        if (_keepItem.Id == 20)
+                        {
+                            _keepItem.Id = 0;
+                            _chestInventory.OrangeSeed += 1;
                             _keepItem.Here = false;
                             return;
                         }
@@ -135,6 +189,24 @@ public class OpenChest : MonoBehaviour
             _isTrigger = true;
             _chest = 3;
         }
+
+        if (collision.gameObject.tag == "ChestPurple")
+        {
+            _isTrigger = true;
+            _chest = 4;
+        }
+
+        if (collision.gameObject.tag == "ChestGreen")
+        {
+            _isTrigger = true;
+            _chest = 5;
+        }
+
+        if (collision.gameObject.tag == "ChestOrange")
+        {
+            _isTrigger = true;
+            _chest = 6;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -158,6 +230,24 @@ public class OpenChest : MonoBehaviour
         }
 
         if (collision.gameObject.tag == "ChestRed")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestPurple")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestGreen")
+        {
+            _isTrigger = false;
+            _chest = -1;
+        }
+
+        if (collision.gameObject.tag == "ChestOrange")
         {
             _isTrigger = false;
             _chest = -1;
