@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Queue : MonoBehaviour
 {
@@ -7,10 +8,12 @@ public class Queue : MonoBehaviour
 
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private AnimationFridge _animationfridge;
+    [field :SerializeField] public int MaxStockFridge { get; set; } = 10;
+    [SerializeField] private TMP_Text _numberInStockText;
 
     public void AddVegetable(int vegetable)
     {
-        if (_queue.Count == 10)
+        if (_queue.Count == MaxStockFridge)
         {
             return;
         }
@@ -30,5 +33,10 @@ public class Queue : MonoBehaviour
         _animationfridge.OnAnimation();
         _keepItem.Id = _queue.Dequeue();
         _keepItem.UpdateSprite();
+    }
+
+    private void FixedUpdate()
+    {
+        _numberInStockText.text = $"{_queue.Count} / {MaxStockFridge}";
     }
 }
