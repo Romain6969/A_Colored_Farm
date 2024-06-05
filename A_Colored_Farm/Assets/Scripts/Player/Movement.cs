@@ -10,6 +10,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private Animator _animationCloseShowInputs;
     [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private GameObject _firstPanelTutorial;
+    [SerializeField] private OpenPause _openPause;
+    [field: SerializeField] public bool FirstTuto { get; set; } = true;
     private float _time;
     private bool _didNotClose = true;
 
@@ -70,6 +73,12 @@ public class Movement : MonoBehaviour
                 _animationCloseShowInputs.enabled = false;
                 if (_tutorial.WhenMove == false)
                 {
+                    if (FirstTuto == true)
+                    {
+                        _firstPanelTutorial.SetActive(true);
+                        CanMove = false;
+                        _openPause.Open = 1;
+                    }
                     _tutorial.IndicatorsList[0].SetActive(true);
                 }
             }
