@@ -7,6 +7,7 @@ public class WichColor : MonoBehaviour
     [field: SerializeField] public SetSeed SetSeed { get; set; }
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
+    [SerializeField] private Tutorial _tutorial;
 
     public void OnClickNumberColor(int color)
     {
@@ -15,6 +16,10 @@ public class WichColor : MonoBehaviour
         _movement.CanMove = true;
         _pause.Open = 2;
         SetSeed.SeedSet();
+        if (_tutorial.EndTuto == false && _tutorial.WhenColor == false && _tutorial.ForClosingPanel == true)
+        {
+            _tutorial.EndTuto = true;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
