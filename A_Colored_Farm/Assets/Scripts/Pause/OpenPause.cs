@@ -19,10 +19,15 @@ public class OpenPause : MonoBehaviour
             switch (Open)
             {
                 case 1:
+                    _movement.FirstTuto = false;
                     _exitPanel[0].SetActive(false);
                     _exitPanel[1].SetActive(false);
+                    _exitPanel[2].SetActive(false);
+                    _exitPanel[3].SetActive(false);
+                    _exitPanel[4].SetActive(false);
                     _movement.CanMove = true;
                     _shop.Open = false;
+                    
                     Open = 2;
                     break;
                 case 2:

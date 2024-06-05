@@ -6,6 +6,7 @@ public class OpenFridge : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private Queue _queue;
+    [SerializeField] private GameObject _numberStockFridge;
     private bool _isTrigger = false;
 
     public void OnQueue(InputAction.CallbackContext context)
@@ -37,6 +38,7 @@ public class OpenFridge : MonoBehaviour
         if (collision.gameObject.tag == "Fridge")
         {
             _isTrigger = true;
+            _numberStockFridge.SetActive(true);
         }
     }
 
@@ -45,6 +47,7 @@ public class OpenFridge : MonoBehaviour
         if (collision.gameObject.tag == "Fridge")
         {
             _isTrigger = false;
+            _numberStockFridge.SetActive(false);
         }
     }
 }
