@@ -41,6 +41,7 @@ public class GrowColors : MonoBehaviour
                                     _keepItem.Id = 1;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
+                                    _keepItem.NumberGreySeedPlanted += 1;
                                     return;
                                 }
                             }
