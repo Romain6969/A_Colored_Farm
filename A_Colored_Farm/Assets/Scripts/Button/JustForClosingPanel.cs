@@ -9,6 +9,7 @@ public class JustForClosingPanel : MonoBehaviour
     public void ClosePanel()
     {
         _movement.CanMove = true;
+        _movement.FirstTuto = false;
         _panel.SetActive(false);
         _pause.Open = 2;
     }

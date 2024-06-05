@@ -9,9 +9,15 @@ public class Tutorial : MonoBehaviour
     [SerializeField] private List<TMP_Text> _inputText;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private RebindingDesplayPlant _desplayPlant;
+    [SerializeField] private Movement _movement;
+    [SerializeField] private OpenPause _openPause;
+    [SerializeField] private ChestInventory _chestInventory;
     [field: SerializeField] public bool WhenMove = false;
     [field: SerializeField] public bool WhenPlayerPlant = false;
     [field: SerializeField] public bool WhenplayerSellPlant = false;
+    [SerializeField] private GameObject _secondTutorialPanel;
+    [SerializeField] private GameObject _thirdTutorialPanel;
+    private bool _whenCanMix = false;
 
     private void FixedUpdate()
     {
@@ -39,6 +45,22 @@ public class Tutorial : MonoBehaviour
             if (_keepItem.Id == 1)
             {
                 IndicatorsList[0].SetActive(true);
+            }
+        }
+        if (_keepItem.NumberGreySeedPlanted == 3)
+        {
+            _secondTutorialPanel.SetActive(true);
+            _movement.CanMove = false;
+            _openPause.Open = 1;
+            _keepItem.NumberGreySeedPlanted += 1;
+        }
+        if ((_chestInventory.BlueSeed >= 1) && (_chestInventory.YellowSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.OrangeSeed >= 1))
+        {
+            if (_whenCanMix == false)
+            {
+                _thirdTutorialPanel.SetActive(true);
+                _movement.CanMove = false;
+                _openPause.Open = 1;
             }
         }
     }
