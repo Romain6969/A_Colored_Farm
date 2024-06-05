@@ -6,6 +6,7 @@ public class KeepItem : MonoBehaviour
     [SerializeField] private SpriteMain _spriteList;
     [field : SerializeField] public int Id { get; set; }
     [field : SerializeField] public bool Here { get; set; }
+    [field: SerializeField] public int NumberGreySeedPlanted { get; set; } = 0;
 
     private void Update()
     {
