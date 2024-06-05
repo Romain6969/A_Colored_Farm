@@ -9,6 +9,7 @@ public class OpenCrusher : MonoBehaviour
     [SerializeField] private Crusher _crusher;
     [SerializeField] private ListAnimation _listAnimation;
     [SerializeField] private GameObject _progressBarGameObject;
+    [SerializeField] private Tutorial _tutorial;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -25,6 +26,7 @@ public class OpenCrusher : MonoBehaviour
                     {
                         if (_crusher.Ready == false)
                         {
+                            _tutorial.IndicatorsList[4].SetActive(false);
                             _crusher.OnActivated();
                             _keepItem.Id = 0;
                             _keepItem.Here = false;
@@ -78,6 +80,10 @@ public class OpenCrusher : MonoBehaviour
                                 _keepItem.Id = 34;
                                 break;
                         }
+                        _tutorial.IndicatorsList[4].SetActive(false);
+                        _tutorial.WhenMix = true;
+                        _tutorial.WhenMix2 = true;
+                        _tutorial.WhenColor = true;
                         _progressBarGameObject.SetActive(false);
                         _crusher.Ready = false;
                         _listAnimation.Restart();

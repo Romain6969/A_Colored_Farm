@@ -11,6 +11,7 @@ public class OpenPause : MonoBehaviour
     [SerializeField] private List<GameObject> _exitPanel;
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenShop _shop;
+    [SerializeField] private Tutorial _tutorial;
 
     public void OnPause(InputAction.CallbackContext context)
     {
@@ -24,11 +25,14 @@ public class OpenPause : MonoBehaviour
                     _exitPanel[1].SetActive(false);
                     _exitPanel[2].SetActive(false);
                     _exitPanel[3].SetActive(false);
-                    _exitPanel[4].SetActive(false);
                     _movement.CanMove = true;
                     _shop.Open = false;
-                    
                     Open = 2;
+                    if (_tutorial.WhenCanMix == true)
+                    {
+                        _tutorial.ForClosingPanel = true;
+                        _exitPanel[4].SetActive(false);
+                    }
                     break;
                 case 2:
                     _pausePanel.SetActive(true);
