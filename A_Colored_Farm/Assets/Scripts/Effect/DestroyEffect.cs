@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class DestroyEffect : MonoBehaviour
 {
+    [SerializeField] private int _timeDestruct;
+
     void Update()
     {
-        Destroy(gameObject, 1);
+        Destroy(gameObject, _timeDestruct);
     }
 }

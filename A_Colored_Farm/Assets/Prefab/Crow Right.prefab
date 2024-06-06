@@ -116,6 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6462231927562367293}
   - component: {fileID: 3730391165073820914}
+  - component: {fileID: 8232897580992430619}
   m_Layer: 0
   m_Name: Crow Right
   m_TagString: Untagged
@@ -151,5 +152,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2002eaaa24e5b42a3e4029ecce0111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
+  _speed: 6
   _right: 0
+  _speedMin: 6
+  _speedMax: 8
+--- !u!114 &8232897580992430619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8186427312644470677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14793c6714291f14c84aa6446ee467ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeDestruct: 10

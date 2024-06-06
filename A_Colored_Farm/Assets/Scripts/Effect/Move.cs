@@ -5,9 +5,12 @@ public class Move : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private bool _right;
 
+    [SerializeField] private float _speedMin;
+    [SerializeField] private float _speedMax;
+
     void Start()
     {
-        _speed = Random.Range(6, 8);
+        _speed = Random.Range(_speedMin, _speedMax);
     }
 
     void Update()
