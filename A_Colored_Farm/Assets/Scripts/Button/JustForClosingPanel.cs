@@ -18,6 +18,7 @@ public class JustForClosingPanel : MonoBehaviour
             _tutorial.ForClosingPanel = true;
             _pause.Open = 1;
             _movement.CanMove = false;
+            _tutorial.WhenCanMix = false;
         }
     }
 }
