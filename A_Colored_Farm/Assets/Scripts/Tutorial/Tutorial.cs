@@ -87,27 +87,27 @@ public class Tutorial : MonoBehaviour
                 {
                     IndicatorsList[2].SetActive(true);
                     IndicatorsList[3].SetActive(true);
-                    if (_listDirtInactif[0] != true)
+                    if (_listDirtInactif[0].activeInHierarchy == true)
                     {
                         IndicatorsList[6].SetActive(true);
                     }
-                    if (_listDirtInactif[1] != true)
+                    if (_listDirtInactif[1].activeInHierarchy == true)
                     {
                         IndicatorsList[7].SetActive(true);
                     }
-                    if (_listDirtInactif[2] != true)
+                    if (_listDirtInactif[2].activeInHierarchy == true)
                     {
                         IndicatorsList[8].SetActive(true);
                     }
-                    if (_listDirtInactif[3] != true)
+                    if (_listDirtInactif[3].activeInHierarchy == true)
                     {
                         IndicatorsList[9].SetActive(true);
                     }
-                    if (_listDirtInactif[4] != true)
+                    if (_listDirtInactif[4].activeInHierarchy == true)
                     {
                         IndicatorsList[10].SetActive(true);
                     }
-                    if (_listDirtInactif[5] != true)
+                    if (_listDirtInactif[5].activeInHierarchy == true)
                     {
                         IndicatorsList[11].SetActive(true);
                     }
