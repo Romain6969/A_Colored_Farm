@@ -14,6 +14,7 @@ public class RightOrLeft : MonoBehaviour
         if (_time > 35)
         {
             _choice = Random.Range(0, 2);
+            _time = 0;
         }
 
         if (_choice == 0)

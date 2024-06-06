@@ -11,6 +11,8 @@ public class PushButton : MonoBehaviour
     private bool _isTrigger = false;
     private int _number = 0;
 
+    public PlayerInput PlayerInput => _playerInput;
+
     public void OnPush(InputAction.CallbackContext context)
     {
         if (_isTrigger == true)
