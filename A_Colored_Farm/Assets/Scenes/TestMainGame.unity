@@ -2455,7 +2455,7 @@ MonoBehaviour:
   _panel: {fileID: 999824537}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &117954893
 GameObject:
   m_ObjectHideFlags: 0
@@ -13638,7 +13638,7 @@ MonoBehaviour:
   _panel: {fileID: 963259934}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &686160694
 GameObject:
   m_ObjectHideFlags: 0
@@ -19662,7 +19662,7 @@ MonoBehaviour:
   _panel: {fileID: 176137332}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &1079666532
 GameObject:
   m_ObjectHideFlags: 0
@@ -27245,7 +27245,7 @@ MonoBehaviour:
   _panel: {fileID: 1400726641}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &1469787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -28785,7 +28785,7 @@ MonoBehaviour:
   _panel: {fileID: 948593103}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &1549727210
 GameObject:
   m_ObjectHideFlags: 0
@@ -35088,7 +35088,7 @@ MonoBehaviour:
   _panel: {fileID: 618759654}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
-  _tutorial: {fileID: 0}
+  _tutorial: {fileID: 1837061901}
 --- !u!1 &1877917663
 GameObject:
   m_ObjectHideFlags: 0
