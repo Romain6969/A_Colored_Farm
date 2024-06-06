@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.InputSystem;
-using UnityEditor.XR;
 
 public class Tutorial : MonoBehaviour
 {
@@ -24,7 +23,7 @@ public class Tutorial : MonoBehaviour
     [field: SerializeField] public bool ForClosingPanel { get; set; } = false;
     [field: SerializeField] public bool WhenMix2 { get; set; } = false;
     [field: SerializeField] public bool WhenColor { get; set; } = false;
-    [field: SerializeField] public bool EndTuto;
+    [field: SerializeField] public bool EndTuto { get; set; } = false;
 
     private void FixedUpdate()
     {
@@ -62,60 +61,75 @@ public class Tutorial : MonoBehaviour
             _openPause.Open = 1;
             _keepItem.NumberGreySeedPlanted += 1;
         }
-        if ((_chestInventory.BlueSeed >= 1) && (_chestInventory.YellowSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.OrangeSeed >= 1))
+        if (EndTuto == false)
         {
-            WhenCanMix = true;
-            if (ForClosingPanel == false)
+            if ((_chestInventory.BlueSeed >= 1) && (_chestInventory.YellowSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.OrangeSeed >= 1))
             {
-                _thirdTutorialPanel.SetActive(true);
-                _movement.CanMove = false;
-                _openPause.Open = 1;
-            }
-        }
-        if (ForClosingPanel == true)
-        {
-            if (WhenColor == true)
-            {
-                IndicatorsList[5].SetActive(true);
-            }
-        }
-        if (_keepItem.Id == 15 && WhenColor == false && ForClosingPanel == true)
-        {
-            if (EndTuto == false)
-            {
-                IndicatorsList[2].SetActive(true);
-                IndicatorsList[3].SetActive(true);
-                if (_listDirtInactif[0] == true)
+                WhenCanMix = true;
+                if (ForClosingPanel == false && EndTuto == false)
                 {
-                    IndicatorsList[6].SetActive(true);
-                }
-                if (_listDirtInactif[1] == true)
-                {
-                    IndicatorsList[7].SetActive(true);
-                }
-                if (_listDirtInactif[2] == true)
-                {
-                    IndicatorsList[8].SetActive(true);
-                }
-                if (_listDirtInactif[3] == true)
-                {
-                    IndicatorsList[9].SetActive(true);
-                }
-                if (_listDirtInactif[4] == true)
-                {
-                    IndicatorsList[10].SetActive(true);
-                }
-                if (_listDirtInactif[5] == true)
-                {
-                    IndicatorsList[11].SetActive(true);
+                    _thirdTutorialPanel.SetActive(true);
+                    _movement.CanMove = false;
+                    _openPause.Open = 1;
                 }
             }
-            
+            if (ForClosingPanel == true)
+            {
+                if (WhenColor == true)
+                {
+                    IndicatorsList[5].SetActive(true);
+                }
+            }
+            if (_keepItem.Id == 21)
+            {
+                WhenColor = false;
+                if (WhenColor == false && ForClosingPanel == true)
+                {
+                    IndicatorsList[2].SetActive(true);
+                    IndicatorsList[3].SetActive(true);
+                    if (_listDirtInactif[0] != true)
+                    {
+                        IndicatorsList[6].SetActive(true);
+                    }
+                    if (_listDirtInactif[1] != true)
+                    {
+                        IndicatorsList[7].SetActive(true);
+                    }
+                    if (_listDirtInactif[2] != true)
+                    {
+                        IndicatorsList[8].SetActive(true);
+                    }
+                    if (_listDirtInactif[3] != true)
+                    {
+                        IndicatorsList[9].SetActive(true);
+                    }
+                    if (_listDirtInactif[4] != true)
+                    {
+                        IndicatorsList[10].SetActive(true);
+                    }
+                    if (_listDirtInactif[5] != true)
+                    {
+                        IndicatorsList[11].SetActive(true);
+                    }
+                }
+            }
+            if (_keepItem.Id != 21 && _keepItem.Id != 14)
+            {
+                IndicatorsList[2].SetActive(false);
+                IndicatorsList[3].SetActive(false);
+                IndicatorsList[6].SetActive(false);
+                IndicatorsList[7].SetActive(false);
+                IndicatorsList[8].SetActive(false);
+                IndicatorsList[9].SetActive(false);
+                IndicatorsList[10].SetActive(false);
+                IndicatorsList[11].SetActive(false);
+            }
         }
         if (EndTuto == true)
         {
             IndicatorsList[2].SetActive(false);
             IndicatorsList[3].SetActive(false);
+            IndicatorsList[5].SetActive(false);
             IndicatorsList[6].SetActive(false);
             IndicatorsList[7].SetActive(false);
             IndicatorsList[8].SetActive(false);

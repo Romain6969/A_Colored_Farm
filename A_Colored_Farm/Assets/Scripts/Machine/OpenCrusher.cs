@@ -83,7 +83,10 @@ public class OpenCrusher : MonoBehaviour
                         _tutorial.IndicatorsList[4].SetActive(false);
                         _tutorial.WhenMix = true;
                         _tutorial.WhenMix2 = true;
-                        _tutorial.WhenColor = true;
+                        if (_tutorial.ForClosingPanel == true)
+                        {
+                            _tutorial.WhenColor = true;
+                        }
                         _progressBarGameObject.SetActive(false);
                         _crusher.Ready = false;
                         _listAnimation.Restart();
