@@ -13,6 +13,7 @@ public class Crusher : MonoBehaviour
     [SerializeField] private ListAnimation _listAnimation;
     [SerializeField] private Image _image;
     [SerializeField] private GameObject _progressBarGameObject;
+    [SerializeField] private Tutorial _tutorial;
 
     public void OnActivated()
     {
@@ -38,6 +39,14 @@ public class Crusher : MonoBehaviour
                 _playSounds.StopAudio(1);
                 _playSounds.PlayAudio(2);
                 _listAnimation.StopAnimation(CopyId);
+                if (_tutorial.WhenMix == false)
+                {
+                    _tutorial.IndicatorsList[4].SetActive(true);
+                }
+                if (_tutorial.WhenMix2 == false && _tutorial.ForClosingPanel == true)
+                {
+                    _tutorial.IndicatorsList[4].SetActive(true);
+                }
             }
         }
         if (Time.timeScale == 0)

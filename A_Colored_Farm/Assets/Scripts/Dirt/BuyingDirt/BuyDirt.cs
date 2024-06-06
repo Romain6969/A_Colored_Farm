@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class BuyDirt : MonoBehaviour
 {
     [SerializeField] private int _dirtCost;
-    [SerializeField] private List<GameObject> _dirts;
+    [SerializeField] private GameObject _dirts;
     [SerializeField] private GameObject _confirmPanel;
     [SerializeField] private GameObject _gameObjectText;
     [SerializeField] private TMP_Text _textCost;
@@ -32,10 +32,7 @@ public class BuyDirt : MonoBehaviour
         if (_inventoryMain.TargetValue >= _dirtCost)
         {
             _inventoryMain.RemoveValue(_dirtCost);
-            _dirts[0].SetActive(true);
-            _dirts[1].SetActive(true);
-            _dirts[2].SetActive(true);
-            _dirts[3].SetActive(true);
+            _dirts.SetActive(true);
             _confirmPanel.SetActive(false);
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
