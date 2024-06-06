@@ -65,9 +65,9 @@ public class Tutorial : MonoBehaviour
         {
             if ((_chestInventory.BlueSeed >= 1) && (_chestInventory.YellowSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.BlueSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.RedSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.YellowSeed >= 1) && (_chestInventory.OrangeSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.PurpleSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.GreenSeed >= 1) || (_chestInventory.RedSeed >= 1) && (_chestInventory.OrangeSeed >= 1))
             {
-                WhenCanMix = true;
                 if (ForClosingPanel == false && EndTuto == false)
                 {
+                    WhenCanMix = true;
                     _thirdTutorialPanel.SetActive(true);
                     _movement.CanMove = false;
                     _openPause.Open = 1;
