@@ -31,7 +31,7 @@ public class GenerateEffect : MonoBehaviour
 
     private void OnSpawn()
     {
-        GameObject instantiated = Instantiate(_effects[_chosing], gameObject.transform);
+        GameObject instantiated = Instantiate(_effects[_chosing]);
 
         instantiated.transform.position = new Vector2(
             Random.Range(transform.position.x - zone.x / 2.5f, transform.position.x + zone.x / 2.5f),

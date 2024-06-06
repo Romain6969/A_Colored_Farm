@@ -37,7 +37,7 @@ public class ClientMovement : MonoBehaviour
             }
         }
 
-        if (transform.position.y <= 4 && transform.position.y >= 3.5)
+        if (transform.position.y <= 4 && transform.position.y >= 2.5)
         {
             _position = true;
         }
