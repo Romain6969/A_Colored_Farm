@@ -23,6 +23,6 @@ public class ShowInputsAnim : MonoBehaviour
             _animator.enabled = false;
         }
 
-        _text.text = $"Move with : {_movementUp.ActionMovement.action.GetBindingDisplayString(1)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(2)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(3)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(4)}";
+        _text.text = $"Move with : {_movementUp.ActionMovement.action.GetBindingDisplayString(1)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(3)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(2)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(4)}";
     }
 }

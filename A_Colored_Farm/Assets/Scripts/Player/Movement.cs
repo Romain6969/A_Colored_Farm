@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Tutorial _tutorial;
     [SerializeField] private GameObject _firstPanelTutorial;
     [SerializeField] private OpenPause _openPause;
+    [SerializeField] private PlaySounds _playSounds;
     [field: SerializeField] public bool FirstTuto { get; set; } = true;
     private float _time;
     private bool _didNotClose = true;
@@ -41,6 +42,7 @@ public class Movement : MonoBehaviour
 
         if (_movement != Vector2.zero)
         {
+            _playSounds.PlayAudio(6);
             _animator.SetBool("IsWalking", true);
             _animator.SetFloat("Right", _movement.x);
             _animator.SetFloat("Left", _movement.y);
@@ -48,6 +50,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
+            _playSounds.StopAudio(6);
             _animator.SetBool("IsWalking", false);
         }
     }
