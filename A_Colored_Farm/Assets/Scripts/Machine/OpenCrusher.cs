@@ -10,6 +10,7 @@ public class OpenCrusher : MonoBehaviour
     [SerializeField] private ListAnimation _listAnimation;
     [SerializeField] private GameObject _progressBarGameObject;
     [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private PlaySounds _playSounds;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -90,6 +91,7 @@ public class OpenCrusher : MonoBehaviour
                         _progressBarGameObject.SetActive(false);
                         _crusher.Ready = false;
                         _listAnimation.Restart();
+                        _playSounds.PlayAudio(4);
                     }
                 }
             }
