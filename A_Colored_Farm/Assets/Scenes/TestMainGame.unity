@@ -9240,6 +9240,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 5
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &419077898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11326,7 +11327,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 562314607}
-  - component: {fileID: 562314606}
   - component: {fileID: 562314605}
   m_Layer: 0
   m_Name: UiManager
@@ -11352,26 +11352,6 @@ MonoBehaviour:
   _blueText: {fileID: 1538795734}
   _yellowText: {fileID: 724155153}
   _redText: {fileID: 2136306543}
-  _purpleSeedText: {fileID: 969225293}
-  _greenSeedText: {fileID: 969225293}
-  _orangeSeedText: {fileID: 969225293}
---- !u!114 &562314606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 562314604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 946f1235d544ccb4b94dda2de43ebd3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _inventory: {fileID: 634756030003194793}
-  _greySeedText: {fileID: 969225293}
-  _blueSeedText: {fileID: 0}
-  _yellowSeedText: {fileID: 0}
-  _redSeedText: {fileID: 0}
   _purpleSeedText: {fileID: 969225293}
   _greenSeedText: {fileID: 969225293}
   _orangeSeedText: {fileID: 969225293}
@@ -13728,6 +13708,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &690563448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16568,6 +16549,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &827818862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19003,6 +18985,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 2
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1011683286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19853,6 +19836,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &1083647975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20996,6 +20980,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 4
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1135349401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25369,6 +25354,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 0
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1347168525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26024,6 +26010,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 6
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1382931629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26595,6 +26582,7 @@ GameObject:
   - component: {fileID: 1417934027}
   - component: {fileID: 1417934030}
   - component: {fileID: 1417934029}
+  - component: {fileID: 1417934031}
   - component: {fileID: 1417934028}
   m_Layer: 5
   m_Name: Money
@@ -26742,6 +26730,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417934026}
   m_CullTransparentMesh: 1
+--- !u!114 &1417934031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1417934026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbd9c9c41529f54ca7793e1cc3e79e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationList:
+  - {fileID: 7400000, guid: db3034197d001174b987c047ff915de4, type: 2}
+  - {fileID: 7400000, guid: 2966ed42c3b79924c80ec4f2defde96a, type: 2}
+  _animator: {fileID: 1417934028}
+  _money: {fileID: 1417934026}
+  _moneyText: {fileID: 1417934029}
 --- !u!1 &1426426824
 GameObject:
   m_ObjectHideFlags: 0
@@ -30225,6 +30231,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 3
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1628214611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31277,6 +31284,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061901}
   _id: 1
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!114 &1658146987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32609,6 +32617,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &1715791182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33581,6 +33590,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &1779195502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40240,6 +40250,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &2114269391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40791,6 +40802,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519243207}
     - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _moneyAnimation
+      value: 
+      objectReference: {fileID: 1417934031}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _shopColorPanel
       value: 
       objectReference: {fileID: 0}
@@ -41197,17 +41212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9cb8e262288d624baaa1e3ec050df18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &634756030003194793 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7290980671677847892, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
-  m_PrefabInstance: {fileID: 634756030003194790}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285819928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00adf25c185ece145a69e0001414f464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &634756030003194794 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6207054884956697482, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
@@ -41413,6 +41417,7 @@ MonoBehaviour:
   _colorMain: {fileID: 1398405675}
   _value: 2
   <Command>k__BackingField: 0
+  _moneyAnimation: {fileID: 1417934031}
 --- !u!61 &634756030003194824
 BoxCollider2D:
   m_ObjectHideFlags: 0
