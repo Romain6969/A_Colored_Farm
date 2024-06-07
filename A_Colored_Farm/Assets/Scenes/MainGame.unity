@@ -14634,6 +14634,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 4
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &638005850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15337,6 +15338,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &690563448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19211,6 +19213,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &827818862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21490,6 +21493,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 2
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1011683286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21801,6 +21805,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 6
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1024068940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23003,6 +23008,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &1083647975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -30710,6 +30716,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 0
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1347168525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37547,6 +37554,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 3
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1628214611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38553,6 +38561,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 1
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1658146987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40185,6 +40194,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &1715791182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41377,6 +41387,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &1779195502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46265,6 +46276,7 @@ MonoBehaviour:
   _chestInventory: {fileID: 1837061893}
   _tutorial: {fileID: 1837061903}
   _id: 5
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!114 &1958212358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47279,6 +47291,8 @@ GameObject:
   - component: {fileID: 2014160334}
   - component: {fileID: 2014160336}
   - component: {fileID: 2014160335}
+  - component: {fileID: 2014160338}
+  - component: {fileID: 2014160337}
   m_Layer: 5
   m_Name: Money
   m_TagString: Untagged
@@ -47402,6 +47416,45 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014160333}
   m_CullTransparentMesh: 1
+--- !u!95 &2014160337
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014160333}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13975012406c0064c83c368b87f7ee0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2014160338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014160333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fbd9c9c41529f54ca7793e1cc3e79e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animationList:
+  - {fileID: 7400000, guid: db3034197d001174b987c047ff915de4, type: 2}
+  - {fileID: 7400000, guid: 2966ed42c3b79924c80ec4f2defde96a, type: 2}
+  _animator: {fileID: 2014160337}
+  _money: {fileID: 2014160333}
+  _moneyText: {fileID: 2014160335}
 --- !u!1 &2023769963
 GameObject:
   m_ObjectHideFlags: 0
@@ -49722,6 +49775,7 @@ MonoBehaviour:
   _interaction: {fileID: 634756030003194816}
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &2114269391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -50301,6 +50355,10 @@ PrefabInstance:
       propertyPath: _shopSeedPanel
       value: 
       objectReference: {fileID: 519243207}
+    - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _moneyAnimation
+      value: 
+      objectReference: {fileID: 2014160338}
     - target: {fileID: 2447420885019448261, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _shopColorPanel
       value: 
@@ -50956,6 +51014,7 @@ MonoBehaviour:
   _colorMain: {fileID: 1398405675}
   _value: 2
   <Command>k__BackingField: 0
+  _moneyAnimation: {fileID: 2014160338}
 --- !u!61 &634756030003194824
 BoxCollider2D:
   m_ObjectHideFlags: 0
