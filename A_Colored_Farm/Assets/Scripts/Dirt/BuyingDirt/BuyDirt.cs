@@ -12,6 +12,7 @@ public class BuyDirt : MonoBehaviour
     [SerializeField] private Interactions _interaction;
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private Movement _movement;
+    [SerializeField] private MoneyAnimation _moneyAnimation;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -31,6 +32,7 @@ public class BuyDirt : MonoBehaviour
     {
         if (_inventoryMain.TargetValue >= _dirtCost)
         {
+            _moneyAnimation.OnAnimation(1);
             _inventoryMain.RemoveValue(_dirtCost);
             _dirts.SetActive(true);
             _confirmPanel.SetActive(false);

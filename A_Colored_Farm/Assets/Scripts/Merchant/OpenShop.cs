@@ -13,6 +13,7 @@ public class OpenShop : MonoBehaviour
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
     [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private MoneyAnimation _moneyAnimation;
     private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
@@ -42,6 +43,7 @@ public class OpenShop : MonoBehaviour
                         }
                         break;
                     case 1:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.GreySeed.SellValue);
                         _keepItem.Id = 0;
                         if (_tutorial.WhenplayerSellPlant == false)
@@ -51,102 +53,127 @@ public class OpenShop : MonoBehaviour
                         }
                         break;
                     case 2:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.BlueSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 3:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.YellowSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 4:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.RedSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 5:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.PurpleSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 6:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.GreenSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 7:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.OrangeSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 8:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.CyanSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 9:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.IndigoSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 10:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.LimeSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 11:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.OcreSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 12:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.MagentaSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 13:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_seedMain.OrSeed.SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 22:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[0].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 23:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[1].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 24:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[2].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 25:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[3].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 26:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[4].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 27:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[5].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 28:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[6].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 29:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[7].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 30:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[8].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 31:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[9].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 32:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[10].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 33:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[11].SellValue);
                         _keepItem.Id = 0;
                         break;
                     case 34:
+                        _moneyAnimation.OnAnimation(0);
                         _inventoryMain.AddValue(_colorMain.ColorsList[12].SellValue);
                         _keepItem.Id = 0;
                         break;
