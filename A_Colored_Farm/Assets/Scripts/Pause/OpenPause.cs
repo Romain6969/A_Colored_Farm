@@ -13,6 +13,7 @@ public class OpenPause : MonoBehaviour
     [SerializeField] private OpenShop _shop;
     [SerializeField] private Tutorial _tutorial;
     [SerializeField] private PlaySounds _playSounds;
+    [SerializeField] private PlaceColor _placeColor;
 
     public void OnPause(InputAction.CallbackContext context)
     {
@@ -27,8 +28,10 @@ public class OpenPause : MonoBehaviour
                     _exitPanel[2].SetActive(false);
                     _exitPanel[3].SetActive(false);
                     _movement.CanMove = true;
+                    _placeColor.CanPaint = true;
                     _shop.Open = false;
                     Open = 2;
+                    _playSounds.PlayAudio(9);
                     if (_tutorial.WhenCanMix == true)
                     {
                         _tutorial.ForClosingPanel = true;

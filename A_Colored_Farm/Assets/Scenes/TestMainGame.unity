@@ -2590,6 +2590,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &117954893
 GameObject:
   m_ObjectHideFlags: 0
@@ -14105,6 +14107,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 0}
+  _placeColor: {fileID: 0}
 --- !u!114 &673912515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14350,6 +14354,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &686160694
 GameObject:
   m_ObjectHideFlags: 0
@@ -16426,7 +16432,9 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
-  _playSounds: {fileID: 0}
+  _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!1 &802620577
 GameObject:
   m_ObjectHideFlags: 0
@@ -20515,6 +20523,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &1079666532
 GameObject:
   m_ObjectHideFlags: 0
@@ -23574,6 +23584,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 0}
+  _placeColor: {fileID: 0}
 --- !u!114 &1187956309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28418,6 +28430,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &1469787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -29959,6 +29973,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &1549727210
 GameObject:
   m_ObjectHideFlags: 0
@@ -36276,6 +36292,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 0}
 --- !u!1 &1877917663
 GameObject:
   m_ObjectHideFlags: 0
@@ -38818,6 +38836,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _interactions: {fileID: 0}
+  _placeColor: {fileID: 0}
 --- !u!114 &2005395950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42289,6 +42309,7 @@ MonoBehaviour:
   _shop: {fileID: 2078742839}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!114 &634756030003194799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42363,6 +42384,7 @@ MonoBehaviour:
   <IsPainting>k__BackingField: 0
   <IsOpen>k__BackingField: 0
   _playerInput: {fileID: 1517065703}
+  <CanPaint>k__BackingField: 1
 --- !u!114 &634756030003194809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42429,6 +42451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 1517065703}
   <IsPerformed>k__BackingField: 0
+  <CanPerform>k__BackingField: 1
 --- !u!114 &634756030003194820
 MonoBehaviour:
   m_ObjectHideFlags: 0
