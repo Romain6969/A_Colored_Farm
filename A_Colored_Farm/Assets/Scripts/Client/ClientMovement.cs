@@ -61,12 +61,12 @@ public class ClientMovement : MonoBehaviour
             transform.Translate(Vector2.up * _speed * Time.deltaTime);
             _time += Time.deltaTime;
 
-            if (Happy == true && _time <= 0.15f)
+            if (Happy == true && _time <= 0.05f)
             {
                 GameObject instantiated = Instantiate(_emotionHappy);
                 instantiated.transform.position = transform.position;
             }
-            else if (_time <= 0.15f)
+            else if (_time <= 0.05f)
             {
                 GameObject instantiated = Instantiate(_emotionHangry);
                 instantiated.transform.position = transform.position;
@@ -78,6 +78,7 @@ public class ClientMovement : MonoBehaviour
                 _time = 0;
                 Back = false;
                 _position = false;
+                Happy = false;
             }
         }
     }

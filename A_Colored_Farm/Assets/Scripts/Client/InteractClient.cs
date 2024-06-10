@@ -42,6 +42,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.GreySeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 1:
@@ -50,6 +51,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.BlueSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 2:
@@ -58,6 +60,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.YellowSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 3:
@@ -66,6 +69,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.RedSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 4:
@@ -74,6 +78,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[0].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 5:
@@ -82,6 +87,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[1].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 6:
@@ -90,6 +96,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[2].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 7:
@@ -98,6 +105,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[3].SellValue *   _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 8:
@@ -106,6 +114,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.PurpleSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 9:
@@ -114,6 +123,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.GreenSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 10:
@@ -122,6 +132,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.OrangeSeed.SellValue *   _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 11:
@@ -130,6 +141,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[4].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 12:
@@ -138,6 +150,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[5].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 13:
@@ -146,6 +159,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[6].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 14:
@@ -154,6 +168,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.CyanSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 15:
@@ -162,6 +177,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.IndigoSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 16:
@@ -170,6 +186,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.LimeSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 17:
@@ -178,6 +195,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.OcreSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 18:
@@ -186,6 +204,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.MagentaSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 19:
@@ -194,6 +213,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_seedMain.OrSeed.SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 20:
@@ -202,6 +222,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[7].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 21:
@@ -210,6 +231,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[8].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 22:
@@ -218,6 +240,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[9].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 23:
@@ -226,6 +249,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[10].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 24:
@@ -234,6 +258,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[11].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                     case 25:
@@ -242,6 +267,7 @@ public class InteractClient : MonoBehaviour
                             _moneyAnimation.OnAnimation(0);
                             _inventoryMain.AddValue((_colorMain.ColorsList[12].SellValue * _value));
                             OnRestart();
+                            _movement.Happy = true;
                         }
                         break;
                 }

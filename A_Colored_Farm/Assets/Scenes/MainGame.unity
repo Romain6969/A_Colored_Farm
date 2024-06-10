@@ -12554,11 +12554,11 @@ PrefabInstance:
     - target: {fileID: 4729708652216845002, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
       propertyPath: _emotionHappy
       value: 
-      objectReference: {fileID: 7650216637330835708, guid: 7df0da873508d5e4e8df55bf7942109d, type: 3}
+      objectReference: {fileID: 6731092561671574539, guid: edfb32401eb00d145a8fb04388ca5d6b, type: 3}
     - target: {fileID: 4729708652216845002, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
       propertyPath: _emotionHangry
       value: 
-      objectReference: {fileID: 5406315383976587750, guid: 39061cec1334a484e9193f5b0787bded, type: 3}
+      objectReference: {fileID: 3783520960529818216, guid: 8b3050bb610e07e4d81878ac0e9434b0, type: 3}
     - target: {fileID: 4729708652216845002, guid: 5bacdb321c8974a4794541af41942e9f, type: 3}
       propertyPath: _explosionBulle
       value: 
