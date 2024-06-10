@@ -21,6 +21,8 @@ public class BuyDirt : MonoBehaviour
             _movement.CanMove = false;
             _confirmPanel.SetActive(true);
             _playSounds.PlayAudio(9);
+            _interaction.IsPerformed = false;
+            _interaction.CanPerform = false;
         }
     }
 
@@ -41,12 +43,14 @@ public class BuyDirt : MonoBehaviour
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
             _movement.CanMove = true;
+            _interaction.CanPerform = true;
         }
         else
         {
             _confirmPanel.SetActive(false);
             Debug.Log("You're poor ha ha, looser !");
             _movement.CanMove = true;
+            _interaction.CanPerform = true;
         }
     }
 
@@ -55,5 +59,6 @@ public class BuyDirt : MonoBehaviour
         _playSounds.PlayAudio(9);
         _confirmPanel.SetActive(false);
         _movement.CanMove = true;
+        _interaction.CanPerform = true;
     }
 }
