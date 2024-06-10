@@ -177,7 +177,8 @@ public class Dirt : MonoBehaviour
                             _colorPanel.SetActive(true);
                             _movement.CanMove = false;
                             _pause.Open = 1;
-
+                            _placeColor.IsPainting = false;
+                            _placeColor.CanPaint = false;
                         }
                     }
                 }

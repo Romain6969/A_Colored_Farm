@@ -31,7 +31,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d4c867f6b72b714dbb5fd1780afe208, type: 3}
-  m_Name: peint jaune
+  m_Name: coffre jaune
   m_EditorClassIdentifier: 
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 0}
@@ -57,7 +57,7 @@ VisualEffectResource:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: peint jaune
+  m_Name: coffre jaune
   m_Graph: {fileID: 114350483966674976}
   m_Infos:
     m_RendererSettings:
@@ -161,7 +161,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 5
+      m_SerializableObject: 7
     m_Space: 2147483647
   m_Property:
     name: Count
@@ -417,7 +417,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.TArcCircle, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"circle":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":-135.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"radius":0.15000000596046449},"arc":2.0}'
+      m_SerializableObject: '{"circle":{"transform":{"position":{"x":0.0,"y":0.0,"z":0.0},"angles":{"x":0.0,"y":0.0,"z":45.0},"scale":{"x":1.0,"y":1.0,"z":1.0}},"radius":0.5},"arc":2.0}'
     m_Space: 0
   m_Property:
     name: arcCircle
@@ -1056,7 +1056,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEditor.VFX.Vector, Unity.VisualEffectGraph.Editor,
           Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"vector":{"x":0.0,"y":-1.0,"z":0.0}}'
+      m_SerializableObject: '{"vector":{"x":0.5,"y":1.0,"z":0.0}}'
     m_Space: 0
   m_Property:
     name: Velocity
@@ -1701,7 +1701,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614742}
   - {fileID: 8926484042661614743}
   dataType: 0
-  capacity: 5
+  capacity: 7
   stripCapacity: 16
   particlePerStripCount: 16
   needsComputeBounds: 0
@@ -1916,7 +1916,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.5004698038101196,"inTangent":0.41798892617225649,"outTangent":0.41798892617225649,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.7500723600387573,"value":-0.0002904776483774185,"inTangent":0.01439359039068222,"outTangent":0.01439359039068222,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
+      m_SerializableObject: '{"frames":[{"time":0.0,"value":0.5028196573257446,"inTangent":0.8294137120246887,"outTangent":0.8294137120246887,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.28996387124061587,"value":0.39981770515441897,"inTangent":-2.393005847930908,"outTangent":-1.6202400922775269,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":true},{"time":0.6501148343086243,"value":-0.00029689143411815166,"inTangent":-0.26773568987846377,"outTangent":-0.26773568987846377,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
     m_Space: 2147483647
   m_Property:
     name: Size
@@ -2014,7 +2014,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":0.0},{"color":{"r":0.9999999403953552,"g":0.9999999403953552,"b":0.9999999403953552,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.10000763088464737},{"alpha":1.0,"time":0.9000076055526733},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":0.0},{"color":{"r":1.0,"g":1.0,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.10000763088464737},{"alpha":1.0,"time":0.9000076055526733},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -2142,7 +2142,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: -0.5
+      m_SerializableObject: -0.75
     m_Space: 2147483647
   m_Property:
     name: min
@@ -2176,7 +2176,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 0.5
+      m_SerializableObject: 0.75
     m_Space: 2147483647
   m_Property:
     name: max
@@ -2308,7 +2308,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.25
+      m_SerializableObject: 0.5
     m_Space: 2147483647
   m_Property:
     name: A
@@ -2342,7 +2342,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.75
+      m_SerializableObject: 1
     m_Space: 2147483647
   m_Property:
     name: B

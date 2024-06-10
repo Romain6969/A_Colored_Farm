@@ -78,7 +78,6 @@ public class Movement : MonoBehaviour
                 {
                     if (FirstTuto == true)
                     {
-                        _playSounds.PlayAudio(9);
                         _firstPanelTutorial.SetActive(true);
                         CanMove = false;
                         _openPause.Open = 1;
