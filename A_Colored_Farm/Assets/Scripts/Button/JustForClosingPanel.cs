@@ -7,6 +7,8 @@ public class JustForClosingPanel : MonoBehaviour
     [SerializeField] private OpenPause _pause;
     [SerializeField] private Tutorial _tutorial;
     [SerializeField] private PlaySounds _playSounds;
+    [SerializeField] private Interactions _interactions;
+    [SerializeField] private PlaceColor _placeColor;
     
     public void ClosePanel()
     {
@@ -15,6 +17,8 @@ public class JustForClosingPanel : MonoBehaviour
         _movement.FirstTuto = false;
         _panel.SetActive(false);
         _pause.Open = 2;
+        _interactions.CanPerform = true;
+        _placeColor.CanPaint = true;
         if (_tutorial.WhenCanMix == true)
         {
             _tutorial.ForClosingPanel = true;

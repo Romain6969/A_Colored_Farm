@@ -9,7 +9,7 @@ public class ShowInputsAnim : MonoBehaviour
     [SerializeField] private RebindingDesplayMovementup _movementUp;
     [SerializeField] private TMP_Text _text;
 
-    private void Start()
+    private void Awake()
     {
         _animator.Play("ShowInputsAnim");
     }
@@ -18,7 +18,7 @@ public class ShowInputsAnim : MonoBehaviour
     {
         _time += Time.deltaTime;
 
-        if (_time >= 1)
+        if (_time >= 0.99f)
         {
             _animator.enabled = false;
         }
