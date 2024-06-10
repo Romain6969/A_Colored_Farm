@@ -56,7 +56,6 @@ public class Tutorial : MonoBehaviour
         }
         if (_keepItem.NumberGreySeedPlanted == 3)
         {
-            _playSounds.PlayAudio(9);
             IndicatorsList[4].SetActive(true);
             _secondTutorialPanel.SetActive(true);
             _movement.CanMove = false;
@@ -70,7 +69,6 @@ public class Tutorial : MonoBehaviour
                 if (ForClosingPanel == false && EndTuto == false)
                 {
                     WhenCanMix = true;
-                    _playSounds.PlayAudio(9);
                     _thirdTutorialPanel.SetActive(true);
                     _movement.CanMove = false;
                     _openPause.Open = 1;
