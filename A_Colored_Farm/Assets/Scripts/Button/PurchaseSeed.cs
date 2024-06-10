@@ -17,7 +17,7 @@ public class PurchaseSeed : MonoBehaviour
             case 0:
                 if (_inventoryMain.TargetValue >= _seedMain.GreySeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.GreySeed.PurchaseValue);
                     _chestInventory.GraySeed += 1;
@@ -33,7 +33,7 @@ public class PurchaseSeed : MonoBehaviour
             case 1:
                 if (_inventoryMain.TargetValue >= _seedMain.BlueSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.BlueSeed.PurchaseValue);
                     _chestInventory.BlueSeed += 1;
@@ -42,7 +42,7 @@ public class PurchaseSeed : MonoBehaviour
             case 2:
                 if (_inventoryMain.TargetValue >= _seedMain.YellowSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.YellowSeed.PurchaseValue);
                     _chestInventory.YellowSeed += 1;
@@ -51,7 +51,7 @@ public class PurchaseSeed : MonoBehaviour
             case 3:
                 if (_inventoryMain.TargetValue >= _seedMain.RedSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.RedSeed.PurchaseValue);
                     _chestInventory.RedSeed += 1;
@@ -60,7 +60,7 @@ public class PurchaseSeed : MonoBehaviour
             case 4:
                 if (_inventoryMain.TargetValue >= _seedMain.PurpleSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.PurpleSeed.PurchaseValue);
                     _chestInventory.PurpleSeed += 1;
@@ -69,7 +69,7 @@ public class PurchaseSeed : MonoBehaviour
             case 5:
                 if (_inventoryMain.TargetValue >= _seedMain.GreenSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.GreenSeed.PurchaseValue);
                     _chestInventory.GreenSeed += 1;
@@ -78,7 +78,7 @@ public class PurchaseSeed : MonoBehaviour
             case 6:
                 if (_inventoryMain.TargetValue >= _seedMain.OrangeSeed.PurchaseValue)
                 {
-                    _playSounds.PlayAudio(7);
+                    _playSounds.PlayAudio(8);
                     _moneyAnimation.OnAnimation(1);
                     _inventoryMain.RemoveValue(_seedMain.OrangeSeed.PurchaseValue);
                     _chestInventory.OrangeSeed += 1;

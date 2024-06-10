@@ -40,7 +40,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 1;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -54,7 +54,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 2;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -67,7 +67,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 3;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -80,7 +80,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 4;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -93,7 +93,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 5;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -106,7 +106,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 6;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -119,7 +119,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = 7;
                                     Destroy(gameObject);
                                     _keepItem.Here = true;
@@ -141,7 +141,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -155,7 +155,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -169,7 +169,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -183,7 +183,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -197,7 +197,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -210,7 +210,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -223,7 +223,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -236,7 +236,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -249,7 +249,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -262,7 +262,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -275,7 +275,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -288,7 +288,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;
@@ -301,7 +301,7 @@ public class GrowColors : MonoBehaviour
                             {
                                 if (_placeSeed.IsPlanting == true)
                                 {
-                                    _playSounds.PlayAudio(4);
+                                    _playSounds.PlayAudio(5);
                                     _keepItem.Id = _seedColorMix.MixThem();
                                     Destroy(gameObject);
                                     PaintColor.PaintUses -= 1;

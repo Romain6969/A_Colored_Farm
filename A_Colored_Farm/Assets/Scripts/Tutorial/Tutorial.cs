@@ -18,6 +18,7 @@ public class Tutorial : MonoBehaviour
     [field: SerializeField] public bool WhenplayerSellPlant = false;
     [SerializeField] private GameObject _secondTutorialPanel;
     [SerializeField] private GameObject _thirdTutorialPanel;
+    [SerializeField] private PlaySounds _playSounds;
     [field: SerializeField] public bool WhenCanMix = false;
     [field: SerializeField] public bool WhenMix { get; set; } = false;
     [field: SerializeField] public bool ForClosingPanel { get; set; } = false;

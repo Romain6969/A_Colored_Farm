@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
 
 public class BuyDirt : MonoBehaviour
 {
@@ -13,6 +12,7 @@ public class BuyDirt : MonoBehaviour
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private Movement _movement;
     [SerializeField] private MoneyAnimation _moneyAnimation;
+    [SerializeField] private PlaySounds _playSounds;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -20,6 +20,9 @@ public class BuyDirt : MonoBehaviour
         {
             _movement.CanMove = false;
             _confirmPanel.SetActive(true);
+            _playSounds.PlayAudio(9);
+            _interaction.IsPerformed = false;
+            _interaction.CanPerform = false;
         }
     }
 
@@ -32,6 +35,7 @@ public class BuyDirt : MonoBehaviour
     {
         if (_inventoryMain.TargetValue >= _dirtCost)
         {
+            _playSounds.PlayAudio(8);
             _moneyAnimation.OnAnimation(1);
             _inventoryMain.RemoveValue(_dirtCost);
             _dirts.SetActive(true);
@@ -39,18 +43,22 @@ public class BuyDirt : MonoBehaviour
             _gameObjectText.SetActive(false);
             gameObject.SetActive(false);
             _movement.CanMove = true;
+            _interaction.CanPerform = true;
         }
         else
         {
             _confirmPanel.SetActive(false);
             Debug.Log("You're poor ha ha, looser !");
             _movement.CanMove = true;
+            _interaction.CanPerform = true;
         }
     }
 
     public void CloseConfirm()
     {
+        _playSounds.PlayAudio(9);
         _confirmPanel.SetActive(false);
         _movement.CanMove = true;
+        _interaction.CanPerform = true;
     }
 }

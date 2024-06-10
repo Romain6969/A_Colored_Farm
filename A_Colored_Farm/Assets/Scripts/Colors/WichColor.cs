@@ -8,14 +8,17 @@ public class WichColor : MonoBehaviour
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
     [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private PlaySounds _playSounds;
 
     public void OnClickNumberColor(int color)
     {
+        _playSounds.PlayAudio(9);
         ColorNumber = color;
         _colorPanel.SetActive(false);
         _movement.CanMove = true;
         _pause.Open = 2;
         SetSeed.SeedSet();
+
         if (_tutorial.EndTuto == false && _tutorial.WhenColor == false && _tutorial.ForClosingPanel == true)
         {
             _tutorial.EndTuto = true;

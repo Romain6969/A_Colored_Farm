@@ -4,9 +4,10 @@ using UnityEngine;
 public class PlaySounds : MonoBehaviour
 {
     [SerializeField] private List<AudioSource> _audioSources;
-    
+    [SerializeField] private List<AudioClip> _clips;
     public void PlayAudio(int wichAudio)
     {
+        //_audioSources[wichAudio].PlayOneShot(_clips[wichAudio]);
         _audioSources[wichAudio].Play();
     }
 
