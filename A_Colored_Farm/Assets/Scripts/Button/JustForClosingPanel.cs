@@ -6,9 +6,11 @@ public class JustForClosingPanel : MonoBehaviour
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
     [SerializeField] private Tutorial _tutorial;
+    [SerializeField] private PlaySounds _playSounds;
     
     public void ClosePanel()
     {
+        _playSounds.PlayAudio(9);
         _movement.CanMove = true;
         _movement.FirstTuto = false;
         _panel.SetActive(false);

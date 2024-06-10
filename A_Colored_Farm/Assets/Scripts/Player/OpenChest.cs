@@ -26,7 +26,7 @@ public class OpenChest : MonoBehaviour
                         case 0:
                             if (_chestInventory.GraySeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 14;
                                 _chestInventory.GraySeed -= 1;
                                 _keepItem.Here = true;
@@ -36,7 +36,7 @@ public class OpenChest : MonoBehaviour
                         case 1:
                             if (_chestInventory.BlueSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 15;
                                 _chestInventory.BlueSeed -= 1;
                                 _keepItem.Here = true;
@@ -46,7 +46,7 @@ public class OpenChest : MonoBehaviour
                         case 2:
                             if (_chestInventory.YellowSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 16;
                                 _chestInventory.YellowSeed -= 1;
                                 _keepItem.Here = true;
@@ -56,7 +56,7 @@ public class OpenChest : MonoBehaviour
                         case 3:
                             if (_chestInventory.RedSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 17;
                                 _chestInventory.RedSeed -= 1;
                                 _keepItem.Here = true;
@@ -66,7 +66,7 @@ public class OpenChest : MonoBehaviour
                         case 4:
                             if (_chestInventory.PurpleSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 18;
                                 _chestInventory.PurpleSeed -= 1;
                                 _keepItem.Here = true;
@@ -76,7 +76,7 @@ public class OpenChest : MonoBehaviour
                         case 5:
                             if (_chestInventory.GreenSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 19;
                                 _chestInventory.GreenSeed -= 1;
                                 _keepItem.Here = true;
@@ -86,7 +86,7 @@ public class OpenChest : MonoBehaviour
                         case 6:
                             if (_chestInventory.OrangeSeed >= 1)
                             {
-                                _playSounds.PlayAudio(5);
+                                _playSounds.PlayAudio(6);
                                 _keepItem.Id = 20;
                                 _chestInventory.OrangeSeed -= 1;
                                 _keepItem.Here = true;

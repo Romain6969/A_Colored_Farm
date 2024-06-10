@@ -696,6 +696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _panelActivated: {fileID: 1647981891}
   _panelDesactivated: {fileID: 1577683001}
+  _playSounds: {fileID: 0}
 --- !u!114 &41666435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2456,6 +2457,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &117954893
 GameObject:
   m_ObjectHideFlags: 0
@@ -7084,11 +7086,11 @@ MonoBehaviour:
   - {fileID: 334549824}
   - {fileID: 334549825}
   - {fileID: 334549826}
+  - {fileID: 334549827}
   - {fileID: 334549828}
   - {fileID: 334549829}
   - {fileID: 334549830}
   - {fileID: 334549831}
-  - {fileID: 0}
 --- !u!82 &334549824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13958,6 +13960,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!114 &673912515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14202,6 +14205,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &686160694
 GameObject:
   m_ObjectHideFlags: 0
@@ -14292,6 +14296,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &690563448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16277,6 +16282,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &804398174
 GameObject:
   m_ObjectHideFlags: 0
@@ -17133,6 +17139,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &827818862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19812,6 +19819,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _panelActivated: {fileID: 1577683001}
   _panelDesactivated: {fileID: 1647981891}
+  _playSounds: {fileID: 0}
 --- !u!1 &1030542496
 GameObject:
   m_ObjectHideFlags: 0
@@ -20230,6 +20238,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &1079666532
 GameObject:
   m_ObjectHideFlags: 0
@@ -20421,6 +20430,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &1083647975
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23286,6 +23296,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!114 &1187956309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27997,6 +28008,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &1469787963
 GameObject:
   m_ObjectHideFlags: 0
@@ -29537,6 +29549,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &1549727210
 GameObject:
   m_ObjectHideFlags: 0
@@ -33207,6 +33220,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &1715791182
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34180,6 +34194,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &1779195502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34835,6 +34850,7 @@ MonoBehaviour:
   WhenplayerSellPlant: 0
   _secondTutorialPanel: {fileID: 1091169893}
   _thirdTutorialPanel: {fileID: 1630836836}
+  _playSounds: {fileID: 334549823}
   WhenCanMix: 0
   <WhenMix>k__BackingField: 0
   <ForClosingPanel>k__BackingField: 0
@@ -35849,6 +35865,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!1 &1877917663
 GameObject:
   m_ObjectHideFlags: 0
@@ -35997,6 +36014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _panelActivated: {fileID: 1647981891}
   _panelDesactivated: {fileID: 1669950549}
+  _playSounds: {fileID: 0}
 --- !u!1 &1877945310
 GameObject:
   m_ObjectHideFlags: 0
@@ -38389,6 +38407,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 0}
 --- !u!114 &2005395950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40783,6 +40802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _panelActivated: {fileID: 1669950549}
   _panelDesactivated: {fileID: 1647981891}
+  _playSounds: {fileID: 0}
 --- !u!1 &2114269388
 GameObject:
   m_ObjectHideFlags: 0
@@ -40840,6 +40860,7 @@ MonoBehaviour:
   _inventoryMain: {fileID: 634756030003194791}
   _movement: {fileID: 2078742838}
   _moneyAnimation: {fileID: 1417934031}
+  _playSounds: {fileID: 0}
 --- !u!61 &2114269391
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -41857,6 +41878,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _shop: {fileID: 2078742839}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 334549823}
 --- !u!114 &634756030003194799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41949,6 +41971,7 @@ MonoBehaviour:
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
+  _playSounds: {fileID: 334549823}
 --- !u!114 &634756030003194811
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ public class Tutorial : MonoBehaviour
     [field: SerializeField] public bool WhenplayerSellPlant = false;
     [SerializeField] private GameObject _secondTutorialPanel;
     [SerializeField] private GameObject _thirdTutorialPanel;
+    [SerializeField] private PlaySounds _playSounds;
     [field: SerializeField] public bool WhenCanMix = false;
     [field: SerializeField] public bool WhenMix { get; set; } = false;
     [field: SerializeField] public bool ForClosingPanel { get; set; } = false;
@@ -55,6 +56,7 @@ public class Tutorial : MonoBehaviour
         }
         if (_keepItem.NumberGreySeedPlanted == 3)
         {
+            _playSounds.PlayAudio(9);
             IndicatorsList[4].SetActive(true);
             _secondTutorialPanel.SetActive(true);
             _movement.CanMove = false;
@@ -68,6 +70,7 @@ public class Tutorial : MonoBehaviour
                 if (ForClosingPanel == false && EndTuto == false)
                 {
                     WhenCanMix = true;
+                    _playSounds.PlayAudio(9);
                     _thirdTutorialPanel.SetActive(true);
                     _movement.CanMove = false;
                     _openPause.Open = 1;
