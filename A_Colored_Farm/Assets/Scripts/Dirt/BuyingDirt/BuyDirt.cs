@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
 
 public class BuyDirt : MonoBehaviour
 {
@@ -13,6 +12,7 @@ public class BuyDirt : MonoBehaviour
     [SerializeField] private InventoryMain _inventoryMain;
     [SerializeField] private Movement _movement;
     [SerializeField] private MoneyAnimation _moneyAnimation;
+    [SerializeField] private PlaySounds _playSounds;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -20,6 +20,7 @@ public class BuyDirt : MonoBehaviour
         {
             _movement.CanMove = false;
             _confirmPanel.SetActive(true);
+            _playSounds.PlayAudio(9);
         }
     }
 
@@ -32,6 +33,7 @@ public class BuyDirt : MonoBehaviour
     {
         if (_inventoryMain.TargetValue >= _dirtCost)
         {
+            _playSounds.PlayAudio(8);
             _moneyAnimation.OnAnimation(1);
             _inventoryMain.RemoveValue(_dirtCost);
             _dirts.SetActive(true);
@@ -50,6 +52,7 @@ public class BuyDirt : MonoBehaviour
 
     public void CloseConfirm()
     {
+        _playSounds.PlayAudio(9);
         _confirmPanel.SetActive(false);
         _movement.CanMove = true;
     }

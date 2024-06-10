@@ -173,6 +173,7 @@ public class Dirt : MonoBehaviour
                     {
                         if (_placeColor.IsPainting == true)
                         {
+                            _playSounds.PlayAudio(9);
                             _colorPanel.SetActive(true);
                             _movement.CanMove = false;
                             _pause.Open = 1;

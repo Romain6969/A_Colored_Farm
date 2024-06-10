@@ -42,7 +42,7 @@ public class Movement : MonoBehaviour
 
         if (_movement != Vector2.zero)
         {
-            _playSounds.PlayAudio(6);
+            _playSounds.PlayAudio(7);
             _animator.SetBool("IsWalking", true);
             _animator.SetFloat("Right", _movement.x);
             _animator.SetFloat("Left", _movement.y);
@@ -50,7 +50,7 @@ public class Movement : MonoBehaviour
         }
         else
         {
-            _playSounds.StopAudio(6);
+            _playSounds.StopAudio(7);
             _animator.SetBool("IsWalking", false);
         }
     }
@@ -78,6 +78,7 @@ public class Movement : MonoBehaviour
                 {
                     if (FirstTuto == true)
                     {
+                        _playSounds.PlayAudio(9);
                         _firstPanelTutorial.SetActive(true);
                         CanMove = false;
                         _openPause.Open = 1;
