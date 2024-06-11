@@ -1057,6 +1057,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &44388444
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2327,6 +2336,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &108050370
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2811,6 +2829,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &146963769
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3448,6 +3475,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &185619253
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3728,6 +3764,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &208961398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4229,6 +4274,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &232411472
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5124,6 +5178,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &261674699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6166,6 +6229,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &289868159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8017,6 +8089,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &374004990
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9260,6 +9341,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &404045223
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10146,6 +10236,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &464638728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10837,6 +10936,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &497733041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13246,6 +13354,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &607865685
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13819,6 +13936,248 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633057205}
   m_CullTransparentMesh: 1
+--- !u!1 &642658519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642658521}
+  - component: {fileID: 642658523}
+  - component: {fileID: 642658520}
+  - component: {fileID: 642658522}
+  m_Layer: 0
+  m_Name: MusicManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &642658520
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642658519}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1777267791266847289, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 667f1e1814c0fa043a0c1ba408d99d65, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &642658521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642658519}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &642658522
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642658519}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 1777267791266847289, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
+  m_audioClip: {fileID: 8300000, guid: bf61cedb58ff7cf40adecf1c513bcd62, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &642658523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642658519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a47c1c8b5413247a9c2cac5124c1ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _musicsAudio:
+  - {fileID: 642658520}
+  - {fileID: 642658522}
+  _time: 0
 --- !u!1 &648970151
 GameObject:
   m_ObjectHideFlags: 0
@@ -15083,6 +15442,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &712627463
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15327,6 +15695,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &719769733
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15571,6 +15948,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &720290120
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16752,6 +17138,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &806436887
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17232,6 +17627,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &827418159
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17631,6 +18035,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &845789878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18306,6 +18719,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &918021451
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21515,6 +21937,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1103668011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22180,6 +22611,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1139141002
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23522,6 +23962,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1187143645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24902,6 +25351,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1248607233
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26183,6 +26641,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1314953248
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -26686,6 +27153,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1352127931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -29102,6 +29578,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1487306768
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33696,6 +34181,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1714525456
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34146,6 +34640,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1719756109
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37907,6 +38410,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1938923121
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38151,6 +38663,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &1939783361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39635,6 +40156,15 @@ MonoBehaviour:
   _playSounds: {fileID: 334549823}
   _movement: {fileID: 2078742838}
   _pause: {fileID: 634756030003194798}
+  _listVfx:
+  - {fileID: 5216317839308716508, guid: bdeedad4606e8b54cb8edaf7cdcf214f, type: 3}
+  - {fileID: 3711756602569503408, guid: 4e905fa199d808d4fbbd035a70049f2a, type: 3}
+  - {fileID: 781064291058276568, guid: 48af4e8cb869be44ca116b361d0df640, type: 3}
+  - {fileID: 2662454206195311666, guid: 67d49328666acff478315c2650b88bed, type: 3}
+  - {fileID: 939521217597066947, guid: 153d04b01c9caa74a98570e4c376ed7c, type: 3}
+  - {fileID: 6034033090607687655, guid: c465dd54469e1ef4fa4aa5d64b8b9224, type: 3}
+  - {fileID: 9002377936994883884, guid: 37ab930edf35f08418197f2b44395dbd, type: 3}
+  - {fileID: 6101378947872615213, guid: b95fa5d48b04caf4bb264a7ef992197e, type: 3}
 --- !u!61 &2025601371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -42825,3 +43355,4 @@ SceneRoots:
   - {fileID: 1510798534}
   - {fileID: 1305526962}
   - {fileID: 1942834515}
+  - {fileID: 642658521}
