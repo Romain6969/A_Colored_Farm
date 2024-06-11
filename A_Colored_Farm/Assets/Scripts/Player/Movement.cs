@@ -17,8 +17,9 @@ public class Movement : MonoBehaviour
     [field: SerializeField] public bool FirstTuto { get; set; } = true;
     [field: SerializeField] public bool GeneratePowder { get; set; }
     private float _time;
-    private bool _didNotClose = true;
-    
+
+    [SerializeField]private bool _didNotClose = true;
+
     [SerializeField]
     private bool _canMove = true;
     public bool CanMove

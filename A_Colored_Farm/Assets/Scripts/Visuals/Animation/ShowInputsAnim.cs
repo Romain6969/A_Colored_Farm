@@ -16,13 +16,6 @@ public class ShowInputsAnim : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _time += Time.deltaTime;
-
-        if (_time >= 0.99f)
-        {
-            _animator.enabled = false;
-        }
-
         _text.text = $"Move with : {_movementUp.ActionMovement.action.GetBindingDisplayString(1)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(3)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(2)} / {_movementUp.ActionMovement.action.GetBindingDisplayString(4)}";
     }
 }
