@@ -2013,7 +2013,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.AnimationCurve, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"frames":[{"time":-0.00031257513910532,"value":0.24965479969978333,"inTangent":1.586370587348938,"outTangent":1.586370587348938,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.5997583270072937,"value":-0.00040723802521824837,"inTangent":-1.8260314464569092,"outTangent":-1.8260314464569092,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
+      m_SerializableObject: '{"frames":[{"time":-0.00031257513910532,"value":0.24965479969978333,"inTangent":2.0815443992614748,"outTangent":2.0815443992614748,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false},{"time":0.5997583270072937,"value":-0.00040723802521824837,"inTangent":-2.213541030883789,"outTangent":-2.213541030883789,"tangentMode":0,"leftTangentMode":0,"rightTangentMode":0,"broken":false}],"preWrapMode":8,"postWrapMode":8,"version":1}'
     m_Space: 2147483647
   m_Property:
     name: Size
