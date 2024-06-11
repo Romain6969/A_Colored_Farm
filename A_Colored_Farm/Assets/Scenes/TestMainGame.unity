@@ -42404,6 +42404,7 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!114 &634756030003194811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42470,6 +42471,7 @@ MonoBehaviour:
   _keepItem: {fileID: 534477681}
   _seedMain: {fileID: 1398405673}
   _colorMain: {fileID: 1398405675}
+  _playSounds: {fileID: 0}
   _value: 2
   <Command>k__BackingField: 0
   _moneyAnimation: {fileID: 1417934031}
