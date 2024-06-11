@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private PlaySounds _playSounds;
     [field: SerializeField] public bool FirstTuto { get; set; } = true;
     private float _time;
-    private bool _didNotClose = true;
+    [SerializeField]private bool _didNotClose = true;
 
     [SerializeField]
     private bool _canMove = true;
