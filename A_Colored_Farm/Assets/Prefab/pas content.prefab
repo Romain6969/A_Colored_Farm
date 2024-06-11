@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3516375257936184314}
   - component: {fileID: 1791042950116683203}
   - component: {fileID: 3913739060400467027}
+  - component: {fileID: -1145664219208561559}
   m_Layer: 0
   m_Name: pas content
   m_TagString: Untagged
@@ -111,3 +112,16 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &-1145664219208561559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783520960529818216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14793c6714291f14c84aa6446ee467ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timeDestruct: 5

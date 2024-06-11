@@ -8,10 +8,12 @@ public class ClientMovement : MonoBehaviour
     private float _speed = 6;
     private float _time = 0;
     private int _index = 0;
+    private bool _nuage = false;
     [SerializeField] private float _wait = 0;
     private bool _position = false;
     [SerializeField] public bool Happy { get; set; } = false;
     [SerializeField] private GameObject _bulle;
+    [SerializeField] private GameObject _bullePosition;
     [SerializeField] private GameObject _explosionBulle;
     [SerializeField] private GameObject _emotionHappy;
     [SerializeField] private GameObject _emotionHangry;
@@ -31,7 +33,6 @@ public class ClientMovement : MonoBehaviour
         if (_position == false)
         {
             transform.Translate(Vector2.down * _speed * Time.deltaTime);
-            _explosionBulle.SetActive(false);
             _animationWalk.OnAnimation(0);
             _index = 0;
         }
@@ -58,7 +59,13 @@ public class ClientMovement : MonoBehaviour
             Time2 = 0;
             ProgressBarGameObject.SetActive(false);
             _bulle.SetActive(false);
-            _explosionBulle.SetActive(true);
+
+            if (_nuage == true)
+            {
+                GameObject instantiated = Instantiate(_explosionBulle);
+                instantiated.transform.position = _bullePosition.transform.position;
+                _nuage = false;
+            }
         }
 
         if (Back == true)
@@ -71,12 +78,14 @@ public class ClientMovement : MonoBehaviour
             {
                 GameObject instantiated = Instantiate(_emotionHappy);
                 instantiated.transform.position = transform.position;
+                _nuage = true;
                 _index += 1;
             }
             else if (_time <= 0.05f && _index == 0)
             {
                 GameObject instantiated = Instantiate(_emotionHangry);
                 instantiated.transform.position = transform.position;
+                _nuage = true;
                 _index += 1;
             }
 

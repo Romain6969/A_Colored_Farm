@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class WichColor : MonoBehaviour
@@ -9,10 +10,13 @@ public class WichColor : MonoBehaviour
     [SerializeField] private OpenPause _pause;
     [SerializeField] private Tutorial _tutorial;
     [SerializeField] private PlaySounds _playSounds;
+    [SerializeField] private List<GameObject> _effectPaint;
 
     public void OnClickNumberColor(int color)
     {
         _playSounds.PlayAudio(9);
+        GameObject instantiated = Instantiate(_effectPaint[color]);
+        instantiated.transform.position = SetSeed.transform.position + new Vector3(0, 1, 0);
         ColorNumber = color;
         _colorPanel.SetActive(false);
         _movement.CanMove = true;
