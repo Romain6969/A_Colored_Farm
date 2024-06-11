@@ -11,6 +11,7 @@ public class WichColor : MonoBehaviour
     [SerializeField] private Tutorial _tutorial;
     [SerializeField] private PlaySounds _playSounds;
     [SerializeField] private List<GameObject> _effectPaint;
+    [SerializeField] private PlaceColor _placeColor;
 
     public void OnClickNumberColor(int color)
     {
@@ -22,6 +23,7 @@ public class WichColor : MonoBehaviour
         _movement.CanMove = true;
         _pause.Open = 2;
         SetSeed.SeedSet();
+        _placeColor.CanPaint = true;
 
         if (_tutorial.EndTuto == false && _tutorial.WhenColor == false && _tutorial.ForClosingPanel == true)
         {

@@ -42404,6 +42404,7 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
+  _effectPaint: []
   _placeColor: {fileID: 634756030003194807}
 --- !u!114 &634756030003194811
 MonoBehaviour:
