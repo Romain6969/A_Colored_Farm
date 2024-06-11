@@ -21,6 +21,7 @@ public class Dirt : MonoBehaviour
     [SerializeField] private PlaySounds _playSounds;
     [SerializeField] private Movement _movement;
     [SerializeField] private OpenPause _pause;
+    [SerializeField] private List<GameObject> _listVfx;
 
     private void FixedUpdate()
     {
@@ -48,6 +49,7 @@ public class Dirt : MonoBehaviour
                         {
                             case 14:
                                 Instantiate(_seedsList[0], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -56,6 +58,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 15:
                                 Instantiate(_seedsList[1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -64,6 +67,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 16:
                                 Instantiate(_seedsList[2], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -72,6 +76,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 17:
                                 Instantiate(_seedsList[3], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -80,6 +85,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 18:
                                 Instantiate(_seedsList[4], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -88,6 +94,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 19:
                                 Instantiate(_seedsList[5], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -96,6 +103,7 @@ public class Dirt : MonoBehaviour
                                 break;
                             case 20:
                                 Instantiate(_seedsList[6], transform.position, transform.rotation);
+                                Instantiate(_listVfx[0], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -111,6 +119,7 @@ public class Dirt : MonoBehaviour
                             case 14:
                                 SeedColor.Seed = Colors.Grey;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -119,6 +128,7 @@ public class Dirt : MonoBehaviour
                             case 15:
                                 SeedColor.Seed = Colors.Blue;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -127,6 +137,7 @@ public class Dirt : MonoBehaviour
                             case 16:
                                 SeedColor.Seed = Colors.Yellow;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -135,6 +146,7 @@ public class Dirt : MonoBehaviour
                             case 17:
                                 SeedColor.Seed = Colors.Red;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -143,6 +155,7 @@ public class Dirt : MonoBehaviour
                             case 18:
                                 SeedColor.Seed = Colors.Purple;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -151,6 +164,7 @@ public class Dirt : MonoBehaviour
                             case 19:
                                 SeedColor.Seed = Colors.Green;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
@@ -159,6 +173,7 @@ public class Dirt : MonoBehaviour
                             case 20:
                                 SeedColor.Seed = Colors.Orange;
                                 Instantiate(_seedsList[_seedColorMix.MixThem() - 1], transform.position, transform.rotation);
+                                Instantiate(_listVfx[PaintColor.ColorId], transform.position, transform.rotation);
                                 _playSounds.PlayAudio(3);
                                 _keepItem.Id = 0;
                                 _placeSeed.IsPlanting = false;
