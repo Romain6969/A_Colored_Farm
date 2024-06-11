@@ -37826,6 +37826,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Menu
+  _panel: {fileID: 0}
 --- !u!1 &1557866707
 GameObject:
   m_ObjectHideFlags: 0
@@ -51160,6 +51161,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079785080}
   m_CullTransparentMesh: 1
+--- !u!1 &2079899553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2079899554}
+  - component: {fileID: 2079899555}
+  m_Layer: 0
+  m_Name: GeneratePowder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2079899554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079899553}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02, y: -0.55, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 634756030003194801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2079899555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079899553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32eb72caad1745c4bae92030eebcafa3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 2078742838}
+  _powder: {fileID: 8650284282299566792, guid: c429c7f28e4d7df408dd9ab0f595aaed, type: 3}
 --- !u!1 &2082265280
 GameObject:
   m_ObjectHideFlags: 0
@@ -52608,6 +52655,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3030685884229560691, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      propertyPath: _vfxWalk
+      value: 
+      objectReference: {fileID: 2079899553}
+    - target: {fileID: 3030685884229560691, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       propertyPath: _animator
       value: 
       objectReference: {fileID: 634756030003194825}
@@ -52962,6 +53013,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 534477680}
+    - targetCorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2079899554}
     - targetCorrespondingSourceObject: {fileID: 8102857234517220803, guid: 358ae9a68c253494dbae3ae4e3d93cb7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1920511991}
