@@ -7,15 +7,15 @@ public class AmeliorationCrusher : MonoBehaviour
     [SerializeField] private Crusher _crusher;
     [SerializeField] private TMP_Text _priceText;
     private int _price = 50;
-    private int _use = 10;
+    private int _use = 5;
 
     public void OnClick()
     {
         if (_inventoryMain.TargetValue >= _price)
         {
-            _crusher.TimeObjectif -= 1;
+            _crusher.TimeObjectif -= 2;
             _inventoryMain.RemoveValue(_price);
-            _price += 25;
+            _price += 50;
             _use -= 1;
         }
     }

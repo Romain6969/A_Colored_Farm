@@ -6,6 +6,7 @@ using System.Collections;
 public class MoneyAnimation : MonoBehaviour
 {
     [SerializeField] private List<AnimationClip> _animationList;
+    [SerializeField] private List<GameObject> _vfxList;
     [SerializeField] private Animator _animator;
     [SerializeField] private GameObject _money;
     [SerializeField] private TMP_Text _moneyText;
@@ -20,12 +21,15 @@ public class MoneyAnimation : MonoBehaviour
         string animationName = _animationList[wichAnimation].name;
         _animator.Play(animationName);
         _animator.enabled = true;
+        _vfxList[wichAnimation].SetActive(true);
         StartCoroutine(Wait());
     }
 
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(1f);
+        _vfxList[0].SetActive(false);
+        _vfxList[1].SetActive(false);
         _animator.enabled = false;
         _money.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
         _money.transform.localPosition = new Vector3(0f, -6f, 0f);

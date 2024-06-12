@@ -9,6 +9,7 @@ public class ChangeScene : MonoBehaviour
 
     public void GoToScene()
     {
+        Time.timeScale = 1;
         _panel.SetActive(true);
         StartCoroutine(Wait());
     }
