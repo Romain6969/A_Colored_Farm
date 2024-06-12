@@ -17,6 +17,7 @@ public class ClientMovement : MonoBehaviour
     [SerializeField] private GameObject _explosionBulle;
     [SerializeField] private GameObject _emotionHappy;
     [SerializeField] private GameObject _emotionHangry;
+    [SerializeField] private PlaySounds _playSounds;
     [SerializeField] private AnimationWalk _animationWalk;
     [SerializeField] private Image _image;
     [field : SerializeField] public GameObject ProgressBarGameObject {  get; set; }
@@ -76,6 +77,7 @@ public class ClientMovement : MonoBehaviour
 
             if (Happy == true && _time <= 0.05f && _index == 0)
             {
+                _playSounds.PlayAudio(11);
                 GameObject instantiated = Instantiate(_emotionHappy);
                 instantiated.transform.position = transform.position;
                 _nuage = true;
@@ -83,6 +85,7 @@ public class ClientMovement : MonoBehaviour
             }
             else if (_time <= 0.05f && _index == 0)
             {
+                _playSounds.PlayAudio(12);
                 GameObject instantiated = Instantiate(_emotionHangry);
                 instantiated.transform.position = transform.position;
                 _nuage = true;

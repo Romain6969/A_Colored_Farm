@@ -13,6 +13,7 @@ public class BuyDirt : MonoBehaviour
     [SerializeField] private Movement _movement;
     [SerializeField] private MoneyAnimation _moneyAnimation;
     [SerializeField] private PlaySounds _playSounds;
+    [SerializeField] private GameObject _vfxBuyDirt;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -44,6 +45,7 @@ public class BuyDirt : MonoBehaviour
             gameObject.SetActive(false);
             _movement.CanMove = true;
             _interaction.CanPerform = true;
+            Instantiate(_vfxBuyDirt, transform.position, transform.rotation);
         }
         else
         {
