@@ -6,38 +6,66 @@ public class SeedColorMix : MonoBehaviour
     [field :SerializeField] public PaintColor PaintColor { get; set; }
     [field :SerializeField] public SeedColor SeedColor { get; set; }
     [field :SerializeField] public ResultMix ResultMix { get; set; }
+
     [SerializeField] private List<GameObject> _listCollision;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Dirt")
-        {
-            _listCollision.Add(collision.gameObject);
-        }
-    }
+        if (collision.tag != "Dirt") return;
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Dirt")
-        {
-            PaintColor = collision.gameObject.GetComponent<PaintColor>();
-            SeedColor = collision.gameObject.GetComponent<SeedColor>();
-            ResultMix = collision.gameObject.GetComponent<ResultMix>();
-        }
+        _listCollision.Add(collision.gameObject);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        PaintColor = null;
-        SeedColor = null;
-        ResultMix = null;
+        if (collision.tag != "Dirt") return;
 
-        if (collision.tag == "Dirt")
+        _listCollision.Remove(collision.gameObject);
+    }
+
+    private GameObject GetClosestDirt()
+    {
+        if (_listCollision.Count == 0) return null;
+
+        if (_listCollision.Count == 1) return _listCollision[0];
+
+        float minDistance = float.MaxValue;
+        GameObject closestDirt = null;
+        foreach (var dirt in _listCollision)
         {
-            _listCollision.Remove(collision.gameObject);
+            float distance = Vector2.Distance(
+                new Vector2(transform.position.x, transform.position.y),
+                new Vector2(dirt.transform.position.x, dirt.transform.position.y));
+
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                closestDirt = dirt;
+            }
+        }
+
+        return closestDirt;
+    }
+
+    private void RefreshComponentsReference()
+    {
+        GameObject closestDirt = GetClosestDirt();
+
+        if (closestDirt == null)
+        {
+            PaintColor = null;
+            SeedColor = null;
+            ResultMix = null;
+        }
+        else
+        {
+            PaintColor = closestDirt.GetComponent<PaintColor>();
+            SeedColor = closestDirt.GetComponent<SeedColor>();
+            ResultMix = closestDirt.GetComponent<ResultMix>();
         }
     }
-    public Colors EveryMix(Colors paintColor, Colors seedColor)
+
+    private Colors EveryMix(Colors paintColor, Colors seedColor)
     {
         if (paintColor == Colors.Blue && seedColor == Colors.Blue)
         {
@@ -145,6 +173,8 @@ public class SeedColorMix : MonoBehaviour
 
     public int MixThem()
     {
+        RefreshComponentsReference();
+
         return (int)EveryMix(PaintColor.Paint, SeedColor.Seed);
     }
 }
