@@ -8,7 +8,6 @@ public class OpenChest : MonoBehaviour
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private KeepItem _keepItem;
     [SerializeField] private PlaySounds _playSounds;
-    [SerializeField] private bool _isTrigger = false;
 
     public PlayerInput PlayerInput => _playerInput;
 
@@ -176,43 +175,36 @@ public class OpenChest : MonoBehaviour
     {
         if (collision.gameObject.tag == "ChestGray")
         {
-            _isTrigger = true;
             _chest = 0;
         }
 
         if (collision.gameObject.tag == "ChestBlue")
         {
-            _isTrigger = true;
             _chest = 1;
         }
 
         if (collision.gameObject.tag == "ChestYellow")
         {
-            _isTrigger = true;
             _chest = 2;
         }
 
         if (collision.gameObject.tag == "ChestRed")
         {
-            _isTrigger = true;
             _chest = 3;
         }
 
         if (collision.gameObject.tag == "ChestPurple")
         {
-            _isTrigger = true;
             _chest = 4;
         }
 
         if (collision.gameObject.tag == "ChestGreen")
         {
-            _isTrigger = true;
             _chest = 5;
         }
 
         if (collision.gameObject.tag == "ChestOrange")
         {
-            _isTrigger = true;
             _chest = 6;
         }
     }
@@ -221,43 +213,36 @@ public class OpenChest : MonoBehaviour
     {
         if (collision.gameObject.tag == "ChestGray")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestBlue")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestYellow")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestRed")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestPurple")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestGreen")
         {
-            _isTrigger = false;
             _chest = -1;
         }
 
         if (collision.gameObject.tag == "ChestOrange")
         {
-            _isTrigger = false;
             _chest = -1;
         }
     }
