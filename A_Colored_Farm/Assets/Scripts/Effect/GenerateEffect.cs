@@ -18,7 +18,7 @@ public class GenerateEffect : MonoBehaviour
 
         if (_time < 0.01f)
         {
-            _waitTime =Random.Range(_number1, _number2);
+            _waitTime = Random.Range(_number1, _number2);
         }
 
         if (_time >= _waitTime)
