@@ -5,7 +5,7 @@ using System.Collections;
 public class SettingGeneral : MonoBehaviour
 {
     [SerializeField] private AudioMixer _audioMixer;
-    [SerializeField] public float Volume {  get; set; }
+    [SerializeField] public float Volume { get; set; }
 
     void Start()
     {
@@ -21,7 +21,5 @@ public class SettingGeneral : MonoBehaviour
     public void SetVolume(float volume)
     {
         _audioMixer.SetFloat("Master", volume);
-        Debug.Log($"{volume}");
-        Volume = volume;
     }
 }

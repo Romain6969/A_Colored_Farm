@@ -7012,13 +7012,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: cf57ef3f89dddff4a90eeb78f6b32a58, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 150
   DopplerLevel: 1
   MinDistance: 400
   MaxDistance: 500
@@ -7347,7 +7347,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: 880b8c23d13a9ed4885526515133aec0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7837,7 +7837,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: 377189df6ac0772478579e86a34b0f26, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -11719,7 +11719,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: 9fe497a0b664ebf43ba92eb96c265b6e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -14178,6 +14178,7 @@ MonoBehaviour:
   - {fileID: 642658520}
   - {fileID: 642658522}
   _time: 0
+  _isPlaying: 1
 --- !u!1 &648970151
 GameObject:
   m_ObjectHideFlags: 0
@@ -14429,8 +14430,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
-  _interactions: {fileID: 0}
-  _placeColor: {fileID: 0}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!114 &673912515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20801,7 +20802,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: db3ea5b97ccdbc546ae00d459043b126, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24124,8 +24125,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
-  _interactions: {fileID: 0}
-  _placeColor: {fileID: 0}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!114 &1187956309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24926,7 +24927,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 7539607826774030451, guid: 7678a8892ae5846448967927ebfa0bee, type: 2}
   m_audioClip: {fileID: 8300000, guid: 0551650fc67a98443a24dcf3f899f65a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -30901,6 +30902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Menu
+  _panel: {fileID: 0}
 --- !u!1 &1550690075
 GameObject:
   m_ObjectHideFlags: 0
@@ -39612,8 +39614,8 @@ MonoBehaviour:
   _pause: {fileID: 634756030003194798}
   _tutorial: {fileID: 1837061901}
   _playSounds: {fileID: 334549823}
-  _interactions: {fileID: 0}
-  _placeColor: {fileID: 0}
+  _interactions: {fileID: 634756030003194816}
+  _placeColor: {fileID: 634756030003194807}
 --- !u!114 &2005395950
 MonoBehaviour:
   m_ObjectHideFlags: 0
