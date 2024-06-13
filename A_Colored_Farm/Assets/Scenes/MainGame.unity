@@ -52823,7 +52823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1000
+  m_text: '10
 
 '
   m_isRightToLeft: 0
