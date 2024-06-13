@@ -17971,8 +17971,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.8999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1024068938}
   - {fileID: 78372796}
+  - {fileID: 1024068938}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -29295,8 +29295,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.8999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1011683284}
   - {fileID: 2088253854}
+  - {fileID: 1011683284}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -32273,8 +32273,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 638005848}
   - {fileID: 2089516155}
+  - {fileID: 638005848}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -36916,8 +36916,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.8999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1347168523}
   - {fileID: 886400659}
+  - {fileID: 1347168523}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -41207,8 +41207,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1658146985}
   - {fileID: 1581940965}
+  - {fileID: 1658146985}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -47055,8 +47055,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.8999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1958212356}
   - {fileID: 1400384955}
+  - {fileID: 1958212356}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -47306,8 +47306,8 @@ RectTransform:
   m_LocalScale: {x: 0.3, y: 0.6, z: 0.8999999}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1628214609}
   - {fileID: 1463441962}
+  - {fileID: 1628214609}
   m_Father: {fileID: 1880774735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
